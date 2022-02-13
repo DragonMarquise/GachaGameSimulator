@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Shows the  title in the browser's tab for this page -->
+        <title>Gacha Game Simulator</title>
+        <link rel="stylesheet" href="gachaStyle.css">
+    </head>
+    <body>
+        <h1>Gacha Game Simulator: 3-Character Gacha Pull</h1>
+        <p id="tracker" />
+
+        <table>
+          <tr>
+            <td>
+              <a href="index.html">Back to Main Page</a>
+            </td>
+            <td rowspan="3" style="padding: 15px;">
+              <p>Probabilities: <br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 20%
+                                <br> ---Bronze Rank characters = 70% </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>This page is for a 3-character gacha pull. Click the button below to try it out!<br>
+                Each pull is worth 10 currency.</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="pullButton" onclick="newPull_Multi(4, 10)">3-Character Gacha Pull</button>
+              <p id="pageTracker">Pulls so far while on this page: 0</p>
+            </td>
+          </tr>
+        </table>
+
+        <div>Click on an icon to view the full image on the right.</div>
+        <div>
+          <br>
+          <hr>
+        </div>
+
+        <!-- The images will be replaced by a random gacha character when the above
+          button is clicked. -->
+        <table>
+          <tr>
+            <td>
+              <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay1')">
+            </td>
+            <td>
+              <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay2')">
+            </td>
+            <td>
+              <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay3')">
+            </td>
+            <!-- Use rowspan here to make it look like the full image display is
+              next to the table of icons. -->
+            <td rowspan="4">
+              <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td />
+            <td />
+            <td />
+            <td id="descriptionSelect" style="text-align: center; vertical-align: middle;" height="50">
+              A description about the selected character will appear here.</td>
+          </tr>
+        </table>
+
+        <script src="gachaMagic.js"></script>
+        <script>window.onload = updateTracker()</script>
+    </body>
+</html>

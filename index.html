@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Shows the  title in the browser's tab for this page-->
+        <title>Gacha Game Simulator</title>
+        <link rel="stylesheet" href="gachaStyle.css">
+    </head>
+    <body>
+        <h1>Gacha Game Simulator</h1>
+        <p id="tracker" />
+        <p>Welcome to DragonMarquise's alpha-prototype gacha simulator!</p>
+        <p>To use this simulator, go to the Gacha Currency Generator page to get Currency.
+           Then go to the different pull pages to<br>
+           spend the Currecny on pulls. Also, the gallery allows you to view individual characters
+           without needing to do pulls,<br>
+           and the history page lets you check what you got on past pulls, up to 50 previous pulls.</p>
+        <p>Hope you have fun with this simulator!</p>
+        <br>
+
+        <table>
+          <tr>
+            <td style="padding-right: 63px;">Utilities:</td>
+            <td><a href="gachaCurrencyGenerator.html">Currency Generator</a></td>
+            <td></td>
+            <td><a href="gachaHistory.html">Pull History Record</a></td>
+            <td></td>
+            <td><a href="gachaGallery.html">Full Gacha Gallery</a></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td colspan="6"><hr></td>
+          </tr>
+          <tr>
+            <td style="padding-right: 20px;">Standard Pulls:</td>
+            <td style="padding-right: 10px;"><a href="gachaSinglePull.html">Single Pull</a></td>
+            <td style="padding-right: 10px;"><a href="gachaThreePull.html">3-Character Pull</a></td>
+            <td style="padding-right: 10px;"><a href="gachaFivePull.html">5-Character Pull</a></td>
+            <td style="padding-right: 10px;"><a href="gachaSevenPull.html">7-Character Pull</a></td>
+            <td style="padding-right: 10px;"><a href="gachaTenPlusPull.html">10+1 Pull</a></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td colspan="6"><hr></td>
+          </tr>
+          <tr>
+            <td style="padding-right: 10px;">Special Banners:</td>
+            <td style="padding-right: 23px;"><a href="gachaSpecialPull_Buff.html">Buff Man</a></td>
+            <td><a href="gachaSpecialPull_Lady.html">Lady Longlegs</a></td>
+            <td><a href="gachaSpecialPull_Gunz.html">Mx. Gunzakimbo</a></td>
+            <td><a href="gachaSpecialPull_Butler.html">The Handsomest Butler</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td style="padding-right: 23px;"><a href="gachaSpecialPull_McGee.html">Megan McGee</a></td>
+            <td style="padding-right: 23px;"><a href="gachaSpecialPull_Timbly.html">Timbly Sexymann</a></td>
+            <td><a href="gachaSpecialPull_CLOWN.html">CHAOSCLOWN</a></td>
+          </tr>
+        </table>
+
+        <script src="gachaMagic.js"></script>
+        <script>window.onload = indexReset()</script> <!-- For this page only, run this script to clear certain values. -->
+    </body>
+</html>

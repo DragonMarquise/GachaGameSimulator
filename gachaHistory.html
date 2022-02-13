@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Shows the  title in the browser's tab for this page-->
+        <title>Pull History Record</title>
+        <link rel="stylesheet" href="gachaStyle.css">
+    </head>
+    <body>
+        <h1>Gacha Game Simulator: Pull History Record</h1>
+        <div>
+          <br>
+        </div>
+
+        <a href="index.html">Back to Main Page</a>
+        <div>
+          <br>
+        </div>
+
+        <div>Here, you can view your most recent pulls, up to the 50th pull! Each row represents a pull.</div>
+        <div>
+          <br>
+        </div>
+        <div>Click on an icon to view the character's full image at the top, along with their descriptions.</div>
+        <div>
+          <br>
+          <hr>
+        </div>
+
+        <!-- The image will be replaced by whatever character is clicked on. -->
+        <table>
+          <tr>
+            <td>
+              <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="descriptionSelect" style="text-align: center; vertical-align: middle;">
+                A description about the selected character will appear here.</p>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <p id="test"></p>
+
+        <!-- The following will list the records of up to the past 50 pulls. -->
+        <table id="pastPulls">
+        </table>
+
+        <script src="gachaMagic.js"></script>
+        <!-- For this specific page, call on the function for populating history information. -->
+        <script>window.onload = setupHistoryPage()</script>
+    </body>
+</html>

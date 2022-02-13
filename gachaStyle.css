@@ -1,0 +1,32 @@
+/* This can be modified to give the pages different styles */
+
+body {
+  background-color: #1A1A1A;
+}
+
+div {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+td {
+  color: white;
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+h1 {
+  color: white;
+}
+
+button {
+  background-color: #1A1A1A;
+  color: white;
+}
+
+a {
+  color: #0099FF;
+}

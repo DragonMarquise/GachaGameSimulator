@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Shows the  title in the browser's tab for this page-->
+        <title>Single Pull Gacha</title>
+        <link rel="stylesheet" href="gachaStyle.css">
+    </head>
+    <body>
+        <h1>Gacha Game Simulator: Currency Generator</h1>
+        <p id="tracker" />
+        <div>
+          <br>
+        </div>
+
+        <a href="index.html">Back to Main Page</a>
+        <div>
+          <br>
+        </div>
+
+        <p>This page lets you generate the currency you need to make gacha pulls.</p>
+        <p>Keep an eye on the tracker near the top for the Currency number to go up!</p>
+        <p>Note that Currency caps out at 999,999,999.</p>
+        <div>
+          <br>
+        </div>
+
+        <button onclick="currencyGenerator()">Currency Generator</button>
+        <p id="amount">See how much you can get!</p>
+        <div>
+          <br>
+          <hr>
+        </div>
+
+        <script src="gachaMagic.js"></script>
+        <script>window.onload = updateTracker()</script>
+    </body>
+</html>
