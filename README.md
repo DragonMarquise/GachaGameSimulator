@@ -31,3 +31,6 @@ file included with this code.
 Besides that, know that this code uses a combination of HTML,
 Javascript, and a bit of CSS, along with plenty of images. Feel free to make
 your own gacha simulators based off of this code as you please!
+
+Note that there is also a version of this game hosted on Itch.io,
+for people to play right in their browser: https://dragonmarquise.itch.io/gacha-game-simulator
