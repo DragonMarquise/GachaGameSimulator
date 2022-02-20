@@ -34,3 +34,12 @@ your own gacha simulators based off of this code as you please!
 
 Note that there is also a version of this game hosted on Itch.io,
 for people to play right in their browser: https://dragonmarquise.itch.io/gacha-game-simulator
+
+Current ideas for future updates:
+ - "Difficulty modes" of sorts, basically just changing the rates to be closer to the
+(more ridiculous) rates seen in most gacha games. The current set of rates in the simulator
+would be set for a "Casual Mode", while more accurate/harder rates could be called an "Authentic Mode".
+ - Add additional tiers? Most gacha games tend to have 4 to 5 tiers. Current ideas are two tiers
+above Gold (Platinum as second-rarest, and Diamond as the new rarest), or a new tier above Gold (Platinum)
+and a new tier below Bronze (Maybe Pyrite/Fool's Gold? Or Iron, or maybe even Wood for the hilarity of it).
+Will need to come up with new characters for those tiers as well, at least for this base repository.
