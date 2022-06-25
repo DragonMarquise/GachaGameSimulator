@@ -54,6 +54,12 @@ function indexReset() {
 // Keep separate arrays for each rank. These are arrays of arrays (basically tuples) that hold
 // info about a character's icon image, full image, and description.
 
+const platinumRank = [
+  ['Images_Icons/Icon_Eclipsia.png', 'Images_Full/Platinum_Eclipsia.png', 'Once upon a time, a sun goddess and moon god had a daughter. That daughter ate her parents and absorbed their powers. Thus she became Eclipsia, the Tyrant Queen of Space.', 1],
+  ['Images_Icons/Icon_Warrior.png', 'Images_Full/Platinum_Warrior.png', 'A hero who has been forced to reincarnate again and again to fight back an immortal evil whenever needed. But now he want to find a way to stop the cycle for good...', 2],
+  ['Images_Icons/Icon_Sandalphon.png', 'Images_Full/Platinum_Sandalphon.png', 'An alien angel from an alternate dimension, they escaped a war that killed countless lives, including gods. Now they stay in this reality to prevent the same war from happening here.', 3]
+]
+
 const goldRank = [
   ['Images_Icons/Icon_BuffMan.png', 'Images_Full/Gold_BuffMan.png', 'A big bodacious hero, he is here to stop crime wherever it is! Huzzah!', 1],
   ['Images_Icons/Icon_LadyLonglegs.png', 'Images_Full/Gold_LadyLonglegs.png', 'She travels the world defeating monsters with her mighty magic!', 2],
@@ -89,6 +95,14 @@ const bronzeRank = [
   ['Images_Icons/Icon_Floral.png', 'Images_Full/Bronze_Floral.png', 'One evil flower is bad enough, but three in one is even worse. Watch your fingers.', 26],
   ['Images_Icons/Icon_Paperclip.png', 'Images_Full/Bronze_Paperclip.png', 'A malevolent spirit possessed a paperclip, and it now terrorizes offices everywhere...', 27],
   ['Images_Icons/Icon_Squirrel.png', 'Images_Full/Bronze_Squirrel.png', 'It steals food from picnikcers, and is especially fond of stealing candy from children.', 28]
+]
+
+const tinRank = [
+  ['Images_Icons/Icon_Animal.png', 'Images_Full/Tin_Animal.png', 'It has no monetary value, but its nostalgic value more than makes up for it.', 1],
+  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone payed a lot to get these but got little return on them.', 2],
+  ['Images_Icons/Icon_Empty.png', 'Images_Full/Tin_Empty.png', 'There was a character in here, but someone else already opened it. Was it a rare character? You\'ll never know now!', 3],
+  ['Images_Icons/Icon_Pillow.png', 'Images_Full/Tin_Pillow.png', 'Normally people put a cover on these to represent a character. Since this one doesn\'t have a cover, it\'s just an unimportant pillow.', 4],
+  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recylcing these, but as is they\'re not very useful.', 5]
 ]
 
 function updateCharacterCount(input) {
