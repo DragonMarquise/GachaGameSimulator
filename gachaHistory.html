@@ -29,13 +29,10 @@
         <!-- The image will be replaced by whatever character is clicked on. -->
         <table>
           <tr>
-            <td>
+            <td style="vertical-align: top;" height="600">
               <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p id="descriptionSelect" style="text-align: center; vertical-align: middle;">
+              <br>
+              <p id="descriptionSelect" style="text-align: center; vertical-align: middle;" height="100">
                 A description about the selected character will appear here.</p>
             </td>
           </tr>
@@ -44,9 +41,12 @@
         <br>
         <p id="test"></p>
 
-        <!-- The following will list the records of up to the past 50 pulls. -->
-        <table id="pastPulls">
-        </table>
+        <!-- The following will list the records of up to the past 50 pulls. Putting the table in a div like this
+             allows it to be scrollable despite its length. -->
+        <div style="height:300px; width:auto; overflow:auto;">
+          <table id="pastPulls">
+          </table>
+        </div>
 
         <script src="gachaMagic.js"></script>
         <!-- For this specific page, call on the function for populating history information. -->

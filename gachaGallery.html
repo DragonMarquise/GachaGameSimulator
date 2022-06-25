@@ -28,117 +28,56 @@
 
         <table>
           <tr>
-            <td>
-              <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
+            <!-- Using a special table layout here to accomodate all the character icons on one page, using a scrollable table cell.
+                 Not really needed for other tables in the game -->
+            <td width="350">
+              <div class=scrollable>
+                <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay4" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay5" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay6" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay7" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay8" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay9" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay10" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay11" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay12" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay13" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay14" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay15" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay16" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay17" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay18" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay19" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay20" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay21" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay22" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay23" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay24" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay25" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay26" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <img id="iconDisplay27" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+                <br>
+                <img id="iconDisplay28" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)" style="padding: 1px 1px">
+              </div>
             </td>
-            <td>
-              <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <!-- Use rowspan here to make it look like the full image display is
-              next to the table of icons. -->
-            <td rowspan="4">
+            <td style="vertical-align: top;">
               <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
+              <br>
+              <div id="descriptionSelect" style="text-align: center;">
+                A count of the copies obtained and a description of the selected character will appear here.
+              </div>
             </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay4" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay5" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay6" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay7" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay8" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay9" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay10" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay11" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay12" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay13" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay14" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay15" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td id="descriptionSelect" style="text-align: center; vertical-align: middle;">
-              A count of the copies obtained and a description of the selected character will appear here.</td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay16" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay17" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay18" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay19" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay20" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay21" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay22" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay23" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay24" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay25" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay26" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td>
-              <img id="iconDisplay27" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img id="iconDisplay28" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage(this.id)">
-            </td>
-            <td />
-            <td />
           </tr>
         </table>
 

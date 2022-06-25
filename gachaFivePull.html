@@ -41,45 +41,21 @@
 
         <!-- The images will be replaced by a random gacha character when the above
           button is clicked. -->
-        <table>
+        <table width="600">
           <tr>
-            <td>
-              <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay1')">
+            <td style="text-align: center">
+              <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay1')" style="padding: 1px 1px">
+              <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay2')" style="padding: 1px 1px">
+              <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay3')" style="padding: 1px 1px">
+              <img id="iconDisplay4" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay4')" style="padding: 1px 1px">
+              <img id="iconDisplay5" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay5')" style="padding: 1px 1px">
             </td>
-            <td>
-              <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay2')">
-            </td>
-            <td>
-              <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay3')">
-            </td>
-            <!-- Use rowspan here to make it look like the full image display is
-              next to the table of icons. -->
-            <td rowspan="4">
+          <tr>
+            <td style="text-align: center">
               <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
             </td>
           </tr>
           <tr>
-            <td>
-              <img id="iconDisplay4" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay4')">
-            </td>
-            <td>
-              <img id="iconDisplay5" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay5')">
-            </td>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td>
-            </td>
-          </tr>
-          <tr>
-            <td />
-            <td />
-            <td />
             <td id="descriptionSelect" style="text-align: center; vertical-align: middle;" height="50">
               A description about the selected character will appear here.</td>
           </tr>
