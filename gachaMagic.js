@@ -27,7 +27,7 @@ function updateTracker() {
   // would be in within the Gallery.
   // If the first one isn't already populated, then that means the others aren't as well.
   if (sessionStorage.getItem("iconDisplay1") == null) {
-    var totalCharacters = goldRank.length + silverRank.length + bronzeRank.length;
+    var totalCharacters = platinumRank.length + goldRank.length + silverRank.length + bronzeRank.length + tinRank.length;
     var i = 1;
     while (i <= totalCharacters) {
       sessionStorage.setItem("iconDisplay" + i, 0);
@@ -61,48 +61,48 @@ const platinumRank = [
 ]
 
 const goldRank = [
-  ['Images_Icons/Icon_BuffMan.png', 'Images_Full/Gold_BuffMan.png', 'A big bodacious hero, he is here to stop crime wherever it is! Huzzah!', 1],
-  ['Images_Icons/Icon_LadyLonglegs.png', 'Images_Full/Gold_LadyLonglegs.png', 'She travels the world defeating monsters with her mighty magic!', 2],
-  ['Images_Icons/Icon_MxGunzakimbo.png', 'Images_Full/Gold_MxGunzakimbo.png', 'The best way to describe them is as a Chaotic Good mercenary who\'s fighting a corrupt military!', 3],
-  ['Images_Icons/Icon_Butler.png', 'Images_Full/Gold_Butler.png', 'He is the best butler in the world, always at your service!', 4],
-  ['Images_Icons/Icon_McGee.png', 'Images_Full/Gold_McGee.png', 'She made a real working version of her favorite video game weapon, and now she\'s off to save the world!', 5],
-  ['Images_Icons/Icon_Timbly.png', 'Images_Full/Gold_Timbly.png', 'He\'s a jerk, but for some reason people love him anyways. And that suit isn\'t his, he\'s just renting it!', 6],
-  ['Images_Icons/Icon_CLOWN.png', 'Images_Full/Gold_CLOWN.png', 'They\'re on a mission to either save humanity or destory it, but they forgot which it was supposed to be...', 7]
+  ['Images_Icons/Icon_BuffMan.png', 'Images_Full/Gold_BuffMan.png', 'A big bodacious hero, he is here to stop crime wherever it is! Huzzah!', 4],
+  ['Images_Icons/Icon_LadyLonglegs.png', 'Images_Full/Gold_LadyLonglegs.png', 'She travels the world defeating monsters with her mighty magic!', 5],
+  ['Images_Icons/Icon_MxGunzakimbo.png', 'Images_Full/Gold_MxGunzakimbo.png', 'The best way to describe them is as a Chaotic Good mercenary who\'s fighting a corrupt military!', 6],
+  ['Images_Icons/Icon_Butler.png', 'Images_Full/Gold_Butler.png', 'He is the best butler in the world, always at your service!', 7],
+  ['Images_Icons/Icon_McGee.png', 'Images_Full/Gold_McGee.png', 'She made a real working version of her favorite video game weapon, and now she\'s off to save the world!', 8],
+  ['Images_Icons/Icon_Timbly.png', 'Images_Full/Gold_Timbly.png', 'He\'s a jerk, but for some reason people love him anyways. And that suit isn\'t his, he\'s just renting it!', 9],
+  ['Images_Icons/Icon_CLOWN.png', 'Images_Full/Gold_CLOWN.png', 'They\'re on a mission to either save humanity or destory it, but they forgot which it was supposed to be...', 10]
 ]
 
 const silverRank = [
-  ['Images_Icons/Icon_Smarty.png', 'Images_Full/Silver_Smarty.png', 'Their name ended up very appropriate to their abilities and hobbies. They work as an omni engineer!', 8],
-  ['Images_Icons/Icon_Pomegranate.png', 'Images_Full/Silver_Pomegranate.png', 'She likes peppermint mocha coffee, but dislikes that it\'s only a seasonal flavor.', 9],
-  ['Images_Icons/Icon_JaneDoe.png', 'Images_Full/Silver_JaneDoe.png', 'A simple lady who lives off the grid in the middle of the woods. Please don\'t ask about the shovel...', 10],
-  ['Images_Icons/Icon_Hourglass.png', 'Images_Full/Silver_Hourglass.png', 'It\'s hard to find clothes that fit, but she thinks her figure is worth it.', 11],
-  ['Images_Icons/Icon_Eustace.png', 'Images_Full/Silver_Eustace.png', 'He always blames his misfortunes on "that stupid dog", but it\'s really his own fault.', 12],
-  ['Images_Icons/Icon_Dude.png', 'Images_Full/Silver_Dude.png', 'It\'s dangerous to underestimate The Dude.', 13],
-  ['Images_Icons/Icon_CoolerDude.png', 'Images_Full/Silver_CoolerDude.png', 'May or may not be related to The Dude. Or maybe is The Dude in disguise. Who knows!', 14],
-  ['Images_Icons/Icon_Alien.png', 'Images_Full/Silver_Alien.png', 'Definitely not an alien, no sir! Just an ordinary tourist from Virginia, nothing to see here.', 15],
-  ['Images_Icons/Icon_FahrenCelsi.png', 'Images_Full/Silver_FahrenCelsi.png', 'Twin spirits of temperature, Fahren controls heat and Celsi controls cold.', 16],
-  ['Images_Icons/Icon_Glitch.png', 'Images_Full/Silver_Glitch.png', 'ERROR 404', 17],
-  ['Images_Icons/Icon_Linguine.png', 'Images_Full/Silver_Linguine.png', 'It likes pasta, moonlit nights, and scaring off trespassers on its territory.', 18],
-  ['Images_Icons/Icon_Skate.png', 'Images_Full/Silver_Skate.png', 'An extremely cool man, he\'s a pro skater by day and a skate-themed phantom thief by night.', 19]
+  ['Images_Icons/Icon_Smarty.png', 'Images_Full/Silver_Smarty.png', 'Their name ended up very appropriate to their abilities and hobbies. They work as an omni engineer!', 11],
+  ['Images_Icons/Icon_Pomegranate.png', 'Images_Full/Silver_Pomegranate.png', 'She likes peppermint mocha coffee, but dislikes that it\'s only a seasonal flavor.', 12],
+  ['Images_Icons/Icon_JaneDoe.png', 'Images_Full/Silver_JaneDoe.png', 'A simple lady who lives off the grid in the middle of the woods. Please don\'t ask about the shovel...', 13],
+  ['Images_Icons/Icon_Hourglass.png', 'Images_Full/Silver_Hourglass.png', 'It\'s hard to find clothes that fit, but she thinks her figure is worth it.', 14],
+  ['Images_Icons/Icon_Eustace.png', 'Images_Full/Silver_Eustace.png', 'He always blames his misfortunes on "that stupid dog", but it\'s really his own fault.', 15],
+  ['Images_Icons/Icon_Dude.png', 'Images_Full/Silver_Dude.png', 'It\'s dangerous to underestimate The Dude.', 16],
+  ['Images_Icons/Icon_CoolerDude.png', 'Images_Full/Silver_CoolerDude.png', 'May or may not be related to The Dude. Or maybe is The Dude in disguise. Who knows!', 17],
+  ['Images_Icons/Icon_Alien.png', 'Images_Full/Silver_Alien.png', 'Definitely not an alien, no sir! Just an ordinary tourist from Virginia, nothing to see here.', 18],
+  ['Images_Icons/Icon_FahrenCelsi.png', 'Images_Full/Silver_FahrenCelsi.png', 'Twin spirits of temperature, Fahren controls heat and Celsi controls cold.', 19],
+  ['Images_Icons/Icon_Glitch.png', 'Images_Full/Silver_Glitch.png', 'ERROR 404', 20],
+  ['Images_Icons/Icon_Linguine.png', 'Images_Full/Silver_Linguine.png', 'It likes pasta, moonlit nights, and scaring off trespassers on its territory.', 21],
+  ['Images_Icons/Icon_Skate.png', 'Images_Full/Silver_Skate.png', 'An extremely cool man, he\'s a pro skater by day and a skate-themed phantom thief by night.', 22]
 ]
 
 const bronzeRank = [
-  ['Images_Icons/Icon_Guy.png', 'Images_Full/Bronze_Guy.png', 'Just a guy trying to make it big in this crazy world.', 20],
-  ['Images_Icons/Icon_Gal.png', 'Images_Full/Bronze_Gal.png', 'Just a gal trying to survive in this wild world.', 21],
-  ['Images_Icons/Icon_Pal.png', 'Images_Full/Bronze_Pal.png', 'Just a pal here to see what life has to offer.', 22],
-  ['Images_Icons/Icon_Creature.png', 'Images_Full/Bronze_Creature.png', 'Just a simple creature, nothing to see here, I promise...', 23],
-  ['Images_Icons/Icon_Pencil.png', 'Images_Full/Bronze_Pencil.png', 'Ironically, they hate writing by hand, preferring to type instead.', 24],
-  ['Images_Icons/Icon_Cardboard.png', 'Images_Full/Bronze_Cardboard.png', 'He thinks he\'s a knight in armor, but that cardboard doesn\'t offer much protection.', 25],
-  ['Images_Icons/Icon_Floral.png', 'Images_Full/Bronze_Floral.png', 'One evil flower is bad enough, but three in one is even worse. Watch your fingers.', 26],
-  ['Images_Icons/Icon_Paperclip.png', 'Images_Full/Bronze_Paperclip.png', 'A malevolent spirit possessed a paperclip, and it now terrorizes offices everywhere...', 27],
-  ['Images_Icons/Icon_Squirrel.png', 'Images_Full/Bronze_Squirrel.png', 'It steals food from picnikcers, and is especially fond of stealing candy from children.', 28]
+  ['Images_Icons/Icon_Guy.png', 'Images_Full/Bronze_Guy.png', 'Just a guy trying to make it big in this crazy world.', 23],
+  ['Images_Icons/Icon_Gal.png', 'Images_Full/Bronze_Gal.png', 'Just a gal trying to survive in this wild world.', 24],
+  ['Images_Icons/Icon_Pal.png', 'Images_Full/Bronze_Pal.png', 'Just a pal here to see what life has to offer.', 25],
+  ['Images_Icons/Icon_Creature.png', 'Images_Full/Bronze_Creature.png', 'Just a simple creature, nothing to see here, I promise...', 26],
+  ['Images_Icons/Icon_Pencil.png', 'Images_Full/Bronze_Pencil.png', 'Ironically, they hate writing by hand, preferring to type instead.', 27],
+  ['Images_Icons/Icon_Cardboard.png', 'Images_Full/Bronze_Cardboard.png', 'He thinks he\'s a knight in armor, but that cardboard doesn\'t offer much protection.', 28],
+  ['Images_Icons/Icon_Floral.png', 'Images_Full/Bronze_Floral.png', 'One evil flower is bad enough, but three in one is even worse. Watch your fingers.', 29],
+  ['Images_Icons/Icon_Paperclip.png', 'Images_Full/Bronze_Paperclip.png', 'A malevolent spirit possessed a paperclip, and it now terrorizes offices everywhere...', 30],
+  ['Images_Icons/Icon_Squirrel.png', 'Images_Full/Bronze_Squirrel.png', 'It steals food from picnikcers, and is especially fond of stealing candy from children.', 31]
 ]
 
 const tinRank = [
-  ['Images_Icons/Icon_Animal.png', 'Images_Full/Tin_Animal.png', 'It has no monetary value, but its nostalgic value more than makes up for it.', 1],
-  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone payed a lot to get these but got little return on them.', 2],
-  ['Images_Icons/Icon_Empty.png', 'Images_Full/Tin_Empty.png', 'There was a character in here, but someone else already opened it. Was it a rare character? You\'ll never know now!', 3],
-  ['Images_Icons/Icon_Pillow.png', 'Images_Full/Tin_Pillow.png', 'Normally people put a cover on these to represent a character. Since this one doesn\'t have a cover, it\'s just an unimportant pillow.', 4],
-  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recylcing these, but as is they\'re not very useful.', 5]
+  ['Images_Icons/Icon_Animal.png', 'Images_Full/Tin_Animal.png', 'It has no monetary value, but its nostalgic value more than makes up for it.', 32],
+  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone payed a lot to get these but got little return on them.', 33],
+  ['Images_Icons/Icon_Empty.png', 'Images_Full/Tin_Empty.png', 'There was a character in here, but someone else already opened it. Was it a rare character? You\'ll never know now!', 34],
+  ['Images_Icons/Icon_Pillow.png', 'Images_Full/Tin_Pillow.png', 'Normally people put a cover on these to represent a character. Since this one doesn\'t have a cover, it\'s just an unimportant pillow.', 35],
+  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recylcing these, but as is they\'re not very useful.', 36]
 ]
 
 function updateCharacterCount(input) {
@@ -139,7 +139,7 @@ function convertPullHistory() {
   var pullHistoryString = sessionStorage.getItem("pullHistory");
   historyArray = pullHistoryString.split(":");
 
-  // This next split will then effective split the array into an array of arrays. The array holds pull values,
+  // This next split will then effectively split the array into an array of arrays. The array holds pull values,
   // which in turn are stored as inner arrays.
   i = 0;
   while (i < historyArray.length){
@@ -219,7 +219,17 @@ function newPull_Single() {
     // The following returns a random number between 1 and 100.
     var randomNumber = Math.floor((Math.random() * 100) + 1);
 
-    if (randomNumber >= 90) {
+    if (randomNumber >= 95) {
+      // Platinum rank chance is 5%
+      // Get a random character from the Platinum Rank array.
+      randomIcon = Math.floor(Math.random() * platinumRank.length);
+      document.getElementById("iconDisplay").src = platinumRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = platinumRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = platinumRank[randomIcon][2];
+
+      updateCharacterCount(platinumRank[randomIcon][3]);
+      pullEntry.push(platinumRank[randomIcon][3]);
+    } else if (randomNumber >= 85) {
       // Gold rank chance is 10%
       // Get a random character from the Gold Rank array.
       randomIcon = Math.floor(Math.random() * goldRank.length);
@@ -230,7 +240,7 @@ function newPull_Single() {
       updateCharacterCount(goldRank[randomIcon][3]);
       pullEntry.push(goldRank[randomIcon][3]);
     } else if (randomNumber >= 70) {
-      // Silver rank chance is 20%
+      // Silver rank chance is 15%
       // Get a random icon from the Silver Rank array.
       randomIcon = Math.floor(Math.random() * silverRank.length);
       document.getElementById("iconDisplay").src = silverRank[randomIcon][0];
@@ -239,8 +249,8 @@ function newPull_Single() {
 
       updateCharacterCount(silverRank[randomIcon][3]);
       pullEntry.push(silverRank[randomIcon][3]);
-    } else {
-      // Bronze rank chance is 70%
+    } else if (randomNumber >= 50) {
+      // Bronze rank chance is 20%
       // Get a random icon from the Bronze Rank array.
       randomIcon = Math.floor(Math.random() * bronzeRank.length);
       document.getElementById("iconDisplay").src = bronzeRank[randomIcon][0];
@@ -249,6 +259,16 @@ function newPull_Single() {
 
       updateCharacterCount(bronzeRank[randomIcon][3]);
       pullEntry.push(bronzeRank[randomIcon][3]);
+    } else {
+      // Tin rank chance is 50%
+      // Get a random icon from the Tin Rank array.
+      randomIcon = Math.floor(Math.random() * tinRank.length);
+      document.getElementById("iconDisplay").src = tinRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = tinRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = tinRank[randomIcon][2];
+
+      updateCharacterCount(tinRank[randomIcon][3]);
+      pullEntry.push(tinRank[randomIcon][3]);
     }
 
     updateSessionVariables(5); // Update the tracker variables with the new pull.
@@ -257,11 +277,11 @@ function newPull_Single() {
   }
 }
 
-function silverAndBronzeRank(input, i) {
-  // To reduce repetitive code, handle the calculations for silver and bronze rank
+function silverBronzeAndTinRank(input, i) {
+  // To reduce repetitive code, handle the calculations for silver, bronze, and tin rank
   // for multi-pulls here.
   if (input >= 70) {
-    // Silver rank chance is 20%
+    // Silver rank chance is 15%
     // Get a random icon from the Silver Rank array.
     randomIcon = Math.floor(Math.random() * silverRank.length);
     document.getElementById("iconDisplay" + i).src = silverRank[randomIcon][0];
@@ -269,8 +289,8 @@ function silverAndBronzeRank(input, i) {
     document.getElementById("iconDisplay" + i).alt = silverRank[randomIcon][2];
 
     return silverRank[randomIcon][3];
-  } else {
-    // Bronze rank chance is 70%
+  } else if (input >= 50) {
+    // Bronze rank chance is 20%
     // Get a random icon from the Bronze Rank array.
     randomIcon = Math.floor(Math.random() * bronzeRank.length);
     document.getElementById("iconDisplay" + i).src = bronzeRank[randomIcon][0];
@@ -278,6 +298,15 @@ function silverAndBronzeRank(input, i) {
     document.getElementById("iconDisplay" + i).alt = bronzeRank[randomIcon][2];
 
     return bronzeRank[randomIcon][3];
+  } else {
+    // Tin rank chance is 50%
+    // Get a random icon from the Tin Rank array.
+    randomIcon = Math.floor(Math.random() * tinRank.length);
+    document.getElementById("iconDisplay" + i).src = tinRank[randomIcon][0];
+    document.getElementById("iconDisplay" + i).longdesc = tinRank[randomIcon][1];
+    document.getElementById("iconDisplay" + i).alt = tinRank[randomIcon][2];
+
+    return tinRank[randomIcon][3];
   }
 }
 
@@ -289,13 +318,22 @@ function resetOnPull() {
 
 function bannerGoldRank(input, i) {
   // Handles the iconDisplay changes for a specific character from the goldRank array.
-  // This function is meant mainly for the banner pages, but also used for the 10+1 pull.
+  // This function is meant mainly for the banner pages, but also used for the multi-pulls.
   // In the latter case, the input is a random number rather than a specific number.
   document.getElementById("iconDisplay" + i).src = goldRank[input][0];
   document.getElementById("iconDisplay" + i).longdesc = goldRank[input][1];
   document.getElementById("iconDisplay" + i).alt = goldRank[input][2];
 
   return goldRank[input][3];
+}
+
+function bannerPlatinumRank(input, i) {
+  // Similar to the bannerGoldRank() function, except this is using the platinumRank array.
+  document.getElementById("iconDisplay" + i).src = platinumRank[input][0];
+  document.getElementById("iconDisplay" + i).longdesc = platinumRank[input][1];
+  document.getElementById("iconDisplay" + i).alt = platinumRank[input][2];
+
+  return platinumRank[input][3];
 }
 
 function newPull_Multi(pullNumber, price) {
@@ -319,7 +357,15 @@ function newPull_Multi(pullNumber, price) {
       // Set the random number in the while-loop, so it can be different on each loop.
       randomNumber = Math.floor((Math.random() * 100) + 1);
 
-      if (randomNumber >= 90) {
+      if (randomNumber >= 95) {
+        // Platinum rank chance is 5%
+        // Get a random character from the Platinum Rank array.
+        randomIcon = Math.floor(Math.random() * platinumRank.length);
+
+        characterValue = bannerPlatinumRank(randomIcon, i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      } else if (randomNumber >= 85) {
         // Gold rank chance is 10%
         // Get a random character from the Gold Rank array.
         randomIcon = Math.floor(Math.random() * goldRank.length);
@@ -328,7 +374,7 @@ function newPull_Multi(pullNumber, price) {
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       } else {
-        characterValue = silverAndBronzeRank(randomNumber, i);
+        characterValue = silverBronzeAndTinRank(randomNumber, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       }
@@ -373,8 +419,8 @@ function reducedGoldRank(input, i) {
   return goldRank[randomIcon][3];
 }
 
-function newSpecialPull(input, characterName) {
-  // The overall function for the special banner pulls, acts as a variant of the 10+1 pulls.
+function newSpecialPull_Gold(input, characterName) {
+  // A function for the Gold rank special banner pulls, acts as a variant of the 10+1 pulls.
   // "input" is the character's position in the goldRank array, and "characterName" is just their name.
 
   if (parseInt(sessionStorage.getItem("currency")) < 75) {
@@ -407,8 +453,88 @@ function newSpecialPull(input, characterName) {
         characterValue = reducedGoldRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
+      } else if (randomNumber >= 85) {
+        // Chance for Platinum Rank remains at 5%
+        characterValue = bannerPlatinumRank(Math.floor(Math.random() * platinumRank.length), i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
       } else {
-        characterValue = silverAndBronzeRank(randomNumber, i);
+        characterValue = silverBronzeAndTinRank(randomNumber, i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      }
+
+      i++;
+    }
+
+    specialPullMessages(obtained, characterName);
+    resetOnPull();
+    updateSessionVariables(100); // Update the tracker variables with the new pull.
+    updatePagePulls();
+    updatePullHistory(pullEntry);
+  }
+}
+
+function reducedPlatinumRank(input, i) {
+  // Similar to the function used for reduced Gold rank chances, with this one beginning
+  // for the Platinum rank instead.
+  tempArray = [];
+
+  for (var x = 0; x < platinumRank.length; x++) {
+    if (x != input) {
+      tempArray.push(x);
+    }
+  }
+
+  randomIcon = tempArray[Math.floor(Math.random() * tempArray.length)];
+  document.getElementById("iconDisplay" + i).src = platinumRank[randomIcon][0];
+  document.getElementById("iconDisplay" + i).longdesc = platinumRank[randomIcon][1];
+  document.getElementById("iconDisplay" + i).alt = platinumRank[randomIcon][2];
+
+  return platinumRank[randomIcon][3];
+}
+
+function newSpecialPull_Platinum(input, characterName) {
+  // A function for the Platinum rank special banner pulls, acts as a variant of the 10+1 pulls.
+  // "input" is the character's position in the platinumRank array, and "characterName" is just their name.
+
+  if (parseInt(sessionStorage.getItem("currency")) < 100) {
+    // Only do a pull if the user has enough currency.
+    document.getElementById("pullButton").innerHTML = "You need more currency!!";
+    resetOnPull();
+  } else {
+    var randomNumber;
+    let i = 1; // Have to start at 1 due to how the img id is set on the page.
+    let obtained = false;
+
+    // Use an array to keep track of the character per pull.
+    var pullEntry = [];
+    characterValue = 0;
+
+    // Make use of variable i to populate all of the iconDisplays in the 10+1 pull page.
+    while (i < 12) {
+      // Set the random number in the while-loop, so it can be different on each loop.
+      randomNumber = Math.floor((Math.random() * 100) + 1);
+
+      if (randomNumber >= 97) {
+        // Banner character chance is 3%
+        characterValue = bannerPlatinumRank(input, i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+
+        obtained = true;
+      } else if (randomNumber >= 95) {
+        // Chance for the rest of the Platinum rank characters is reduced to 2%
+        characterValue = reducedPlatinumRank(input, i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      } else if (randomNumber >= 85) {
+        // Chance for Gold Rank remains at 10%
+        characterValue = bannerGoldRank(Math.floor(Math.random() * goldRank.length), i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      } else {
+        characterValue = silverBronzeAndTinRank(randomNumber, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       }
@@ -426,37 +552,52 @@ function newSpecialPull(input, characterName) {
 
 function newSpecialPull_Buff() {
   // Increased chance for Buff Man in particular.
-  newSpecialPull(0, "Buff Man");
+  newSpecialPull_Gold(0, "Buff Man");
 }
 
 function newSpecialPull_Lady() {
   // Increased chance for Lady Longlegs in particular.
-  newSpecialPull(1, "Lady Longlegs");
+  newSpecialPull_Gold(1, "Lady Longlegs");
 }
 
 function newSpecialPull_Gunz() {
   // Increased chance for Mx. Gunzakimbo in particular.
-  newSpecialPull(2, "Mx. Gunzakimbo");
+  newSpecialPull_Gold(2, "Mx. Gunzakimbo");
 }
 
 function newSpecialPull_Butler() {
   // Increased chance for The Handsomest Butler in particular.
-  newSpecialPull(3, "The Handsomest Butler");
+  newSpecialPull_Gold(3, "The Handsomest Butler");
 }
 
 function newSpecialPull_McGee() {
   // Increased chance for Megan McGee in particular.
-  newSpecialPull(4, "Megan McGee");
+  newSpecialPull_Gold(4, "Megan McGee");
 }
 
 function newSpecialPull_Timbly() {
   // Increased chance for Timbly Sexymann in particular.
-  newSpecialPull(5, "Timbly Sexymann");
+  newSpecialPull_Gold(5, "Timbly Sexymann");
 }
 
 function newSpecialPull_CLOWN() {
   // Increased chance for CHAOSCLOWN in particular.
-  newSpecialPull(6, "CHAOSCLOWN");
+  newSpecialPull_Gold(6, "CHAOSCLOWN");
+}
+
+function newSpecialPull_Eclipsia() {
+  // Increased chance for Eclipsia in particular.
+  newSpecialPull_Platinum(0, "Eclipsia");
+}
+
+function newSpecialPull_Warrior() {
+  // Increased chance for The Lone Warrior in particular.
+  newSpecialPull_Platinum(1, "The Lone Warrior");
+}
+
+function newSpecialPull_Sandalphon() {
+  // Increased chance for Sandalphon Arpeggio in particular.
+  newSpecialPull_Platinum(2, "Sandalphon Arpeggio");
 }
 
 function displayFullImage(input) {
@@ -475,6 +616,19 @@ function loadingGallery() {
   // to the length of each array, and is reset between arrays as a result.
   let i = 1;
   let j = 0;
+
+  while (j < platinumRank.length){
+    document.getElementById("iconDisplay" + i).src = platinumRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = platinumRank[j][1];
+    document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                      + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                      + "<br>" + platinumRank[j][2];
+
+    i++;
+    j++;
+  }
+
+  j = 0;
 
   while (j < goldRank.length){
     document.getElementById("iconDisplay" + i).src = goldRank[j][0];
@@ -508,6 +662,19 @@ function loadingGallery() {
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
                                                       + "<br>" + bronzeRank[j][2];
+
+    i++;
+    j++;
+  }
+
+  j = 0;
+
+  while (j < tinRank.length){
+    document.getElementById("iconDisplay" + i).src = tinRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = tinRank[j][1];
+    document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                      + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                      + "<br>" + tinRank[j][2];
 
     i++;
     j++;
@@ -584,9 +751,21 @@ function createImg(character, image) {
 
   matchFound = false;
 
-  // Look through the goldRank array first.
+  // Look through the platinumRank array first.
   // Note the use of x, y, and z instead of i, since i is already used by the function that calls on this one.
   // src is for the icon image, longdesc is for the full image, and alt is for the character descriptions.
+  for (var x = 0; x < platinumRank.length; x++) {
+    if (platinumRank[x][3] == character) {
+      imgNode.src = platinumRank[x][0];
+      imgNode.longdesc = platinumRank[x][1];
+      imgNode.alt = platinumRank[x][2];
+
+      matchFound = true;
+      break;
+    }
+  }
+
+  // If no match was found, then check the goldRank array next.
   for (var x = 0; x < goldRank.length; x++) {
     if (goldRank[x][3] == character) {
       imgNode.src = goldRank[x][0];
@@ -612,13 +791,27 @@ function createImg(character, image) {
     }
   }
 
-  // If still no match was found, then finally check the bronzeRank array.
+  // If still no match was found, then check the bronzeRank array.
   if (!matchFound) {
     for (var z = 0; z < bronzeRank.length; z++) {
       if (bronzeRank[z][3] == character) {
         imgNode.src = bronzeRank[z][0];
         imgNode.longdesc = bronzeRank[z][1];
         imgNode.alt = bronzeRank[z][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  // If still no match was found, then finally check the tinRank array.
+  if (!matchFound) {
+    for (var z = 0; z < tinRank.length; z++) {
+      if (tinRank[z][3] == character) {
+        imgNode.src = tinRank[z][0];
+        imgNode.longdesc = tinRank[z][1];
+        imgNode.alt = tinRank[z][2];
 
         matchFound = true;
         break;
