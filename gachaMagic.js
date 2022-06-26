@@ -17,6 +17,11 @@ function updateTracker() {
     sessionStorage.setItem("totalPulls", 0);
   }
 
+  // Used to determine if True Gacha Mode is enabled or disabled.
+  if (sessionStorage.getItem("trueGacha") == null) {
+    sessionStorage.setItem("trueGacha", "");
+  }
+
   // Need to initialize the pullHistory string here as an empty string.
   // It will be filled with pull history later on.
   if (sessionStorage.getItem("pullHistory") == null) {
@@ -204,6 +209,92 @@ function updatePullHistory(arrayInput) {
   savePullHistory(currentHistory);
 }
 
+function updateTrueGachaButton() {
+  // Using !! here converts strings to boolean. If the string is empty (i.e. ""), then the Boolean value is false.
+  // If it's a non-empty string, the Boolean value will be true.
+  // This is really just so we don't have to deal with converting strings to boolean and back.
+  if (!!sessionStorage.getItem("trueGacha")) {
+    sessionStorage.setItem("trueGacha", "");
+    document.getElementById("trueGachaButton").innerHTML = "True Gacha Mode: Off";
+  }
+  else {
+    sessionStorage.setItem("trueGacha", "true");
+    document.getElementById("trueGachaButton").innerHTML = "True Gacha Mode: On";
+  }
+}
+
+function setTrueGachaButton() {
+  // This is for setting the button's text in-between reloads of the index page, to make sure the button
+  // test is accurate without changing the actual trueGacha value.
+  if (!!sessionStorage.getItem("trueGacha")) {
+    document.getElementById("trueGachaButton").innerHTML = "True Gacha Mode: On";
+  }
+  else {
+    document.getElementById("trueGachaButton").innerHTML = "True Gacha Mode: Off";
+  }
+}
+
+function retrieveTrueGacha() {
+  // Same reasoning for use of !! here as noted in updateTrueGachaButton()
+  currentTrueGacha = !!sessionStorage.getItem("trueGacha");
+
+  return currentTrueGacha;
+}
+
+function generateRatesString() {
+  // Generates the string for pull rates based on whether or not True Gacha Mode is enabled.
+  trueGachaMode = retrieveTrueGacha();
+
+  if (trueGachaMode)
+  {
+    // Set the string with the True Gacha Mode rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Platinum Rank characters = 0.3%" +
+                      "<br> ---Gold Rank characters = 0.7% <br> ---Silver Rank characters = 9%" +
+                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank characters = 75%";
+  } else {
+    // Set the string with the normal rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Platinum Rank characters = 5%" +
+                      "<br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%" +
+                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank characters = 50%";
+  }
+}
+
+function generateRatesString_Gold(characterName) {
+  // Specifically for the Gold Rank character banners, with a given character's name as input.
+  trueGachaMode = retrieveTrueGacha();
+
+  if (trueGachaMode)
+  {
+    // Set the string with the True Gacha Mode rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.4% <br> ---Platinum Rank Characters = 0.3%" +
+                      "<br> ---Other Gold Rank characters = 0.3% <br> ---Silver Rank characters = 9%" +
+                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank characters = 75%";
+  } else {
+    // Set the string with the normal rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 7% <br> ---Platinum Rank Characters = 5%" +
+                      "<br> ---Other Gold Rank characters = 3% <br> ---Silver Rank characters = 15%" +
+                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank characters = 50%";
+  }
+}
+
+function generateRatesString_Platinum(characterName) {
+  // Specifically for the Platinum Rank character banners, with a given character's name as input.
+  trueGachaMode = retrieveTrueGacha();
+
+  if (trueGachaMode)
+  {
+    // Set the string with the True Gacha Mode rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.2% <br> ---Other Platinum Rank characters = 0.1%" +
+                      "<br> ---Gold Rank characters = 0.7% <br> ---Silver Rank characters = 9%" +
+                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank character = 75%";
+  } else {
+    // Set the string with the normal rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 3% <br> ---Other Platinum Rank characters = 2%" +
+                      "<br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%" +
+                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank character = 50%";
+  }
+}
+
 function newPull_Single() {
   // The Math.random() method basically returns a value between 0 and 1
   // (0.25, 0.37, etc.); the range includes 0 but excludes 1.
@@ -216,11 +307,28 @@ function newPull_Single() {
     document.getElementById("pullButton").innerHTML = "You need more currency!!";
     resetOnPull();
   } else {
-    // The following returns a random number between 1 and 100.
-    var randomNumber = Math.floor((Math.random() * 100) + 1);
+    // Check the True Gacha Mode to see what rates to use.
+    platinumRate = 0;
+    goldRate = 0;
+    silverRate = 0;
+    bronzeRate = 0;
 
-    if (randomNumber >= 95) {
-      // Platinum rank chance is 5%
+    if (retrieveTrueGacha()){
+      platinumRate = 998;
+      goldRate = 991;
+      silverRate = 901;
+      bronzeRate = 751;
+    } else {
+      platinumRate = 950;
+      goldRate = 850;
+      silverRate = 700;
+      bronzeRate = 500;
+    }
+
+    // The following returns a random number between 1 and 1000.
+    var randomNumber = Math.floor((Math.random() * 1000) + 1);
+
+    if (randomNumber >= platinumRate) {
       // Get a random character from the Platinum Rank array.
       randomIcon = Math.floor(Math.random() * platinumRank.length);
       document.getElementById("iconDisplay").src = platinumRank[randomIcon][0];
@@ -229,8 +337,7 @@ function newPull_Single() {
 
       updateCharacterCount(platinumRank[randomIcon][3]);
       pullEntry.push(platinumRank[randomIcon][3]);
-    } else if (randomNumber >= 85) {
-      // Gold rank chance is 10%
+    } else if (randomNumber >= goldRate) {
       // Get a random character from the Gold Rank array.
       randomIcon = Math.floor(Math.random() * goldRank.length);
       document.getElementById("iconDisplay").src = goldRank[randomIcon][0];
@@ -239,8 +346,7 @@ function newPull_Single() {
 
       updateCharacterCount(goldRank[randomIcon][3]);
       pullEntry.push(goldRank[randomIcon][3]);
-    } else if (randomNumber >= 70) {
-      // Silver rank chance is 15%
+    } else if (randomNumber >= silverRate) {
       // Get a random icon from the Silver Rank array.
       randomIcon = Math.floor(Math.random() * silverRank.length);
       document.getElementById("iconDisplay").src = silverRank[randomIcon][0];
@@ -249,8 +355,7 @@ function newPull_Single() {
 
       updateCharacterCount(silverRank[randomIcon][3]);
       pullEntry.push(silverRank[randomIcon][3]);
-    } else if (randomNumber >= 50) {
-      // Bronze rank chance is 20%
+    } else if (randomNumber >= bronzeRate) {
       // Get a random icon from the Bronze Rank array.
       randomIcon = Math.floor(Math.random() * bronzeRank.length);
       document.getElementById("iconDisplay").src = bronzeRank[randomIcon][0];
@@ -260,7 +365,6 @@ function newPull_Single() {
       updateCharacterCount(bronzeRank[randomIcon][3]);
       pullEntry.push(bronzeRank[randomIcon][3]);
     } else {
-      // Tin rank chance is 50%
       // Get a random icon from the Tin Rank array.
       randomIcon = Math.floor(Math.random() * tinRank.length);
       document.getElementById("iconDisplay").src = tinRank[randomIcon][0];
@@ -278,10 +382,21 @@ function newPull_Single() {
 }
 
 function silverBronzeAndTinRank(input, i) {
+  // Check the True Gacha Mode to see what rates to use.
+  silverRate = 0;
+  bronzeRate = 0;
+
+  if (retrieveTrueGacha()){
+    silverRate = 901;
+    bronzeRate = 751;
+  } else {
+    silverRate = 700;
+    bronzeRate = 500;
+  }
+
   // To reduce repetitive code, handle the calculations for silver, bronze, and tin rank
   // for multi-pulls here.
-  if (input >= 70) {
-    // Silver rank chance is 15%
+  if (input >= silverRate) {
     // Get a random icon from the Silver Rank array.
     randomIcon = Math.floor(Math.random() * silverRank.length);
     document.getElementById("iconDisplay" + i).src = silverRank[randomIcon][0];
@@ -289,8 +404,7 @@ function silverBronzeAndTinRank(input, i) {
     document.getElementById("iconDisplay" + i).alt = silverRank[randomIcon][2];
 
     return silverRank[randomIcon][3];
-  } else if (input >= 50) {
-    // Bronze rank chance is 20%
+  } else if (input >= bronzeRate) {
     // Get a random icon from the Bronze Rank array.
     randomIcon = Math.floor(Math.random() * bronzeRank.length);
     document.getElementById("iconDisplay" + i).src = bronzeRank[randomIcon][0];
@@ -299,7 +413,6 @@ function silverBronzeAndTinRank(input, i) {
 
     return bronzeRank[randomIcon][3];
   } else {
-    // Tin rank chance is 50%
     // Get a random icon from the Tin Rank array.
     randomIcon = Math.floor(Math.random() * tinRank.length);
     document.getElementById("iconDisplay" + i).src = tinRank[randomIcon][0];
@@ -345,6 +458,18 @@ function newPull_Multi(pullNumber, price) {
     document.getElementById("pullButton").innerHTML = "You need more currency!!";
     resetOnPull();
   } else {
+    // Check the True Gacha Mode to see what rates to use.
+    platinumRate = 0;
+    goldRate = 0;
+
+    if (retrieveTrueGacha()){
+      platinumRate = 998;
+      goldRate = 991;
+    } else {
+      platinumRate = 950;
+      goldRate = 850;
+    }
+
     var randomNumber;
     let i = 1; // Have to start at 1 due to how the img id is set on the page.
 
@@ -355,17 +480,16 @@ function newPull_Multi(pullNumber, price) {
     // Make use of variable i to populate all of the iconDisplays in the 10+1 pull page.
     while (i < pullNumber) {
       // Set the random number in the while-loop, so it can be different on each loop.
-      randomNumber = Math.floor((Math.random() * 100) + 1);
+      randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= 95) {
-        // Platinum rank chance is 5%
+      if (randomNumber >= platinumRate) {
         // Get a random character from the Platinum Rank array.
         randomIcon = Math.floor(Math.random() * platinumRank.length);
 
         characterValue = bannerPlatinumRank(randomIcon, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= 85) {
+      } else if (randomNumber >= goldRate) {
         // Gold rank chance is 10%
         // Get a random character from the Gold Rank array.
         randomIcon = Math.floor(Math.random() * goldRank.length);
@@ -428,6 +552,21 @@ function newSpecialPull_Gold(input, characterName) {
     document.getElementById("pullButton").innerHTML = "You need more currency!!";
     resetOnPull();
   } else {
+    // Check the True Gacha Mode to see what rates to use.
+    goldRate = 0;
+    reducedGoldRate = 0;
+    platinumRate = 0;
+
+    if (retrieveTrueGacha()){
+      goldRate = 997;
+      reducedGoldRate = 994;
+      platinumRate = 991;
+    } else {
+      goldRate = 930;
+      reducedGoldRate = 900;
+      platinumRate = 850;
+    }
+
     var randomNumber;
     let i = 1; // Have to start at 1 due to how the img id is set on the page.
     let obtained = false;
@@ -439,22 +578,22 @@ function newSpecialPull_Gold(input, characterName) {
     // Make use of variable i to populate all of the iconDisplays in the 10+1 pull page.
     while (i < 12) {
       // Set the random number in the while-loop, so it can be different on each loop.
-      randomNumber = Math.floor((Math.random() * 100) + 1);
+      randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= 93) {
-        // Banner character chance is 7%
+      if (randomNumber >= goldRate) {
+        // Improved rate for the banner character specifically.
         characterValue = bannerGoldRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
 
         obtained = true;
-      } else if (randomNumber >= 90) {
-        // Chance for the rest of the Gold rank characters is reduced to 3%
+      } else if (randomNumber >= reducedGoldRate) {
+        // Chance for the rest of the Gold rank characters is reduced.
         characterValue = reducedGoldRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= 85) {
-        // Chance for Platinum Rank remains at 5%
+      } else if (randomNumber >= platinumRate) {
+        // Platinum character rates stay the same.
         characterValue = bannerPlatinumRank(Math.floor(Math.random() * platinumRank.length), i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
@@ -469,7 +608,7 @@ function newSpecialPull_Gold(input, characterName) {
 
     specialPullMessages(obtained, characterName);
     resetOnPull();
-    updateSessionVariables(100); // Update the tracker variables with the new pull.
+    updateSessionVariables(75); // Update the tracker variables with the new pull.
     updatePagePulls();
     updatePullHistory(pullEntry);
   }
@@ -503,6 +642,21 @@ function newSpecialPull_Platinum(input, characterName) {
     document.getElementById("pullButton").innerHTML = "You need more currency!!";
     resetOnPull();
   } else {
+    // Check the True Gacha Mode to see what rates to use.
+    platinumRate = 0;
+    reducedPlatinumRate = 0;
+    goldRate = 0;
+
+    if (retrieveTrueGacha()){
+      platinumRate = 999;
+      reducedPlatinumRate = 998;
+      goldRate = 991;
+    } else {
+      platinumRate = 970;
+      reducedPlatinumRate = 950;
+      goldRate = 850;
+    }
+
     var randomNumber;
     let i = 1; // Have to start at 1 due to how the img id is set on the page.
     let obtained = false;
@@ -514,22 +668,22 @@ function newSpecialPull_Platinum(input, characterName) {
     // Make use of variable i to populate all of the iconDisplays in the 10+1 pull page.
     while (i < 12) {
       // Set the random number in the while-loop, so it can be different on each loop.
-      randomNumber = Math.floor((Math.random() * 100) + 1);
+      randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= 97) {
-        // Banner character chance is 3%
+      if (randomNumber >= platinumRate) {
+        // Improved rate for the banner character specifically.
         characterValue = bannerPlatinumRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
 
         obtained = true;
-      } else if (randomNumber >= 95) {
-        // Chance for the rest of the Platinum rank characters is reduced to 2%
+      } else if (randomNumber >= reducedPlatinumRate) {
+        // Chance for the rest of the Platinum rank characters is reduced.
         characterValue = reducedPlatinumRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= 85) {
-        // Chance for Gold Rank remains at 10%
+      } else if (randomNumber >= goldRate) {
+        // Gold character rates stay the same.
         characterValue = bannerGoldRank(Math.floor(Math.random() * goldRank.length), i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
@@ -544,7 +698,7 @@ function newSpecialPull_Platinum(input, characterName) {
 
     specialPullMessages(obtained, characterName);
     resetOnPull();
-    updateSessionVariables(75); // Update the tracker variables with the new pull.
+    updateSessionVariables(100); // Update the tracker variables with the new pull.
     updatePagePulls();
     updatePullHistory(pullEntry);
   }

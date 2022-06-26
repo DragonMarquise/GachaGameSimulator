@@ -26,9 +26,7 @@
               <a href="index.html">Back to Main Page</a>
             </td>
             <td rowspan="3" style="padding: 15px;">
-              <p>Probabilities: <br> ---The Lone Warrior = 3% <br> ---Other Platinum Rank characters = 2%
-                                <br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%
-                                <br> ---Bronze Rank characters = 20% <br> ---Tin Rank character = 50%</p>
+              <p id="ratesString">www</p>
             </td>
           </tr>
           <tr>
@@ -45,7 +43,7 @@
           </tr>
         </table>
 
-        <div>Click on an icon to view the full image on the right.</div>
+        <div>Click on an icon to view the full image and character description.</div>
         <br>
 
         <!-- The images will be replaced by a random gacha character when the above
@@ -92,6 +90,6 @@
         </table>
 
         <script src="gachaMagic.js"></script>
-        <script>window.onload = updateTracker()</script>
+        <script>window.onload = updateTracker(); generateRatesString_Platinum("The Lone Warrior");</script>
     </body>
 </html>

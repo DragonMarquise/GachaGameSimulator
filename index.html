@@ -15,6 +15,14 @@
            without needing to do pulls,<br>
            and the history page lets you check what you got on past pulls, up to 50 previous pulls.</p>
         <p>Hope you have fun with this simulator!</p>
+        <hr>
+
+        <p>"True Gacha Mode" is where the rates in this simulator are similar to actual gacha games.
+           That is, they will be far<br>more brutal and unforgiving. You can enable or disable True Gacha
+           Mode using the button below.</p>
+        <div style="padding-left: 250px;"><button onclick="updateTrueGachaButton()" id="trueGachaButton">www</button></div>
+        <hr>
+        <br>
         <br>
 
         <table>
@@ -66,6 +74,6 @@
         </table>
 
         <script src="gachaMagic.js"></script>
-        <script>window.onload = indexReset()</script> <!-- For this page only, run this script to clear certain values. -->
+        <script>window.onload = indexReset(); setTrueGachaButton();</script> <!-- For this page only, run indexReset() script to clear certain values. -->
     </body>
 </html>

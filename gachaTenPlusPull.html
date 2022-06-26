@@ -15,8 +15,7 @@
               <a href="index.html">Back to Main Page</a>
             </td>
             <td rowspan="3" style="padding: 15px;">
-              <p>Probabilities: <br> ---Platinum Rank characters = 5% <br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%
-                                <br> ---Bronze Rank characters = 20% <br> ---Tin Rank characters = 50%</p>
+              <p id="ratesString">www</p>
             </td>
           </tr>
           <tr>
@@ -33,7 +32,7 @@
           </tr>
         </table>
 
-        <div>Click on an icon to view the full image.</div>
+        <div>Click on an icon to view the full image and character description.</div>
         <div>
           <br>
           <hr>
@@ -70,6 +69,6 @@
         </table>
 
         <script src="gachaMagic.js"></script>
-        <script>window.onload = updateTracker()</script>
+        <script>window.onload = updateTracker(); generateRatesString();</script>
     </body>
 </html>
