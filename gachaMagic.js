@@ -104,10 +104,10 @@ const bronzeRank = [
 
 const tinRank = [
   ['Images_Icons/Icon_Animal.png', 'Images_Full/Tin_Animal.png', 'It has no monetary value, but its nostalgic value more than makes up for it.', 32],
-  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone payed a lot to get these but got little return on them.', 33],
+  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone paid a lot to get these but got little return on them.', 33],
   ['Images_Icons/Icon_Empty.png', 'Images_Full/Tin_Empty.png', 'There was a character in here, but someone else already opened it. Was it a rare character? You\'ll never know now!', 34],
   ['Images_Icons/Icon_Pillow.png', 'Images_Full/Tin_Pillow.png', 'Normally people put a cover on these to represent a character. Since this one doesn\'t have a cover, it\'s just an unimportant pillow.', 35],
-  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recylcing these, but as is they\'re not very useful.', 36]
+  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recycling these, but as is they\'re not very useful.', 36]
 ]
 
 function updateCharacterCount(input) {
