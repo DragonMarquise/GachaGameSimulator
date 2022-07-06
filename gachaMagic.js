@@ -32,7 +32,7 @@ function updateTracker() {
   // would be in within the Gallery.
   // If the first one isn't already populated, then that means the others aren't as well.
   if (sessionStorage.getItem("iconDisplay1") == null) {
-    var totalCharacters = platinumRank.length + goldRank.length + silverRank.length + bronzeRank.length + tinRank.length;
+    var totalCharacters = teraRank.length + gigaRank.length + megaRank.length + kiloRank.length + standardRank.length;
     var i = 1;
     while (i <= totalCharacters) {
       sessionStorage.setItem("iconDisplay" + i, 0);
@@ -59,55 +59,150 @@ function indexReset() {
 // Keep separate arrays for each rank. These are arrays of arrays (basically tuples) that hold
 // info about a character's icon image, full image, and description.
 
-const platinumRank = [
-  ['Images_Icons/Icon_Eclipsia.png', 'Images_Full/Platinum_Eclipsia.png', 'Once upon a time, a sun goddess and moon god had a daughter. That daughter ate her parents and absorbed their powers. Thus she became Eclipsia, the Tyrant Queen of Space.', 1],
-  ['Images_Icons/Icon_Warrior.png', 'Images_Full/Platinum_Warrior.png', 'A hero who has been forced to reincarnate again and again to fight back an immortal evil whenever needed. But now he want to find a way to stop the cycle for good...', 2],
-  ['Images_Icons/Icon_Sandalphon.png', 'Images_Full/Platinum_Sandalphon.png', 'An alien angel from an alternate dimension, they escaped a war that killed countless lives, including gods. Now they stay in this reality to prevent the same war from happening here.', 3]
+const teraRank = [
+  ['Images_Icons/1_TeraIcons/Icon_Serenade.png', 'Images_Full/1_Tera/Tera_Serenade.png', 'www \' for apostrophes', 1],
+  ['Images_Icons/1_TeraIcons/Icon_OmegaMan.png', 'Images_Full/1_Tera/Tera_OmegaMan.png', 'www \' for apostrophe', 2],
+  ['Images_Icons/1_TeraIcons/Icon_KingProg.png', 'Images_Full/1_Tera/Tera_KingProg.png', 'www \' for apostrophe', 3],
+  ['Images_Icons/1_TeraIcons/Icon_Slur.png', 'Images_Full/1_Tera/Tera_Slur.png', 'www \' for apostrophe', 4],
+  ['Images_Icons/1_TeraIcons/Icon_Cache.png', 'Images_Full/1_Tera/Tera_Cache.png', 'www \' for apostrophe', 5]
 ]
 
-const goldRank = [
-  ['Images_Icons/Icon_BuffMan.png', 'Images_Full/Gold_BuffMan.png', 'A big bodacious hero, he is here to stop crime wherever it is! Huzzah!', 4],
-  ['Images_Icons/Icon_LadyLonglegs.png', 'Images_Full/Gold_LadyLonglegs.png', 'She travels the world defeating monsters with her mighty magic!', 5],
-  ['Images_Icons/Icon_MxGunzakimbo.png', 'Images_Full/Gold_MxGunzakimbo.png', 'The best way to describe them is as a Chaotic Good mercenary who\'s fighting a corrupt military!', 6],
-  ['Images_Icons/Icon_Butler.png', 'Images_Full/Gold_Butler.png', 'He is the best butler in the world, always at your service!', 7],
-  ['Images_Icons/Icon_McGee.png', 'Images_Full/Gold_McGee.png', 'She made a real working version of her favorite video game weapon, and now she\'s off to save the world!', 8],
-  ['Images_Icons/Icon_Timbly.png', 'Images_Full/Gold_Timbly.png', 'He\'s a jerk, but for some reason people love him anyways. And that suit isn\'t his, he\'s just renting it!', 9],
-  ['Images_Icons/Icon_CLOWN.png', 'Images_Full/Gold_CLOWN.png', 'They\'re on a mission to either save humanity or destory it, but they forgot which it was supposed to be...', 10]
+const gigaRank = [
+  ['Images_Icons/2_GigaIcons/Icon_Lan.png', 'Images_Full/2_Giga/Giga_Lan.png', 'www \' for apostrophe', 6],
+  ['Images_Icons/2_GigaIcons/Icon_Chaud.png', 'Images_Full/2_Giga/Giga_Chaud.png', 'www \' for apostrophe', 7],
+  ['Images_Icons/2_GigaIcons/Icon_Baryl.png', 'Images_Full/2_Giga/Giga_Baryl.png', 'www \' for apostrophe', 8],
+  ['Images_Icons/2_GigaIcons/Icon_Bass.png', 'Images_Full/2_Giga/Giga_Bass.png', 'www \' for apostrophe', 9],
+  ['Images_Icons/2_GigaIcons/Icon_Zero.png', 'Images_Full/2_Giga/Giga_Zero.png', 'www \' for apostrophe', 10],
+  ['Images_Icons/2_GigaIcons/Icon_PharaohMan.png', 'Images_Full/2_Giga/Giga_PharaohMan.png', 'www \' for apostrophe', 11],
+  ['Images_Icons/2_GigaIcons/Icon_PlanetMan.png', 'Images_Full/2_Giga/Giga_PlanetMan.png', 'www \' for apostrophe', 12],
+  ['Images_Icons/2_GigaIcons/Icon_LifeVirus.png', 'Images_Full/2_Giga/Giga_LifeVirus.png', 'www \' for apostrophe', 13],
+  ['Images_Icons/2_GigaIcons/Icon_Gospel.png', 'Images_Full/2_Giga/Giga_Gospel.png', 'www \' for apostrophe', 14],
+  ['Images_Icons/2_GigaIcons/Icon_Alpha.png', 'Images_Full/2_Giga/Giga_Alpha.png', 'www \' for apostrophe', 15],
+  ['Images_Icons/2_GigaIcons/Icon_Duo.png', 'Images_Full/2_Giga/Giga_Duo.png', 'www \' for apostrophe', 16],
+  ['Images_Icons/2_GigaIcons/Icon_NebulaGray.png', 'Images_Full/2_Giga/Giga_NebulaGray.png', 'www \' for apostrophe', 17],
+  ['Images_Icons/2_GigaIcons/Icon_Gregar.png', 'Images_Full/2_Giga/Giga_Gregar.png', 'www \' for apostrophe', 18],
+  ['Images_Icons/2_GigaIcons/Icon_Falzar.png', 'Images_Full/2_Giga/Giga_Falzar.png', 'www \' for apostrophe', 19],
+  ['Images_Icons/2_GigaIcons/Icon_Django.png', 'Images_Full/2_Giga/Giga_Django.png', 'www \' for apostrophe', 20],
+  ['Images_Icons/2_GigaIcons/Icon_Count.png', 'Images_Full/2_Giga/Giga_Count.png', 'www \' for apostrophe', 21],
+  ['Images_Icons/2_GigaIcons/Icon_ShootingStars.png', 'Images_Full/2_Giga/Giga_ShootingStars.png', 'www \' for apostrophe', 22],
+  ['Images_Icons/2_GigaIcons/Icon_Wan.png', 'Images_Full/2_Giga/Giga_Wan.png', 'www \' for apostrophe', 23]
 ]
 
-const silverRank = [
-  ['Images_Icons/Icon_Smarty.png', 'Images_Full/Silver_Smarty.png', 'Their name ended up very appropriate to their abilities and hobbies. They work as an omni engineer!', 11],
-  ['Images_Icons/Icon_Pomegranate.png', 'Images_Full/Silver_Pomegranate.png', 'She likes peppermint mocha coffee, but dislikes that it\'s only a seasonal flavor.', 12],
-  ['Images_Icons/Icon_JaneDoe.png', 'Images_Full/Silver_JaneDoe.png', 'A simple lady who lives off the grid in the middle of the woods. Please don\'t ask about the shovel...', 13],
-  ['Images_Icons/Icon_Hourglass.png', 'Images_Full/Silver_Hourglass.png', 'It\'s hard to find clothes that fit, but she thinks her figure is worth it.', 14],
-  ['Images_Icons/Icon_Eustace.png', 'Images_Full/Silver_Eustace.png', 'He always blames his misfortunes on "that stupid dog", but it\'s really his own fault.', 15],
-  ['Images_Icons/Icon_Dude.png', 'Images_Full/Silver_Dude.png', 'It\'s dangerous to underestimate The Dude.', 16],
-  ['Images_Icons/Icon_CoolerDude.png', 'Images_Full/Silver_CoolerDude.png', 'May or may not be related to The Dude. Or maybe is The Dude in disguise. Who knows!', 17],
-  ['Images_Icons/Icon_Alien.png', 'Images_Full/Silver_Alien.png', 'Definitely not an alien, no sir! Just an ordinary tourist from Virginia, nothing to see here.', 18],
-  ['Images_Icons/Icon_FahrenCelsi.png', 'Images_Full/Silver_FahrenCelsi.png', 'Twin spirits of temperature, Fahren controls heat and Celsi controls cold.', 19],
-  ['Images_Icons/Icon_Glitch.png', 'Images_Full/Silver_Glitch.png', 'ERROR 404', 20],
-  ['Images_Icons/Icon_Linguine.png', 'Images_Full/Silver_Linguine.png', 'It likes pasta, moonlit nights, and scaring off trespassers on its territory.', 21],
-  ['Images_Icons/Icon_Skate.png', 'Images_Full/Silver_Skate.png', 'An extremely cool man, he\'s a pro skater by day and a skate-themed phantom thief by night.', 22]
+const megaRank = [
+  ['Images_Icons/3_MegaIcons/Icon_FireMan.png', 'Images_Full/3_Mega/Mega_FireMan.png', 'www \' for apostrophe', 24],
+  ['Images_Icons/3_MegaIcons/Icon_HeatMan.png', 'Images_Full/3_Mega/Mega_HeatMan.png', 'www \' for apostrophe', 25],
+  ['Images_Icons/3_MegaIcons/Icon_FlameMan.png', 'Images_Full/3_Mega/Mega_FlameMan.png', 'www \' for apostrophe', 26],
+  ['Images_Icons/3_MegaIcons/Icon_Madd.png', 'Images_Full/3_Mega/Mega_Madd.png', 'www \' for apostrophe', 27],
+  ['Images_Icons/3_MegaIcons/Icon_CountZap.png', 'Images_Full/3_Mega/Mega_CountZap.png', 'www \' for apostrophe', 28],
+  ['Images_Icons/3_MegaIcons/Icon_Yahoot.png', 'Images_Full/3_Mega/Mega_Yahoot.png', 'www \' for apostrophe', 29],
+  ['Images_Icons/3_MegaIcons/Icon_StoneMan.png', 'Images_Full/3_Mega/Mega_StoneMan.png', 'www \' for apostrophe', 30],
+  ['Images_Icons/3_MegaIcons/Icon_BombMan.png', 'Images_Full/3_Mega/Mega_BombMan.png', 'www \' for apostrophe', 31],
+  ['Images_Icons/3_MegaIcons/Icon_Froid.png', 'Images_Full/3_Mega/Mega_Froid.png', 'www \' for apostrophe', 32],
+  ['Images_Icons/3_MegaIcons/Icon_Arashi.png', 'Images_Full/3_Mega/Mega_Arashi.png', 'www \' for apostrophe', 33],
+  ['Images_Icons/3_MegaIcons/Icon_Dave.png', 'Images_Full/3_Mega/Mega_Dave.png', 'www \' for apostrophe', 34],
+  ['Images_Icons/3_MegaIcons/Icon_CutMan.png', 'Images_Full/3_Mega/Mega_CutMan.png', 'www \' for apostrophe', 35],
+  ['Images_Icons/3_MegaIcons/Icon_Gauss.png', 'Images_Full/3_Mega/Mega_Gauss.png', 'www \' for apostrophe', 36],
+  ['Images_Icons/3_MegaIcons/Icon_Sean.png', 'Images_Full/3_Mega/Mega_Sean.png', 'www \' for apostrophe', 37],
+  ['Images_Icons/3_MegaIcons/Icon_Raoul.png', 'Images_Full/3_Mega/Mega_Raoul.png', 'www \' for apostrophe', 38],
+  ['Images_Icons/3_MegaIcons/Icon_Millions.png', 'Images_Full/3_Mega/Mega_Millions.png', 'www \' for apostrophe', 39],
+  ['Images_Icons/3_MegaIcons/Icon_Rei.png', 'Images_Full/3_Mega/Mega_Rei.png', 'www \' for apostrophe', 40],
+  ['Images_Icons/3_MegaIcons/Icon_Inukai.png', 'Images_Full/3_Mega/Mega_Inukai.png', 'www \' for apostrophe', 41],
+  ['Images_Icons/3_MegaIcons/Icon_BubbleMan.png', 'Images_Full/3_Mega/Mega_BubbleMan.png', 'www \' for apostrophe', 42],
+  ['Images_Icons/3_MegaIcons/Icon_Tamako.png', 'Images_Full/3_Mega/Mega_Tamako.png', 'www \' for apostrophe', 43],
+  ['Images_Icons/3_MegaIcons/Icon_Tora.png', 'Images_Full/3_Mega/Mega_Tora.png', 'www \' for apostrophe', 44],
+  ['Images_Icons/3_MegaIcons/Icon_Sunayama.png', 'Images_Full/3_Mega/Mega_Sunayama.png', 'www \' for apostrophe', 45],
+  ['Images_Icons/3_MegaIcons/Icon_Anetta.png', 'Images_Full/3_Mega/Mega_Anetta.png', 'www \' for apostrophe', 46],
+  ['Images_Icons/3_MegaIcons/Icon_MistMan.png', 'Images_Full/3_Mega/Mega_MistMan.png', 'www \' for apostrophe', 47],
+  ['Images_Icons/3_MegaIcons/Icon_BowlMan.png', 'Images_Full/3_Mega/Mega_BowlMan.png', 'www \' for apostrophe', 48],
+  ['Images_Icons/3_MegaIcons/Icon_DrillMan.png', 'Images_Full/3_Mega/Mega_DrillMan.png', 'www \' for apostrophe', 49],
+  ['Images_Icons/3_MegaIcons/Icon_DarkMan.png', 'Images_Full/3_Mega/Mega_DarkMan.png', 'www \' for apostrophe', 50],
+  ['Images_Icons/3_MegaIcons/Icon_YamatoMan.png', 'Images_Full/3_Mega/Mega_YamatoMan.png', 'www \' for apostrophe', 51],
+  ['Images_Icons/3_MegaIcons/Icon_ShadeMan.png', 'Images_Full/3_Mega/Mega_ShadeMan.png', 'www \' for apostrophe', 52],
+  ['Images_Icons/3_MegaIcons/Icon_Shuko.png', 'Images_Full/3_Mega/Mega_Shuko.png', 'www \' for apostrophe', 53],
+  ['Images_Icons/3_MegaIcons/Icon_Terry.png', 'Images_Full/3_Mega/Mega_Terry.png', 'www \' for apostrophe', 54],
+  ['Images_Icons/3_MegaIcons/Icon_TopMan.png', 'Images_Full/3_Mega/Mega_TopMan.png', 'www \' for apostrophe', 55],
+  ['Images_Icons/3_MegaIcons/Icon_KiteMan.png', 'Images_Full/3_Mega/Mega_KiteMan.png', 'www \' for apostrophe', 56],
+  ['Images_Icons/3_MegaIcons/Icon_Atsuki.png', 'Images_Full/3_Mega/Mega_Atsuki.png', 'www \' for apostrophe', 57],
+  ['Images_Icons/3_MegaIcons/Icon_Narcy.png', 'Images_Full/3_Mega/Mega_Narcy.png', 'www \' for apostrophe', 58],
+  ['Images_Icons/3_MegaIcons/Icon_Lilly.png', 'Images_Full/3_Mega/Mega_Lilly.png', 'www \' for apostrophe', 59],
+  ['Images_Icons/3_MegaIcons/Icon_IvanChillski.png', 'Images_Full/3_Mega/Mega_IvanChillski.png', 'www \' for apostrophe', 60],
+  ['Images_Icons/3_MegaIcons/Icon_JunkMan.png', 'Images_Full/3_Mega/Mega_JunkMan.png', 'www \' for apostrophe', 61],
+  ['Images_Icons/3_MegaIcons/Icon_Regal.png', 'Images_Full/3_Mega/Mega_Regal.png', 'www \' for apostrophe', 62],
+  ['Images_Icons/3_MegaIcons/Icon_Tesla.png', 'Images_Full/3_Mega/Mega_Tesla.png', 'www \' for apostrophe', 63],
+  ['Images_Icons/3_MegaIcons/Icon_Charlie.png', 'Images_Full/3_Mega/Mega_Charlie.png', 'www \' for apostrophe', 64],
+  ['Images_Icons/3_MegaIcons/Icon_Nenji.png', 'Images_Full/3_Mega/Mega_Nenji.png', 'www \' for apostrophe', 65],
+  ['Images_Icons/3_MegaIcons/Icon_Laika.png', 'Images_Full/3_Mega/Mega_Laika.png', 'www \' for apostrophe', 66],
+  ['Images_Icons/3_MegaIcons/Icon_Jasmine.png', 'Images_Full/3_Mega/Mega_Jasmine.png', 'www \' for apostrophe', 67],
+  ['Images_Icons/3_MegaIcons/Icon_Pride.png', 'Images_Full/3_Mega/Mega_Pride.png', 'www \' for apostrophe', 68],
+  ['Images_Icons/3_MegaIcons/Icon_Dusk.png', 'Images_Full/3_Mega/Mega_Dusk.png', 'www \' for apostrophe', 69],
+  ['Images_Icons/3_MegaIcons/Icon_Dingo.png', 'Images_Full/3_Mega/Mega_Dingo.png', 'www \' for apostrophe', 70],
+  ['Images_Icons/3_MegaIcons/Icon_LarkMan.png', 'Images_Full/3_Mega/Mega_LarkMan.png', 'www \' for apostrophe', 71],
+  ['Images_Icons/3_MegaIcons/Icon_BlizzardMan.png', 'Images_Full/3_Mega/Mega_BlizzardMan.png', 'www \' for apostrophe', 72],
+  ['Images_Icons/3_MegaIcons/Icon_CloudMan.png', 'Images_Full/3_Mega/Mega_CloudMan.png', 'www \' for apostrophe', 73],
+  ['Images_Icons/3_MegaIcons/Icon_CosmoMan.png', 'Images_Full/3_Mega/Mega_CosmoMan.png', 'www \' for apostrophe', 74],
+  ['Images_Icons/3_MegaIcons/Icon_Pat.png', 'Images_Full/3_Mega/Mega_Pat.png', 'www \' for apostrophe', 75],
+  ['Images_Icons/3_MegaIcons/Icon_AnnZap.png', 'Images_Full/3_Mega/Mega_AnnZap.png', 'www \' for apostrophe', 76],
+  ['Images_Icons/3_MegaIcons/Icon_DarkScythe.png', 'Images_Full/3_Mega/DarkScythe.png', 'www \' for apostrophe', 77],
+  ['Images_Icons/3_MegaIcons/Icon_AlFerry.png', 'Images_Full/3_Mega/Mega_AlFerry.png', 'www \' for apostrophe', 78],
+  ['Images_Icons/3_MegaIcons/Icon_Master.png', 'Images_Full/3_Mega/Mega_Master.png', 'www \' for apostrophe', 79],
+  ['Images_Icons/3_MegaIcons/Icon_Moliarty.png', 'Images_Full/3_Mega/Mega_Moliarty.png', 'www \' for apostrophe', 80],
+  ['Images_Icons/3_MegaIcons/Icon_Press.png', 'Images_Full/3_Mega/Mega_Press.png', 'www \' for apostrophe', 81],
+  ['Images_Icons/3_MegaIcons/Icon_JoeMach.png', 'Images_Full/3_Mega/Mega_JoeMach.png', 'www \' for apostrophe', 82],
+  ['Images_Icons/3_MegaIcons/Icon_Blackbeard.png', 'Images_Full/3_Mega/Mega_Blackbeard.png', 'www \' for apostrophe', 83],
+  ['Images_Icons/3_MegaIcons/Icon_Yuika.png', 'Images_Full/3_Mega/Mega_Yuika.png', 'www \' for apostrophe', 84],
+  ['Images_Icons/3_MegaIcons/Icon_Ito.png', 'Images_Full/3_Mega/Mega_Ito.png', 'www \' for apostrophe', 85],
+  ['Images_Icons/3_MegaIcons/Icon_Vic.png', 'Images_Full/3_Mega/Mega_Vic.png', 'www \' for apostrophe', 86],
+  ['Images_Icons/3_MegaIcons/Icon_HatMan.png', 'Images_Full/3_Mega/Mega_HatMan.png', 'www \' for apostrophe', 87],
+  ['Images_Icons/3_MegaIcons/Icon_MaryTowa.png', 'Images_Full/3_Mega/Mega_MaryTowa.png', 'www \' for apostrophe', 88],
+  ['Images_Icons/3_MegaIcons/Icon_Kai.png', 'Images_Full/3_Mega/Mega_Kai.png', 'www \' for apostrophe', 89],
+  ['Images_Icons/3_MegaIcons/Icon_Sherrice.png', 'Images_Full/3_Mega/Mega_Sherrice.png', 'www \' for apostrophe', 90],
+  ['Images_Icons/3_MegaIcons/Icon_BrightMan.png', 'Images_Full/3_Mega/Mega_BrightMan.png', 'www \' for apostrophe', 91],
+  ['Images_Icons/3_MegaIcons/Icon_GravityMan.png', 'Images_Full/3_Mega/Mega_GravityMan.png', 'www \' for apostrophe', 92],
+  ['Images_Icons/3_MegaIcons/Icon_NeedleMan.png', 'Images_Full/3_Mega/Mega_NeedleMan.png', 'www \' for apostrophe', 93],
+  ['Images_Icons/3_MegaIcons/Icon_SwordMan.png', 'Images_Full/3_Mega/Mega_SwordMan.png', 'www \' for apostrophe', 94],
+  ['Images_Icons/3_MegaIcons/Icon_StarMan.png', 'Images_Full/3_Mega/Mega_StarMan.png', 'www \' for apostrophe', 95]
 ]
 
-const bronzeRank = [
-  ['Images_Icons/Icon_Guy.png', 'Images_Full/Bronze_Guy.png', 'Just a guy trying to make it big in this crazy world.', 23],
-  ['Images_Icons/Icon_Gal.png', 'Images_Full/Bronze_Gal.png', 'Just a gal trying to survive in this wild world.', 24],
-  ['Images_Icons/Icon_Pal.png', 'Images_Full/Bronze_Pal.png', 'Just a pal here to see what life has to offer.', 25],
-  ['Images_Icons/Icon_Creature.png', 'Images_Full/Bronze_Creature.png', 'Just a simple creature, nothing to see here, I promise...', 26],
-  ['Images_Icons/Icon_Pencil.png', 'Images_Full/Bronze_Pencil.png', 'Ironically, they hate writing by hand, preferring to type instead.', 27],
-  ['Images_Icons/Icon_Cardboard.png', 'Images_Full/Bronze_Cardboard.png', 'He thinks he\'s a knight in armor, but that cardboard doesn\'t offer much protection.', 28],
-  ['Images_Icons/Icon_Floral.png', 'Images_Full/Bronze_Floral.png', 'One evil flower is bad enough, but three in one is even worse. Watch your fingers.', 29],
-  ['Images_Icons/Icon_Paperclip.png', 'Images_Full/Bronze_Paperclip.png', 'A malevolent spirit possessed a paperclip, and it now terrorizes offices everywhere...', 30],
-  ['Images_Icons/Icon_Squirrel.png', 'Images_Full/Bronze_Squirrel.png', 'It steals food from picnikcers, and is especially fond of stealing candy from children.', 31]
+const kiloRank = [
+  ['Images_Icons/4_KiloIcons/Icon_SirProg.png', 'Images_Full/4_Kilo/Kilo_SirProg.png', 'www \' for apostrophe', 96],
+  ['Images_Icons/4_KiloIcons/Icon_ProgEsq.png', 'Images_Full/4_Kilo/Kilo_ProgEsq.png', 'www \' for apostrophe', 97],
+  ['Images_Icons/4_KiloIcons/Icon_NinjaProg.png', 'Images_Full/4_Kilo/Kilo_NinjaProg.png', 'www \' for apostrophe', 98],
+  ['Images_Icons/4_KiloIcons/Icon_DrProg.png', 'Images_Full/4_Kilo/Kilo_DrProg.png', 'www \' for apostrophe', 99],
+  ['Images_Icons/4_KiloIcons/Icon_IronFist.png', 'Images_Full/4_Kilo/Kilo_IronFist.png', 'www \' for apostrophe', 100],
+  ['Images_Icons/4_KiloIcons/Icon_Jennifer.png', 'Images_Full/4_Kilo/Kilo_Jennifer.png', 'www \' for apostrophe', 101],
+  ['Images_Icons/4_KiloIcons/Icon_Insectopedia.png', 'Images_Full/4_Kilo/Kilo_Insectopedia.png', 'www \' for apostrophe', 102],
+  ['Images_Icons/4_KiloIcons/Icon_Guilty.png', 'Images_Full/4_Kilo/Kilo_Guilty.png', 'www \' for apostrophe', 103],
+  ['Images_Icons/4_KiloIcons/Icon_Criminal.png', 'Images_Full/4_Kilo/Kilo_Criminal.png', 'www \' for apostrophe', 104],
+  ['Images_Icons/4_KiloIcons/Icon_Liar.png', 'Images_Full/4_Kilo/Kilo_Liar.png', 'www \' for apostrophe', 105],
+  ['Images_Icons/4_KiloIcons/Icon_Mick.png', 'Images_Full/4_Kilo/Kilo_Mick.png', 'www \' for apostrophe', 106],
+  ['Images_Icons/4_KiloIcons/Icon_Tab.png', 'Images_Full/4_Kilo/Kilo_Tab.png', 'www \' for apostrophe', 107],
+  ['Images_Icons/4_KiloIcons/Icon_Maylu.png', 'Images_Full/4_Kilo/Kilo_Maylu.png', 'www \' for apostrophe', 108],
+  ['Images_Icons/4_KiloIcons/Icon_Yai.png', 'Images_Full/4_Kilo/Kilo_Yai.png', 'www \' for apostrophe', 109],
+  ['Images_Icons/4_KiloIcons/Icon_Dex.png', 'Images_Full/4_Kilo/Kilo_Dex.png', 'www \' for apostrophe', 110],
+  ['Images_Icons/4_KiloIcons/Icon_Higsby.png', 'Images_Full/4_Kilo/Kilo_Higsby.png', 'www \' for apostrophe', 111],
+  ['Images_Icons/4_KiloIcons/Icon_Ribitta.png', 'Images_Full/4_Kilo/Kilo_Ribitta.png', 'www \' for apostrophe', 112],
+  ['Images_Icons/4_KiloIcons/Icon_Sal.png', 'Images_Full/4_Kilo/Kilo_Sal.png', 'www \' for apostrophe', 113],
+  ['Images_Icons/4_KiloIcons/Icon_Miyu.png', 'Images_Full/4_Kilo/Kilo_Miyu.png', 'www \' for apostrophe', 114],
+  ['Images_Icons/4_KiloIcons/Icon_Masa.png', 'Images_Full/4_Kilo/Kilo_Masa.png', 'www \' for apostrophe', 115],
+  ['Images_Icons/4_KiloIcons/Icon_GateMan.png', 'Images_Full/4_Kilo/Kilo_GateMan.png', 'www \' for apostrophe', 116],
+  ['Images_Icons/4_KiloIcons/Icon_Punk.png', 'Images_Full/4_Kilo/Kilo_Punk.png', 'www \' for apostrophe', 117],
+  ['Images_Icons/4_KiloIcons/Icon_KendoMan.png', 'Images_Full/4_Kilo/Kilo_KendoMan.png', 'www \' for apostrophe', 118],
+  ['Images_Icons/4_KiloIcons/Icon_GridMan.png', 'Images_Full/4_Kilo/Kilo_GridMan.png', 'www \' for apostrophe', 119]
 ]
 
-const tinRank = [
-  ['Images_Icons/Icon_Animal.png', 'Images_Full/Tin_Animal.png', 'It has no monetary value, but its nostalgic value more than makes up for it.', 32],
-  ['Images_Icons/Icon_Cards.png', 'Images_Full/Tin_Cards.png', 'Essentially a pile of proto-NFTs, someone paid a lot to get these but got little return on them.', 33],
-  ['Images_Icons/Icon_Empty.png', 'Images_Full/Tin_Empty.png', 'There was a character in here, but someone else already opened it. Was it a rare character? You\'ll never know now!', 34],
-  ['Images_Icons/Icon_Pillow.png', 'Images_Full/Tin_Pillow.png', 'Normally people put a cover on these to represent a character. Since this one doesn\'t have a cover, it\'s just an unimportant pillow.', 35],
-  ['Images_Icons/Icon_Recycle.png', 'Images_Full/Tin_Recycle.png', 'You could get a couple of dollars at most for recycling these, but as is they\'re not very useful.', 36]
+const standardRank = [
+  ['Images_Icons/5_StandardIcons/Icon_FastEddy.png', 'Images_Full/5_Standard/Standard_FastEddy.png', 'www \' for apostrophe', 120],
+  ['Images_Icons/5_StandardIcons/Icon_Candy.png', 'Images_Full/5_Standard/Standard_Candy.png', 'www \' for apostrophe', 121],
+  ['Images_Icons/5_StandardIcons/Icon_Indigo.png', 'Images_Full/5_Standard/Standard_Indigo.png', 'www \' for apostrophe', 122],
+  ['Images_Icons/5_StandardIcons/Icon_Pacifica.png', 'Images_Full/5_Standard/Standard_Pacifica.png', 'www \' for apostrophe', 123],
+  ['Images_Icons/5_StandardIcons/Icon_John.png', 'Images_Full/5_Standard/Standard_John.png', 'www \' for apostrophe', 124],
+  ['Images_Icons/5_StandardIcons/Icon_Virtue.png', 'Images_Full/5_Standard/Standard_Virtue.png', 'www \' for apostrophe', 125],
+  ['Images_Icons/5_StandardIcons/Icon_Mari.png', 'Images_Full/5_Standard/Standard_Mari.png', 'www \' for apostrophe', 126],
+  ['Images_Icons/5_StandardIcons/Icon_Haruka.png', 'Images_Full/5_Standard/Standard_Haruka.png', 'www \' for apostrophe', 127],
+  ['Images_Icons/5_StandardIcons/Icon_Yuichiro.png', 'Images_Full/5_Standard/Standard_Yuichiro.png', 'www \' for apostrophe', 128],
+  ['Images_Icons/5_StandardIcons/Icon_Prog.png', 'Images_Full/5_Standard/Standard_Prog.png', 'www \' for apostrophe', 129],
+  ['Images_Icons/5_StandardIcons/Icon_ProfessorProg.png', 'Images_Full/5_Standard/Standard_ProfessorProg.png', 'www \' for apostrophe', 130],
+  ['Images_Icons/5_StandardIcons/Icon_FarmerProg.png', 'Images_Full/5_Standard/Standard_FarmerProg.png', 'www \' for apostrophe', 131]
 ]
 
 function updateCharacterCount(input) {
@@ -248,50 +343,50 @@ function generateRatesString() {
   if (trueGachaMode)
   {
     // Set the string with the True Gacha Mode rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Platinum Rank characters = 0.3%" +
-                      "<br> ---Gold Rank characters = 0.7% <br> ---Silver Rank characters = 9%" +
-                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank characters = 75%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Tera Rank characters = 0.3%" +
+                      "<br> ---Giga Rank characters = 0.7% <br> ---Mega Rank characters = 9%" +
+                      "<br> ---Kilo Rank characters = 15% <br> ---Standard Rank characters = 75%";
   } else {
     // Set the string with the normal rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Platinum Rank characters = 5%" +
-                      "<br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%" +
-                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank characters = 50%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---Tera Rank characters = 5%" +
+                      "<br> ---Giga Rank characters = 10% <br> ---Mega Rank characters = 15%" +
+                      "<br> ---Kilo Rank characters = 20% <br> ---Standard Rank characters = 50%";
   }
 }
 
-function generateRatesString_Gold(characterName) {
-  // Specifically for the Gold Rank character banners, with a given character's name as input.
+function generateRatesString_Giga(characterName) {
+  // Specifically for the Giga Rank character banners, with a given character's name as input.
   trueGachaMode = retrieveTrueGacha();
 
   if (trueGachaMode)
   {
     // Set the string with the True Gacha Mode rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.4% <br> ---Platinum Rank Characters = 0.3%" +
-                      "<br> ---Other Gold Rank characters = 0.3% <br> ---Silver Rank characters = 9%" +
-                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank characters = 75%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.4% <br> ---Tera Rank Characters = 0.3%" +
+                      "<br> ---Other Giga Rank characters = 0.3% <br> ---Mega Rank characters = 9%" +
+                      "<br> ---Kilo Rank characters = 15% <br> ---Standard Rank characters = 75%";
   } else {
     // Set the string with the normal rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 7% <br> ---Platinum Rank Characters = 5%" +
-                      "<br> ---Other Gold Rank characters = 3% <br> ---Silver Rank characters = 15%" +
-                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank characters = 50%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 7% <br> ---Tera Rank Characters = 5%" +
+                      "<br> ---Other Giga Rank characters = 3% <br> ---Mega Rank characters = 15%" +
+                      "<br> ---Kilo Rank characters = 20% <br> ---Standard Rank characters = 50%";
   }
 }
 
-function generateRatesString_Platinum(characterName) {
-  // Specifically for the Platinum Rank character banners, with a given character's name as input.
+function generateRatesString_Tera(characterName) {
+  // Specifically for the Tera Rank character banners, with a given character's name as input.
   trueGachaMode = retrieveTrueGacha();
 
   if (trueGachaMode)
   {
     // Set the string with the True Gacha Mode rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.2% <br> ---Other Platinum Rank characters = 0.1%" +
-                      "<br> ---Gold Rank characters = 0.7% <br> ---Silver Rank characters = 9%" +
-                      "<br> ---Bronze Rank characters = 15% <br> ---Tin Rank character = 75%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 0.2% <br> ---Other Tera Rank characters = 0.1%" +
+                      "<br> ---Giga Rank characters = 0.7% <br> ---Mega Rank characters = 9%" +
+                      "<br> ---Kilo Rank characters = 15% <br> ---Standard Rank character = 75%";
   } else {
     // Set the string with the normal rates
-    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 3% <br> ---Other Platinum Rank characters = 2%" +
-                      "<br> ---Gold Rank characters = 10% <br> ---Silver Rank characters = 15%" +
-                      "<br> ---Bronze Rank characters = 20% <br> ---Tin Rank character = 50%";
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 3% <br> ---Other Tera Rank characters = 2%" +
+                      "<br> ---Giga Rank characters = 10% <br> ---Mega Rank characters = 15%" +
+                      "<br> ---Kilo Rank characters = 20% <br> ---Standard Rank character = 50%";
   }
 }
 
@@ -308,71 +403,71 @@ function newPull_Single() {
     resetOnPull();
   } else {
     // Check the True Gacha Mode to see what rates to use.
-    platinumRate = 0;
-    goldRate = 0;
-    silverRate = 0;
-    bronzeRate = 0;
+    teraRate = 0;
+    gigaRate = 0;
+    megaRate = 0;
+    kiloRate = 0;
 
     if (retrieveTrueGacha()){
-      platinumRate = 998;
-      goldRate = 991;
-      silverRate = 901;
-      bronzeRate = 751;
+      teraRate = 998;
+      gigaRate = 991;
+      megaRate = 901;
+      kiloRate = 751;
     } else {
-      platinumRate = 950;
-      goldRate = 850;
-      silverRate = 700;
-      bronzeRate = 500;
+      teraRate = 950;
+      gigaRate = 850;
+      megaRate = 700;
+      kiloRate = 500;
     }
 
     // The following returns a random number between 1 and 1000.
     var randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-    if (randomNumber >= platinumRate) {
-      // Get a random character from the Platinum Rank array.
-      randomIcon = Math.floor(Math.random() * platinumRank.length);
-      document.getElementById("iconDisplay").src = platinumRank[randomIcon][0];
-      document.getElementById("fullDisplay").src = platinumRank[randomIcon][1];
-      document.getElementById("descriptionSelect").innerHTML = platinumRank[randomIcon][2];
+    if (randomNumber >= teraRate) {
+      // Get a random character from the Tera Rank array.
+      randomIcon = Math.floor(Math.random() * teraRank.length);
+      document.getElementById("iconDisplay").src = teraRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = teraRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = teraRank[randomIcon][2];
 
-      updateCharacterCount(platinumRank[randomIcon][3]);
-      pullEntry.push(platinumRank[randomIcon][3]);
-    } else if (randomNumber >= goldRate) {
-      // Get a random character from the Gold Rank array.
-      randomIcon = Math.floor(Math.random() * goldRank.length);
-      document.getElementById("iconDisplay").src = goldRank[randomIcon][0];
-      document.getElementById("fullDisplay").src = goldRank[randomIcon][1];
-      document.getElementById("descriptionSelect").innerHTML = goldRank[randomIcon][2];
+      updateCharacterCount(teraRank[randomIcon][3]);
+      pullEntry.push(teraRank[randomIcon][3]);
+    } else if (randomNumber >= gigaRate) {
+      // Get a random character from the Giga Rank array.
+      randomIcon = Math.floor(Math.random() * gigaRank.length);
+      document.getElementById("iconDisplay").src = gigaRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = gigaRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = gigaRank[randomIcon][2];
 
-      updateCharacterCount(goldRank[randomIcon][3]);
-      pullEntry.push(goldRank[randomIcon][3]);
-    } else if (randomNumber >= silverRate) {
-      // Get a random icon from the Silver Rank array.
-      randomIcon = Math.floor(Math.random() * silverRank.length);
-      document.getElementById("iconDisplay").src = silverRank[randomIcon][0];
-      document.getElementById("fullDisplay").src = silverRank[randomIcon][1];
-      document.getElementById("descriptionSelect").innerHTML = silverRank[randomIcon][2];
+      updateCharacterCount(gigaRank[randomIcon][3]);
+      pullEntry.push(gigaRank[randomIcon][3]);
+    } else if (randomNumber >= megaRate) {
+      // Get a random icon from the Mega Rank array.
+      randomIcon = Math.floor(Math.random() * megaRank.length);
+      document.getElementById("iconDisplay").src = megaRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = megaRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = megaRank[randomIcon][2];
 
-      updateCharacterCount(silverRank[randomIcon][3]);
-      pullEntry.push(silverRank[randomIcon][3]);
-    } else if (randomNumber >= bronzeRate) {
-      // Get a random icon from the Bronze Rank array.
-      randomIcon = Math.floor(Math.random() * bronzeRank.length);
-      document.getElementById("iconDisplay").src = bronzeRank[randomIcon][0];
-      document.getElementById("fullDisplay").src = bronzeRank[randomIcon][1];
-      document.getElementById("descriptionSelect").innerHTML = bronzeRank[randomIcon][2];
+      updateCharacterCount(megaRank[randomIcon][3]);
+      pullEntry.push(megaRank[randomIcon][3]);
+    } else if (randomNumber >= kiloRate) {
+      // Get a random icon from the Kilo Rank array.
+      randomIcon = Math.floor(Math.random() * kiloRank.length);
+      document.getElementById("iconDisplay").src = kiloRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = kiloRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = kiloRank[randomIcon][2];
 
-      updateCharacterCount(bronzeRank[randomIcon][3]);
-      pullEntry.push(bronzeRank[randomIcon][3]);
+      updateCharacterCount(kiloRank[randomIcon][3]);
+      pullEntry.push(kiloRank[randomIcon][3]);
     } else {
-      // Get a random icon from the Tin Rank array.
-      randomIcon = Math.floor(Math.random() * tinRank.length);
-      document.getElementById("iconDisplay").src = tinRank[randomIcon][0];
-      document.getElementById("fullDisplay").src = tinRank[randomIcon][1];
-      document.getElementById("descriptionSelect").innerHTML = tinRank[randomIcon][2];
+      // Get a random icon from the Standard Rank array.
+      randomIcon = Math.floor(Math.random() * standardRank.length);
+      document.getElementById("iconDisplay").src = standardRank[randomIcon][0];
+      document.getElementById("fullDisplay").src = standardRank[randomIcon][1];
+      document.getElementById("descriptionSelect").innerHTML = standardRank[randomIcon][2];
 
-      updateCharacterCount(tinRank[randomIcon][3]);
-      pullEntry.push(tinRank[randomIcon][3]);
+      updateCharacterCount(standardRank[randomIcon][3]);
+      pullEntry.push(standardRank[randomIcon][3]);
     }
 
     updateSessionVariables(5); // Update the tracker variables with the new pull.
@@ -381,45 +476,45 @@ function newPull_Single() {
   }
 }
 
-function silverBronzeAndTinRank(input, i) {
+function megaKiloAndStandardRank(input, i) {
   // Check the True Gacha Mode to see what rates to use.
-  silverRate = 0;
-  bronzeRate = 0;
+  megaRate = 0;
+  kiloRate = 0;
 
   if (retrieveTrueGacha()){
-    silverRate = 901;
-    bronzeRate = 751;
+    megaRate = 901;
+    kiloRate = 751;
   } else {
-    silverRate = 700;
-    bronzeRate = 500;
+    megaRate = 700;
+    kiloRate = 500;
   }
 
-  // To reduce repetitive code, handle the calculations for silver, bronze, and tin rank
+  // To reduce repetitive code, handle the calculations for mega, kilo, and standard rank
   // for multi-pulls here.
-  if (input >= silverRate) {
-    // Get a random icon from the Silver Rank array.
-    randomIcon = Math.floor(Math.random() * silverRank.length);
-    document.getElementById("iconDisplay" + i).src = silverRank[randomIcon][0];
-    document.getElementById("iconDisplay" + i).longdesc = silverRank[randomIcon][1];
-    document.getElementById("iconDisplay" + i).alt = silverRank[randomIcon][2];
+  if (input >= megaRate) {
+    // Get a random icon from the Mega Rank array.
+    randomIcon = Math.floor(Math.random() * megaRank.length);
+    document.getElementById("iconDisplay" + i).src = megaRank[randomIcon][0];
+    document.getElementById("iconDisplay" + i).longdesc = megaRank[randomIcon][1];
+    document.getElementById("iconDisplay" + i).alt = megaRank[randomIcon][2];
 
-    return silverRank[randomIcon][3];
-  } else if (input >= bronzeRate) {
-    // Get a random icon from the Bronze Rank array.
-    randomIcon = Math.floor(Math.random() * bronzeRank.length);
-    document.getElementById("iconDisplay" + i).src = bronzeRank[randomIcon][0];
-    document.getElementById("iconDisplay" + i).longdesc = bronzeRank[randomIcon][1];
-    document.getElementById("iconDisplay" + i).alt = bronzeRank[randomIcon][2];
+    return megaRank[randomIcon][3];
+  } else if (input >= kiloRate) {
+    // Get a random icon from the Kilo Rank array.
+    randomIcon = Math.floor(Math.random() * kiloRank.length);
+    document.getElementById("iconDisplay" + i).src = kiloRank[randomIcon][0];
+    document.getElementById("iconDisplay" + i).longdesc = kiloRank[randomIcon][1];
+    document.getElementById("iconDisplay" + i).alt = kiloRank[randomIcon][2];
 
-    return bronzeRank[randomIcon][3];
+    return kiloRank[randomIcon][3];
   } else {
-    // Get a random icon from the Tin Rank array.
-    randomIcon = Math.floor(Math.random() * tinRank.length);
-    document.getElementById("iconDisplay" + i).src = tinRank[randomIcon][0];
-    document.getElementById("iconDisplay" + i).longdesc = tinRank[randomIcon][1];
-    document.getElementById("iconDisplay" + i).alt = tinRank[randomIcon][2];
+    // Get a random icon from the Standard Rank array.
+    randomIcon = Math.floor(Math.random() * standardRank.length);
+    document.getElementById("iconDisplay" + i).src = standardRank[randomIcon][0];
+    document.getElementById("iconDisplay" + i).longdesc = standardRank[randomIcon][1];
+    document.getElementById("iconDisplay" + i).alt = standardRank[randomIcon][2];
 
-    return tinRank[randomIcon][3];
+    return standardRank[randomIcon][3];
   }
 }
 
@@ -429,24 +524,24 @@ function resetOnPull() {
   document.getElementById("descriptionSelect").innerHTML = "A description about the selected character will appear here.";
 }
 
-function bannerGoldRank(input, i) {
-  // Handles the iconDisplay changes for a specific character from the goldRank array.
+function bannerGigaRank(input, i) {
+  // Handles the iconDisplay changes for a specific character from the gigaRank array.
   // This function is meant mainly for the banner pages, but also used for the multi-pulls.
   // In the latter case, the input is a random number rather than a specific number.
-  document.getElementById("iconDisplay" + i).src = goldRank[input][0];
-  document.getElementById("iconDisplay" + i).longdesc = goldRank[input][1];
-  document.getElementById("iconDisplay" + i).alt = goldRank[input][2];
+  document.getElementById("iconDisplay" + i).src = gigaRank[input][0];
+  document.getElementById("iconDisplay" + i).longdesc = gigaRank[input][1];
+  document.getElementById("iconDisplay" + i).alt = gigaRank[input][2];
 
-  return goldRank[input][3];
+  return gigaRank[input][3];
 }
 
-function bannerPlatinumRank(input, i) {
-  // Similar to the bannerGoldRank() function, except this is using the platinumRank array.
-  document.getElementById("iconDisplay" + i).src = platinumRank[input][0];
-  document.getElementById("iconDisplay" + i).longdesc = platinumRank[input][1];
-  document.getElementById("iconDisplay" + i).alt = platinumRank[input][2];
+function bannerTeraRank(input, i) {
+  // Similar to the bannerGigaRank() function, except this is using the teraRank array.
+  document.getElementById("iconDisplay" + i).src = teraRank[input][0];
+  document.getElementById("iconDisplay" + i).longdesc = teraRank[input][1];
+  document.getElementById("iconDisplay" + i).alt = teraRank[input][2];
 
-  return platinumRank[input][3];
+  return teraRank[input][3];
 }
 
 function newPull_Multi(pullNumber, price) {
@@ -459,15 +554,15 @@ function newPull_Multi(pullNumber, price) {
     resetOnPull();
   } else {
     // Check the True Gacha Mode to see what rates to use.
-    platinumRate = 0;
-    goldRate = 0;
+    teraRate = 0;
+    gigaRate = 0;
 
     if (retrieveTrueGacha()){
-      platinumRate = 998;
-      goldRate = 991;
+      teraRate = 998;
+      gigaRate = 991;
     } else {
-      platinumRate = 950;
-      goldRate = 850;
+      teraRate = 950;
+      gigaRate = 850;
     }
 
     var randomNumber;
@@ -482,23 +577,23 @@ function newPull_Multi(pullNumber, price) {
       // Set the random number in the while-loop, so it can be different on each loop.
       randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= platinumRate) {
-        // Get a random character from the Platinum Rank array.
-        randomIcon = Math.floor(Math.random() * platinumRank.length);
+      if (randomNumber >= teraRate) {
+        // Get a random character from the Tera Rank array.
+        randomIcon = Math.floor(Math.random() * teraRank.length);
 
-        characterValue = bannerPlatinumRank(randomIcon, i);
+        characterValue = bannerTeraRank(randomIcon, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= goldRate) {
-        // Gold rank chance is 10%
-        // Get a random character from the Gold Rank array.
-        randomIcon = Math.floor(Math.random() * goldRank.length);
+      } else if (randomNumber >= gigaRate) {
+        // Giga rank chance is 10%
+        // Get a random character from the Giga Rank array.
+        randomIcon = Math.floor(Math.random() * gigaRank.length);
 
-        characterValue = bannerGoldRank(randomIcon, i);
+        characterValue = bannerGigaRank(randomIcon, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       } else {
-        characterValue = silverBronzeAndTinRank(randomNumber, i);
+        characterValue = megaKiloAndStandardRank(randomNumber, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       }
@@ -522,30 +617,30 @@ function specialPullMessages(obtained, characterName) {
   }
 }
 
-function reducedGoldRank(input, i) {
-  // A special function for handling the banner pulls, for the Gold rank characters
-  // that will have a reduced chance due to the banner being for one specific Gold character.
-  // The input represents the position of the banner character in the goldRank array, and thus
+function reducedGigaRank(input, i) {
+  // A special function for handling the banner pulls, for the Giga rank characters
+  // that will have a reduced chance due to the banner being for one specific Giga character.
+  // The input represents the position of the banner character in the gigaRank array, and thus
   // the one part of the array that should be ignored here.
   tempArray = [];
 
-  for (var x = 0; x < goldRank.length; x++) {
+  for (var x = 0; x < gigaRank.length; x++) {
     if (x != input) {
       tempArray.push(x);
     }
   }
 
   randomIcon = tempArray[Math.floor(Math.random() * tempArray.length)];
-  document.getElementById("iconDisplay" + i).src = goldRank[randomIcon][0];
-  document.getElementById("iconDisplay" + i).longdesc = goldRank[randomIcon][1];
-  document.getElementById("iconDisplay" + i).alt = goldRank[randomIcon][2];
+  document.getElementById("iconDisplay" + i).src = gigaRank[randomIcon][0];
+  document.getElementById("iconDisplay" + i).longdesc = gigaRank[randomIcon][1];
+  document.getElementById("iconDisplay" + i).alt = gigaRank[randomIcon][2];
 
-  return goldRank[randomIcon][3];
+  return gigaRank[randomIcon][3];
 }
 
-function newSpecialPull_Gold(input, characterName) {
-  // A function for the Gold rank special banner pulls, acts as a variant of the 10+1 pulls.
-  // "input" is the character's position in the goldRank array, and "characterName" is just their name.
+function newSpecialPull_Giga(input, characterName) {
+  // A function for the Giga rank special banner pulls, acts as a variant of the 10+1 pulls.
+  // "input" is the character's position in the gigaRank array, and "characterName" is just their name.
 
   if (parseInt(sessionStorage.getItem("currency")) < 75) {
     // Only do a pull if the user has enough currency.
@@ -553,18 +648,18 @@ function newSpecialPull_Gold(input, characterName) {
     resetOnPull();
   } else {
     // Check the True Gacha Mode to see what rates to use.
-    goldRate = 0;
-    reducedGoldRate = 0;
-    platinumRate = 0;
+    gigaRate = 0;
+    reducedGigaRate = 0;
+    teraRate = 0;
 
     if (retrieveTrueGacha()){
-      goldRate = 997;
-      reducedGoldRate = 994;
-      platinumRate = 991;
+      gigaRate = 997;
+      reducedGigaRate = 994;
+      teraRate = 991;
     } else {
-      goldRate = 930;
-      reducedGoldRate = 900;
-      platinumRate = 850;
+      gigaRate = 930;
+      reducedGigaRate = 900;
+      teraRate = 850;
     }
 
     var randomNumber;
@@ -580,25 +675,25 @@ function newSpecialPull_Gold(input, characterName) {
       // Set the random number in the while-loop, so it can be different on each loop.
       randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= goldRate) {
+      if (randomNumber >= gigaRate) {
         // Improved rate for the banner character specifically.
-        characterValue = bannerGoldRank(input, i);
+        characterValue = bannerGigaRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
 
         obtained = true;
-      } else if (randomNumber >= reducedGoldRate) {
-        // Chance for the rest of the Gold rank characters is reduced.
-        characterValue = reducedGoldRank(input, i);
+      } else if (randomNumber >= reducedGigaRate) {
+        // Chance for the rest of the Giga rank characters is reduced.
+        characterValue = reducedGigaRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= platinumRate) {
-        // Platinum character rates stay the same.
-        characterValue = bannerPlatinumRank(Math.floor(Math.random() * platinumRank.length), i);
+      } else if (randomNumber >= teraRate) {
+        // Tera character rates stay the same.
+        characterValue = bannerTeraRank(Math.floor(Math.random() * teraRank.length), i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       } else {
-        characterValue = silverBronzeAndTinRank(randomNumber, i);
+        characterValue = megaKiloAndStandardRank(randomNumber, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       }
@@ -614,28 +709,28 @@ function newSpecialPull_Gold(input, characterName) {
   }
 }
 
-function reducedPlatinumRank(input, i) {
-  // Similar to the function used for reduced Gold rank chances, with this one beginning
-  // for the Platinum rank instead.
+function reducedTeraRank(input, i) {
+  // Similar to the function used for reduced Giga rank chances, with this one beginning
+  // for the Tera rank instead.
   tempArray = [];
 
-  for (var x = 0; x < platinumRank.length; x++) {
+  for (var x = 0; x < teraRank.length; x++) {
     if (x != input) {
       tempArray.push(x);
     }
   }
 
   randomIcon = tempArray[Math.floor(Math.random() * tempArray.length)];
-  document.getElementById("iconDisplay" + i).src = platinumRank[randomIcon][0];
-  document.getElementById("iconDisplay" + i).longdesc = platinumRank[randomIcon][1];
-  document.getElementById("iconDisplay" + i).alt = platinumRank[randomIcon][2];
+  document.getElementById("iconDisplay" + i).src = teraRank[randomIcon][0];
+  document.getElementById("iconDisplay" + i).longdesc = teraRank[randomIcon][1];
+  document.getElementById("iconDisplay" + i).alt = teraRank[randomIcon][2];
 
-  return platinumRank[randomIcon][3];
+  return teraRank[randomIcon][3];
 }
 
-function newSpecialPull_Platinum(input, characterName) {
-  // A function for the Platinum rank special banner pulls, acts as a variant of the 10+1 pulls.
-  // "input" is the character's position in the platinumRank array, and "characterName" is just their name.
+function newSpecialPull_Tera(input, characterName) {
+  // A function for the Tera rank special banner pulls, acts as a variant of the 10+1 pulls.
+  // "input" is the character's position in the teraRank array, and "characterName" is just their name.
 
   if (parseInt(sessionStorage.getItem("currency")) < 100) {
     // Only do a pull if the user has enough currency.
@@ -643,18 +738,18 @@ function newSpecialPull_Platinum(input, characterName) {
     resetOnPull();
   } else {
     // Check the True Gacha Mode to see what rates to use.
-    platinumRate = 0;
-    reducedPlatinumRate = 0;
-    goldRate = 0;
+    teraRate = 0;
+    reducedTeraRate = 0;
+    gigaRate = 0;
 
     if (retrieveTrueGacha()){
-      platinumRate = 999;
-      reducedPlatinumRate = 998;
-      goldRate = 991;
+      teraRate = 999;
+      reducedTeraRate = 998;
+      gigaRate = 991;
     } else {
-      platinumRate = 970;
-      reducedPlatinumRate = 950;
-      goldRate = 850;
+      teraRate = 970;
+      reducedTeraRate = 950;
+      gigaRate = 850;
     }
 
     var randomNumber;
@@ -670,25 +765,25 @@ function newSpecialPull_Platinum(input, characterName) {
       // Set the random number in the while-loop, so it can be different on each loop.
       randomNumber = Math.floor((Math.random() * 1000) + 1);
 
-      if (randomNumber >= platinumRate) {
+      if (randomNumber >= teraRate) {
         // Improved rate for the banner character specifically.
-        characterValue = bannerPlatinumRank(input, i);
+        characterValue = bannerTeraRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
 
         obtained = true;
-      } else if (randomNumber >= reducedPlatinumRate) {
-        // Chance for the rest of the Platinum rank characters is reduced.
-        characterValue = reducedPlatinumRank(input, i);
+      } else if (randomNumber >= reducedTeraRate) {
+        // Chance for the rest of the Tera rank characters is reduced.
+        characterValue = reducedTeraRank(input, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
-      } else if (randomNumber >= goldRate) {
-        // Gold character rates stay the same.
-        characterValue = bannerGoldRank(Math.floor(Math.random() * goldRank.length), i);
+      } else if (randomNumber >= gigaRate) {
+        // Giga character rates stay the same.
+        characterValue = bannerGigaRank(Math.floor(Math.random() * gigaRank.length), i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       } else {
-        characterValue = silverBronzeAndTinRank(randomNumber, i);
+        characterValue = megaKiloAndStandardRank(randomNumber, i);
         updateCharacterCount(characterValue);
         pullEntry.push(characterValue);
       }
@@ -702,56 +797,6 @@ function newSpecialPull_Platinum(input, characterName) {
     updatePagePulls();
     updatePullHistory(pullEntry);
   }
-}
-
-function newSpecialPull_Buff() {
-  // Increased chance for Buff Man in particular.
-  newSpecialPull_Gold(0, "Buff Man");
-}
-
-function newSpecialPull_Lady() {
-  // Increased chance for Lady Longlegs in particular.
-  newSpecialPull_Gold(1, "Lady Longlegs");
-}
-
-function newSpecialPull_Gunz() {
-  // Increased chance for Mx. Gunzakimbo in particular.
-  newSpecialPull_Gold(2, "Mx. Gunzakimbo");
-}
-
-function newSpecialPull_Butler() {
-  // Increased chance for The Handsomest Butler in particular.
-  newSpecialPull_Gold(3, "The Handsomest Butler");
-}
-
-function newSpecialPull_McGee() {
-  // Increased chance for Megan McGee in particular.
-  newSpecialPull_Gold(4, "Megan McGee");
-}
-
-function newSpecialPull_Timbly() {
-  // Increased chance for Timbly Sexymann in particular.
-  newSpecialPull_Gold(5, "Timbly Sexymann");
-}
-
-function newSpecialPull_CLOWN() {
-  // Increased chance for CHAOSCLOWN in particular.
-  newSpecialPull_Gold(6, "CHAOSCLOWN");
-}
-
-function newSpecialPull_Eclipsia() {
-  // Increased chance for Eclipsia in particular.
-  newSpecialPull_Platinum(0, "Eclipsia");
-}
-
-function newSpecialPull_Warrior() {
-  // Increased chance for The Lone Warrior in particular.
-  newSpecialPull_Platinum(1, "The Lone Warrior");
-}
-
-function newSpecialPull_Sandalphon() {
-  // Increased chance for Sandalphon Arpeggio in particular.
-  newSpecialPull_Platinum(2, "Sandalphon Arpeggio");
 }
 
 function displayFullImage(input) {
@@ -771,12 +816,12 @@ function loadingGallery() {
   let i = 1;
   let j = 0;
 
-  while (j < platinumRank.length){
-    document.getElementById("iconDisplay" + i).src = platinumRank[j][0];
-    document.getElementById("iconDisplay" + i).longdesc = platinumRank[j][1];
+  while (j < teraRank.length){
+    document.getElementById("iconDisplay" + i).src = teraRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = teraRank[j][1];
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
-                                                      + "<br>" + platinumRank[j][2];
+                                                      + "<br>" + teraRank[j][2];
 
     i++;
     j++;
@@ -784,12 +829,12 @@ function loadingGallery() {
 
   j = 0;
 
-  while (j < goldRank.length){
-    document.getElementById("iconDisplay" + i).src = goldRank[j][0];
-    document.getElementById("iconDisplay" + i).longdesc = goldRank[j][1];
+  while (j < gigaRank.length){
+    document.getElementById("iconDisplay" + i).src = gigaRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = gigaRank[j][1];
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
-                                                      + "<br>" + goldRank[j][2];
+                                                      + "<br>" + gigaRank[j][2];
 
     i++;
     j++;
@@ -797,12 +842,12 @@ function loadingGallery() {
 
   j = 0;
 
-  while (j < silverRank.length){
-    document.getElementById("iconDisplay" + i).src = silverRank[j][0];
-    document.getElementById("iconDisplay" + i).longdesc = silverRank[j][1];
+  while (j < megaRank.length){
+    document.getElementById("iconDisplay" + i).src = megaRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = megaRank[j][1];
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
-                                                      + "<br>" + silverRank[j][2];
+                                                      + "<br>" + megaRank[j][2];
 
     i++;
     j++;
@@ -810,12 +855,12 @@ function loadingGallery() {
 
   j = 0;
 
-  while (j < bronzeRank.length){
-    document.getElementById("iconDisplay" + i).src = bronzeRank[j][0];
-    document.getElementById("iconDisplay" + i).longdesc = bronzeRank[j][1];
+  while (j < kiloRank.length){
+    document.getElementById("iconDisplay" + i).src = kiloRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = kiloRank[j][1];
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
-                                                      + "<br>" + bronzeRank[j][2];
+                                                      + "<br>" + kiloRank[j][2];
 
     i++;
     j++;
@@ -823,12 +868,12 @@ function loadingGallery() {
 
   j = 0;
 
-  while (j < tinRank.length){
-    document.getElementById("iconDisplay" + i).src = tinRank[j][0];
-    document.getElementById("iconDisplay" + i).longdesc = tinRank[j][1];
+  while (j < standardRank.length){
+    document.getElementById("iconDisplay" + i).src = standardRank[j][0];
+    document.getElementById("iconDisplay" + i).longdesc = standardRank[j][1];
     document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
                                                       + parseInt(sessionStorage.getItem("iconDisplay" + i))
-                                                      + "<br>" + tinRank[j][2];
+                                                      + "<br>" + standardRank[j][2];
 
     i++;
     j++;
@@ -905,39 +950,39 @@ function createImg(character, image) {
 
   matchFound = false;
 
-  // Look through the platinumRank array first.
+  // Look through the teraRank array first.
   // Note the use of x, y, and z instead of i, since i is already used by the function that calls on this one.
   // src is for the icon image, longdesc is for the full image, and alt is for the character descriptions.
-  for (var x = 0; x < platinumRank.length; x++) {
-    if (platinumRank[x][3] == character) {
-      imgNode.src = platinumRank[x][0];
-      imgNode.longdesc = platinumRank[x][1];
-      imgNode.alt = platinumRank[x][2];
+  for (var x = 0; x < teraRank.length; x++) {
+    if (teraRank[x][3] == character) {
+      imgNode.src = teraRank[x][0];
+      imgNode.longdesc = teraRank[x][1];
+      imgNode.alt = teraRank[x][2];
 
       matchFound = true;
       break;
     }
   }
 
-  // If no match was found, then check the goldRank array next.
-  for (var x = 0; x < goldRank.length; x++) {
-    if (goldRank[x][3] == character) {
-      imgNode.src = goldRank[x][0];
-      imgNode.longdesc = goldRank[x][1];
-      imgNode.alt = goldRank[x][2];
+  // If no match was found, then check the gigaRank array next.
+  for (var x = 0; x < gigaRank.length; x++) {
+    if (gigaRank[x][3] == character) {
+      imgNode.src = gigaRank[x][0];
+      imgNode.longdesc = gigaRank[x][1];
+      imgNode.alt = gigaRank[x][2];
 
       matchFound = true;
       break;
     }
   }
 
-  // If no match was found, then check the silverRank array next.
+  // If no match was found, then check the megaRank array next.
   if (!matchFound) {
-    for (var y = 0; y < silverRank.length; y++) {
-      if (silverRank[y][3] == character) {
-        imgNode.src = silverRank[y][0];
-        imgNode.longdesc = silverRank[y][1];
-        imgNode.alt = silverRank[y][2];
+    for (var y = 0; y < megaRank.length; y++) {
+      if (megaRank[y][3] == character) {
+        imgNode.src = megaRank[y][0];
+        imgNode.longdesc = megaRank[y][1];
+        imgNode.alt = megaRank[y][2];
 
         matchFound = true;
         break;
@@ -945,13 +990,13 @@ function createImg(character, image) {
     }
   }
 
-  // If still no match was found, then check the bronzeRank array.
+  // If still no match was found, then check the kiloRank array.
   if (!matchFound) {
-    for (var z = 0; z < bronzeRank.length; z++) {
-      if (bronzeRank[z][3] == character) {
-        imgNode.src = bronzeRank[z][0];
-        imgNode.longdesc = bronzeRank[z][1];
-        imgNode.alt = bronzeRank[z][2];
+    for (var z = 0; z < kiloRank.length; z++) {
+      if (kiloRank[z][3] == character) {
+        imgNode.src = kiloRank[z][0];
+        imgNode.longdesc = kiloRank[z][1];
+        imgNode.alt = kiloRank[z][2];
 
         matchFound = true;
         break;
@@ -959,13 +1004,13 @@ function createImg(character, image) {
     }
   }
 
-  // If still no match was found, then finally check the tinRank array.
+  // If still no match was found, then finally check the standardRank array.
   if (!matchFound) {
-    for (var z = 0; z < tinRank.length; z++) {
-      if (tinRank[z][3] == character) {
-        imgNode.src = tinRank[z][0];
-        imgNode.longdesc = tinRank[z][1];
-        imgNode.alt = tinRank[z][2];
+    for (var z = 0; z < standardRank.length; z++) {
+      if (standardRank[z][3] == character) {
+        imgNode.src = standardRank[z][0];
+        imgNode.longdesc = standardRank[z][1];
+        imgNode.alt = standardRank[z][2];
 
         matchFound = true;
         break;
