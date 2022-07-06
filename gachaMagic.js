@@ -43,8 +43,8 @@ function updateTracker() {
   // Keep the tracker up to date with the player's current currency and pulls.
   // Due to functionality in the rest of the code, these will cap out at
   // 999,999,999 and 9,999 respectively.
-  document.getElementById("tracker").innerHTML = "--- Currency: " + sessionStorage.getItem("currency")
-                                        + " --- Currency spent so far: " + sessionStorage.getItem("currencySpent")
+  document.getElementById("tracker").innerHTML = "--- Zenny: " + sessionStorage.getItem("currency")
+                                        + " --- Zenny spent so far: " + sessionStorage.getItem("currencySpent")
                                         + " --- Total pulls so far: " + sessionStorage.getItem("totalPulls") + " ---";
 }
 
