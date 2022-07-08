@@ -86,6 +86,7 @@ const gigaRank = [
   ['Images_Icons/2_GigaIcons/Icon_Count.png', 'Images_Full/2_Giga/Giga_Count.png', 'www \' for apostrophe', 21],
   ['Images_Icons/2_GigaIcons/Icon_ShootingStars.png', 'Images_Full/2_Giga/Giga_ShootingStars.png', 'www \' for apostrophe', 22],
   ['Images_Icons/2_GigaIcons/Icon_Wan.png', 'Images_Full/2_Giga/Giga_Wan.png', 'www \' for apostrophe', 23]
+  ['Images_Icons/2_GigaIcons/Icon_Wily.png', 'Images_Full/2_Giga/Giga_Wily.png', 'www \' for apostrophe', 133]
 ]
 
 const megaRank = [
@@ -131,7 +132,7 @@ const megaRank = [
   ['Images_Icons/3_MegaIcons/Icon_Tesla.png', 'Images_Full/3_Mega/Mega_Tesla.png', 'www \' for apostrophe', 63],
   ['Images_Icons/3_MegaIcons/Icon_Charlie.png', 'Images_Full/3_Mega/Mega_Charlie.png', 'www \' for apostrophe', 64],
   ['Images_Icons/3_MegaIcons/Icon_Nenji.png', 'Images_Full/3_Mega/Mega_Nenji.png', 'www \' for apostrophe', 65],
-  ['Images_Icons/3_MegaIcons/Icon_Laika.png', 'Images_Full/3_Mega/Mega_Laika.png', 'www \' for apostrophe', 66],
+  ['Images_Icons/3_MegaIcons/Icon_Raika.png', 'Images_Full/3_Mega/Mega_Raika.png', 'www \' for apostrophe', 66],
   ['Images_Icons/3_MegaIcons/Icon_Jasmine.png', 'Images_Full/3_Mega/Mega_Jasmine.png', 'www \' for apostrophe', 67],
   ['Images_Icons/3_MegaIcons/Icon_Pride.png', 'Images_Full/3_Mega/Mega_Pride.png', 'www \' for apostrophe', 68],
   ['Images_Icons/3_MegaIcons/Icon_Dusk.png', 'Images_Full/3_Mega/Mega_Dusk.png', 'www \' for apostrophe', 69],
@@ -161,6 +162,7 @@ const megaRank = [
   ['Images_Icons/3_MegaIcons/Icon_NeedleMan.png', 'Images_Full/3_Mega/Mega_NeedleMan.png', 'www \' for apostrophe', 93],
   ['Images_Icons/3_MegaIcons/Icon_SwordMan.png', 'Images_Full/3_Mega/Mega_SwordMan.png', 'www \' for apostrophe', 94],
   ['Images_Icons/3_MegaIcons/Icon_StarMan.png', 'Images_Full/3_Mega/Mega_StarMan.png', 'www \' for apostrophe', 95]
+  ['Images_Icons/3_MegaIcons/Icon_Professor.png', 'Images_Full/3_Mega/Mega_Professor.png', 'www \' for apostrophe', 134]
 ]
 
 const kiloRank = [
@@ -187,7 +189,8 @@ const kiloRank = [
   ['Images_Icons/4_KiloIcons/Icon_GateMan.png', 'Images_Full/4_Kilo/Kilo_GateMan.png', 'www \' for apostrophe', 116],
   ['Images_Icons/4_KiloIcons/Icon_Punk.png', 'Images_Full/4_Kilo/Kilo_Punk.png', 'www \' for apostrophe', 117],
   ['Images_Icons/4_KiloIcons/Icon_KendoMan.png', 'Images_Full/4_Kilo/Kilo_KendoMan.png', 'www \' for apostrophe', 118],
-  ['Images_Icons/4_KiloIcons/Icon_GridMan.png', 'Images_Full/4_Kilo/Kilo_GridMan.png', 'www \' for apostrophe', 119]
+  ['Images_Icons/4_KiloIcons/Icon_GridMan.png', 'Images_Full/4_Kilo/Kilo_GridMan.png', 'www \' for apostrophe', 119],
+  ['Images_Icons/4_KiloIcons/Icon_Iris.png', 'Images_Full/4_Kilo/Kilo_Iris.png', 'www \' for apostrophe', 132]
 ]
 
 const standardRank = [
@@ -204,6 +207,8 @@ const standardRank = [
   ['Images_Icons/5_StandardIcons/Icon_ProfessorProg.png', 'Images_Full/5_Standard/Standard_ProfessorProg.png', 'www \' for apostrophe', 130],
   ['Images_Icons/5_StandardIcons/Icon_FarmerProg.png', 'Images_Full/5_Standard/Standard_FarmerProg.png', 'www \' for apostrophe', 131]
 ]
+
+// The arrays used for the special costume variations are in the getThemeArray() function.
 
 function updateCharacterCount(input) {
   var countValue = parseInt(sessionStorage.getItem("iconDisplay" + input));
@@ -385,6 +390,24 @@ function generateRatesString_Tera(characterName) {
   } else {
     // Set the string with the normal rates
     document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + characterName + " = 3% <br> ---Other Tera Rank characters = 2%" +
+                      "<br> ---Giga Rank characters = 10% <br> ---Mega Rank characters = 15%" +
+                      "<br> ---Kilo Rank characters = 20% <br> ---Standard Rank character = 50%";
+  }
+}
+
+function generateRatesString_Theme(themeName) {
+  // Specifically for the themed character banners, including costumes, with the given theme as input.
+  trueGachaMode = retrieveTrueGacha();
+
+  if (trueGachaMode)
+  {
+    // Set the string with the True Gacha Mode rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + themeName + " = 0.2% <br> ---Tera Rank characters = 0.1%" +
+                      "<br> ---Giga Rank characters = 0.7% <br> ---Mega Rank characters = 9%" +
+                      "<br> ---Kilo Rank characters = 15% <br> ---Standard Rank character = 75%";
+  } else {
+    // Set the string with the normal rates
+    document.getElementById("ratesString").innerHTML = "Probabilities: <br> ---" + themeName + " = 3% <br> ---Tera Rank characters = 2%" +
                       "<br> ---Giga Rank characters = 10% <br> ---Mega Rank characters = 15%" +
                       "<br> ---Kilo Rank characters = 20% <br> ---Standard Rank character = 50%";
   }
@@ -611,7 +634,7 @@ function newPull_Multi(pullNumber, price) {
 function specialPullMessages(obtained, characterName) {
   // Handle the character messages for each special pull.
   if (obtained) {
-    document.getElementById("bannerMessage").innerHTML = "Congradulations, you got " + characterName + "!!";
+    document.getElementById("bannerMessage").innerHTML = "Congratulations, you got " + characterName + "!!";
   } else {
     document.getElementById("bannerMessage").innerHTML = "Sorry, try again...";
   }
@@ -794,6 +817,410 @@ function newSpecialPull_Tera(input, characterName) {
     specialPullMessages(obtained, characterName);
     resetOnPull();
     updateSessionVariables(100); // Update the tracker variables with the new pull.
+    updatePagePulls();
+    updatePullHistory(pullEntry);
+  }
+}
+
+function getThemeArray(input) {
+  var returnArray = [];
+
+  switch(input) {
+    case 0:
+    // Lan and friends specifically
+    returnArray = [1,6,7,37,88,89,106,107,108,109,110,132];
+    case 1:
+    // World Three members (BN1, BN3, and BN6)
+    returnArray = [8,10,11,12,24,26,27,28,29,30,31,40,41,42,45,46,49,82,83,84,85,86,95,111,133,134];
+    case 2:
+    // Gospel members (BN2)
+    returnArray = [33,34,35,36,37,68];
+    case 3:
+    // Nebula members (BN4 and BN5)
+    returnArray = [23,52,62,72,73,74,105];
+    case 4:
+    // Team Colonel members
+    returnArray = [8,68,69,70,111,112];
+    case 5:
+    // Team ProtoMan members
+    returnArray = [7,63,64,65,66,67];
+    case 6:
+    // Characters that first appeared in BN1
+    returnArray = [6,7,9,11,13,24,27,28,29,30,31,32,108,109,110,111,113,114,115,126,127,128,129,133];
+    case 7:
+    // Characters that first appeared in BN2
+    returnArray = [12,14,25,33,34,35,36,37,38,39,68,69,100,101,102,112,116];
+    case 8:
+    // Characters that first appeared in BN3
+    returnArray = [1,15,26,40,41,42,43,44,45,46,47,48,49,50,51,117];
+    case 9:
+    // Characters that first appeared in BN4
+    returnArray = [16,52,53,54,55,56,57,58,59,60,61,62,66,118];
+    case 10:
+    // Characters that first appeared in BN5
+    returnArray = [8,17,63,64,65,67,70,71,72,73,74,98,105,119];
+    case 11:
+    // Characters that first appeared in BN6
+    returnArray = [18,19,75,76,77,78,79,80,81,82,83,84,85,86,106,107,132];
+    case 12:
+    // Side game/anime characters
+    returnArray = [4,5,10,87,88,89,90,91,92,93,94,95,134];
+    case 13:
+    // "A Step into the Future" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_FutureMamoru.png', 'Images_Full/Costumes/Tera_FutureMamoru.png', 'FutureMamoru', 135],
+      ['Images_Icons/Costumes/Icon_FutureLan.png', 'Images_Full/Costumes/Giga_FutureLan.png', 'FutureLan', 136],
+      ['Images_Icons/Costumes/Icon_FutureChaud.png', 'Images_Full/Costumes/Giga_FutureChaud.png', 'FutureChaud', 137],
+      ['Images_Icons/Costumes/Icon_FutureSean.png', 'Images_Full/Costumes/Mega_FutureSean.png', 'FutureSean', 138],
+      ['Images_Icons/Costumes/Icon_FutureMick.png', 'Images_Full/Costumes/Kilo_FutureMick.png', 'FutureMick', 139],
+      ['Images_Icons/Costumes/Icon_FutureTab.png', 'Images_Full/Costumes/Kilo_FutureTab.png', 'FutureTab', 140],
+      ['Images_Icons/Costumes/Icon_FutureMaylu.png', 'Images_Full/Costumes/Kilo_FutureMaylu.png', 'FutureMaylu', 141],
+      ['Images_Icons/Costumes/Icon_FutureYai.png', 'Images_Full/Costumes/Kilo_FutureYai.png', 'FutureYai', 142],
+      ['Images_Icons/Costumes/Icon_FutureDex.png', 'Images_Full/Costumes/Kilo_FutureDex.png', 'FutureDex', 143],
+      ['Images_Icons/Costumes/Icon_FutureAnetta.png', 'Images_Full/Costumes/Mega_FutureAnetta.png', 'FutureAnetta', 144]
+    ];
+    case 14:
+    // "A Step into the Past" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_PastMatch.png', 'Images_Full/Costumes/Mega_PastMatch.png', 'PastMatch', 145],
+      ['Images_Icons/Costumes/Icon_PastMadd.png', 'Images_Full/Costumes/Mega_PastMadd.png', 'PastMadd', 146],
+      ['Images_Icons/Costumes/Icon_PastCountZap.png', 'Images_Full/Costumes/Mega_PastCountZap.png', 'PastCountZap', 147],
+      ['Images_Icons/Costumes/Icon_PastYahoot.png', 'Images_Full/Costumes/Mega_PastYahoot.png', 'PastYahoot', 148],
+      ['Images_Icons/Costumes/Icon_PastYuichiro.png', 'Images_Full/Costumes/Standard_PastYuichiro.png', 'PastYuichiro', 149],
+      ['Images_Icons/Costumes/Icon_PastHaruka.png', 'Images_Full/Costumes/Standard_PastHaruka.png', 'PastHaruka', 150],
+      ['Images_Icons/Costumes/Icon_PastWily.png', 'Images_Full/Costumes/Giga_PastWily.png', 'PastWily', 151],
+      ['Images_Icons/Costumes/Icon_PastLan.png', 'Images_Full/Costumes/Giga_PastLan.png', 'PastLan', 152],
+      ['Images_Icons/Costumes/Icon_PastBass.png', 'Images_Full/Costumes/Giga_PastBass.png', 'PastBass', 153],
+      ['Images_Icons/Costumes/Icon_PastTamako.png', 'Images_Full/Costumes/Mega_PastTamako.png', 'PastTamako', 154]
+    ];
+    case 15:
+    // "New Years" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_NewYearsMatch.png', 'Images_Full/Costumes/Mega_NewYearsMatch.png', 'NewYearsMatch', 155],
+      ['Images_Icons/Costumes/Icon_NewYearsMadd.png', 'Images_Full/Costumes/Mega_NewYearsMadd.png', 'NewYearsMadd', 156],
+      ['Images_Icons/Costumes/Icon_NewYearsCountZap.png', 'Images_Full/Costumes/Mega_NewYearsCountZap.png', 'NewYearsCountZap', 157],
+      ['Images_Icons/Costumes/Icon_NewYearsYahoot.png', 'Images_Full/Costumes/Mega_NewYearsYahoot.png', 'NewYearsYahoot', 158],
+      ['Images_Icons/Costumes/Icon_NewYearsTab.png', 'Images_Full/Costumes/Kilo_NewYearsTab.png', 'NewYearsTab', 159],
+      ['Images_Icons/Costumes/Icon_NewYearsKai.png', 'Images_Full/Costumes/Mega_NewYearsKai.png', 'NewYearsKai', 160],
+      ['Images_Icons/Costumes/Icon_NewYearsTora.png', 'Images_Full/Costumes/Mega_NewYearsTora.png', 'NewYearsTora', 161],
+      ['Images_Icons/Costumes/Icon_NewYearsLilly.png', 'Images_Full/Costumes/Mega_NewYearsLilly.png', 'NewYearsLilly', 162],
+      ['Images_Icons/Costumes/Icon_NewYearsJunkMan.png', 'Images_Full/Costumes/Mega_NewYearsJunkMan.png', 'NewYearsJunkMan', 163],
+      ['Images_Icons/Costumes/Icon_NewYearsRaoul.png', 'Images_Full/Costumes/Mega_NewYearsRaoul.png', 'NewYearsRaoul', 164]
+    ];
+    case 16:
+    // "Valentines" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_ValentinesMatch.png', 'Images_Full/Costumes/Mega_ValentinesMatch.png', 'ValentinesMatch', 165],
+      ['Images_Icons/Costumes/Icon_ValentinesMadd.png', 'Images_Full/Costumes/Mega_ValentinesMadd.png', 'ValentinesMadd', 166],
+      ['Images_Icons/Costumes/Icon_ValentinesCountZap.png', 'Images_Full/Costumes/Mega_ValentinesCountZap.png', 'ValentinesCountZap', 167],
+      ['Images_Icons/Costumes/Icon_ValentinesYahoot.png', 'Images_Full/Costumes/Mega_ValentinesYahoot.png', 'ValentinesYahoot', 168],
+      ['Images_Icons/Costumes/Icon_ValentinesChaud.png', 'Images_Full/Costumes/Giga_ValentinesChaud.png', 'ValentinesChaud', 169],
+      ['Images_Icons/Costumes/Icon_ValentinesMaryTowa.png', 'Images_Full/Costumes/Mega_ValentinesMaryTowa.png', 'ValentinesMaryTowa', 170],
+      ['Images_Icons/Costumes/Icon_ValentinesMaylu.png', 'Images_Full/Costumes/Kilo_ValentinesMaylu.png', 'ValentinesMaylu', 171],
+      ['Images_Icons/Costumes/Icon_ValentinesCharlie.png', 'Images_Full/Costumes/Mega_ValentinesCharlie.png', 'ValentinesCharlie', 172],
+      ['Images_Icons/Costumes/Icon_ValentinesMillions.png', 'Images_Full/Costumes/Mega_ValentinesMillions.png', 'ValentinesMillions', 173],
+      ['Images_Icons/Costumes/Icon_ValentinesYuika.png', 'Images_Full/Costumes/Mega_ValentinesYuika.png', 'ValentinesYuika', 174]
+    ];
+    case 17:
+    // "Easter" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_EasterMatch.png', 'Images_Full/Costumes/Mega_EasterMatch.png', 'EasterMatch', 175],
+      ['Images_Icons/Costumes/Icon_EasterMadd.png', 'Images_Full/Costumes/Mega_EasterMadd.png', 'EasterMadd', 176],
+      ['Images_Icons/Costumes/Icon_EasterCountZap.png', 'Images_Full/Costumes/Mega_EasterCountZap.png', 'EasterCountZap', 177],
+      ['Images_Icons/Costumes/Icon_EasterYahoot.png', 'Images_Full/Costumes/Mega_EasterYahoot.png', 'EasterYahoot', 178],
+      ['Images_Icons/Costumes/Icon_EasterShuko.png', 'Images_Full/Costumes/Mega_EasterShuko.png', 'EasterShuko', 179],
+      ['Images_Icons/Costumes/Icon_EasterAlFerry.png', 'Images_Full/Costumes/Mega_EasterAlFerry.png', 'EasterAlFerry', 180],
+      ['Images_Icons/Costumes/Icon_EasterMoliarty.png', 'Images_Full/Costumes/Mega_EasterMoliarty.png', 'EasterMoliarty', 181],
+      ['Images_Icons/Costumes/Icon_EasterNarcy.png', 'Images_Full/Costumes/Mega_EasterNarcy.png', 'EasterNarcy', 182],
+      ['Images_Icons/Costumes/Icon_EasterArashi.png', 'Images_Full/Costumes/Mega_EasterArashi.png', 'EasterArashi', 183],
+      ['Images_Icons/Costumes/Icon_EasterBowlMan.png', 'Images_Full/Costumes/Mega_EasterBowlMan.png', 'EasterBowlMan', 184]
+    ];
+    case 18:
+    // "Fireworks Festival" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_FireworksMatch.png', 'Images_Full/Costumes/Mega_FireworksMatch.png', 'FireworksMatch', 185],
+      ['Images_Icons/Costumes/Icon_FireworksMadd.png', 'Images_Full/Costumes/Mega_FireworksMadd.png', 'FireworksMadd', 186],
+      ['Images_Icons/Costumes/Icon_FireworksCountZap.png', 'Images_Full/Costumes/Mega_FireworksCountZap.png', 'FireworksCountZap', 187],
+      ['Images_Icons/Costumes/Icon_FireworksYahoot.png', 'Images_Full/Costumes/Mega_FireworksYahoot.png', 'FireworksYahoot', 188],
+      ['Images_Icons/Costumes/Icon_FireworksNenji.png', 'Images_Full/Costumes/Mega_FireworksNenji.png', 'FireworksNenji', 189],
+      ['Images_Icons/Costumes/Icon_FireworksHigsby.png', 'Images_Full/Costumes/Mega_FireworksHigsby.png', 'FireworksHigsby', 190],
+      ['Images_Icons/Costumes/Icon_FireworksDingo.png', 'Images_Full/Costumes/Mega_FireworksDingo.png', 'FireworksDingo', 191],
+      ['Images_Icons/Costumes/Icon_FireworksStarMan.png', 'Images_Full/Costumes/Mega_FireworksStarMan.png', 'FireworksStarMan', 192],
+      ['Images_Icons/Costumes/Icon_FireworksAtsuki.png', 'Images_Full/Costumes/Mega_FireworksAtsuki.png', 'FireworksAtsuki', 193],
+      ['Images_Icons/Costumes/Icon_FireworksBombMan.png', 'Images_Full/Costumes/Mega_FireworksBombMan.png', 'FireworksBombMan', 194]
+    ];
+    case 19:
+    // "Harvest Moon" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_HarvestMatch.png', 'Images_Full/Costumes/Mega_HarvestMatch.png', 'HarvestMatch', 195],
+      ['Images_Icons/Costumes/Icon_HarvestMadd.png', 'Images_Full/Costumes/Mega_HarvestMadd.png', 'HarvestMadd', 196],
+      ['Images_Icons/Costumes/Icon_HarvestCountZap.png', 'Images_Full/Costumes/Mega_HarvestCountZap.png', 'HarvestCountZap', 197],
+      ['Images_Icons/Costumes/Icon_HarvestYahoot.png', 'Images_Full/Costumes/Mega_HarvestYahoot.png', 'HarvestYahoot', 198],
+      ['Images_Icons/Costumes/Icon_HarvestDex.png', 'Images_Full/Costumes/Kilo_HarvestDex.png', 'HarvestDex', 199],
+      ['Images_Icons/Costumes/Icon_HarvestRei.png', 'Images_Full/Costumes/Mega_HarvestRei.png', 'HarvestRei', 200],
+      ['Images_Icons/Costumes/Icon_HarvestPat.png', 'Images_Full/Costumes/Mega_HarvestPat.png', 'HarvestPat', 201],
+      ['Images_Icons/Costumes/Icon_HarvestPress.png', 'Images_Full/Costumes/Mega_HarvestPress.png', 'HarvestPress', 202],
+      ['Images_Icons/Costumes/Icon_HarvestMistMan.png', 'Images_Full/Costumes/Mega_HarvestMistMan.png', 'HarvestMistMan', 203],
+      ['Images_Icons/Costumes/Icon_HarvestYamatoMan.png', 'Images_Full/Costumes/Mega_HarvestYamatoMan.png', 'HarvestYamatoMan', 204]
+    ];
+    case 20:
+    // "Halloween" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_HalloweenMatch.png', 'Images_Full/Costumes/Mega_HalloweenMatch.png', 'HalloweenMatch', 205],
+      ['Images_Icons/Costumes/Icon_HalloweenMadd.png', 'Images_Full/Costumes/Mega_HalloweenMadd.png', 'HalloweenMadd', 206],
+      ['Images_Icons/Costumes/Icon_HalloweenCountZap.png', 'Images_Full/Costumes/Mega_HalloweenCountZap.png', 'HalloweenCountZap', 207],
+      ['Images_Icons/Costumes/Icon_HalloweenYahoot.png', 'Images_Full/Costumes/Mega_HalloweenYahoot.png', 'HalloweenYahoot', 208],
+      ['Images_Icons/Costumes/Icon_HalloweenRaika.png', 'Images_Full/Costumes/Mega_HalloweenRaika.png', 'HalloweenRaika', 209],
+      ['Images_Icons/Costumes/Icon_HalloweenLan.png', 'Images_Full/Costumes/Giga_HalloweenLan.png', 'HalloweenLan', 210],
+      ['Images_Icons/Costumes/Icon_HalloweenPlanetMan.png', 'Images_Full/Costumes/Giga_HalloweenPlanetMan.png', 'HalloweenPlanetMan', 211],
+      ['Images_Icons/Costumes/Icon_HalloweenShadeMan.png', 'Images_Full/Costumes/Mega_HalloweenShadeMan.png', 'HalloweenShadeMan', 212],
+      ['Images_Icons/Costumes/Icon_HalloweenDarkMan.png', 'Images_Full/Costumes/Mega_HalloweenDarkMan.png', 'HalloweenDarkMan', 213],
+      ['Images_Icons/Costumes/Icon_HalloweenDarkScythe.png', 'Images_Full/Costumes/Mega_HalloweenDarkScythe.png', 'HalloweenDarkScythe', 214]
+    ];
+    case 21:
+    // "Christmas" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_ChristmasMatch.png', 'Images_Full/Costumes/Mega_ChristmasMatch.png', 'ChristmasMatch', 215],
+      ['Images_Icons/Costumes/Icon_ChristmasMadd.png', 'Images_Full/Costumes/Mega_ChristmasMadd.png', 'ChristmasMadd', 216],
+      ['Images_Icons/Costumes/Icon_ChristmasCountZap.png', 'Images_Full/Costumes/Mega_ChristmasCountZap.png', 'ChristmasCountZap', 217],
+      ['Images_Icons/Costumes/Icon_ChristmasYahoot.png', 'Images_Full/Costumes/Mega_ChristmasYahootChristmasYahoot.png', 'ChristmasYahoot', 218],
+      ['Images_Icons/Costumes/Icon_ChristmasMamoru.png', 'Images_Full/Costumes/Tera_ChristmasMamoru.png', 'ChristmasMamoru', 219],
+      ['Images_Icons/Costumes/Icon_ChristmasInukai.png', 'Images_Full/Costumes/Mega_ChristmasInukai.png', 'ChristmasInukai', 220],
+      ['Images_Icons/Costumes/Icon_ChristmasJasmine.png', 'Images_Full/Costumes/Mega_ChristmasJasmine.png', 'ChristmasJasmine', 221],
+      ['Images_Icons/Costumes/Icon_ChristmasSal.png', 'Images_Full/Costumes/Mega_ChristmasSal.png', 'ChristmasSal', 222],
+      ['Images_Icons/Costumes/Icon_ChristmasMick.png', 'Images_Full/Costumes/Kilo_ChristmasMick.png', 'ChristmasMick', 223],
+      ['Images_Icons/Costumes/Icon_ChristmasLarkMan.png', 'Images_Full/Costumes/Mega_ChristmasLarkMan.png', 'ChristmasLarkMan', 224]
+    ];
+    case 22:
+    // "Hot Summer Fun" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_SummerMatch.png', 'Images_Full/Costumes/Mega_SummerMatch.png', 'SummerMatch', 225],
+      ['Images_Icons/Costumes/Icon_SummerMadd.png', 'Images_Full/Costumes/Mega_SummerMadd.png', 'SummerMadd', 226],
+      ['Images_Icons/Costumes/Icon_SummerCountZap.png', 'Images_Full/Costumes/Mega_SummerCountZap.png', 'SummerCountZap', 227],
+      ['Images_Icons/Costumes/Icon_SummerYahoot.png', 'Images_Full/Costumes/Mega_SummerYahoot.png', 'SummerYahoot', 228],
+      ['Images_Icons/Costumes/Icon_SummerSunayama.png', 'Images_Full/Costumes/Mega_SummerSunayama.png', 'SummerSunayama', 229],
+      ['Images_Icons/Costumes/Icon_SummerYai.png', 'Images_Full/Costumes/Kilo_SummerYai.png', 'SummerYai', 230],
+      ['Images_Icons/Costumes/Icon_SummerTesla.png', 'Images_Full/Costumes/Mega_SummerTesla.png', 'SummerTesla', 231],
+      ['Images_Icons/Costumes/Icon_SummerBlackbeard.png', 'Images_Full/Costumes/Mega_SummerBlackbeard.png', 'SummerBlackbeard', 232],
+      ['Images_Icons/Costumes/Icon_SummerTerry.png', 'Images_Full/Costumes/Mega_SummerTerry.png', 'SummerTerry', 233],
+      ['Images_Icons/Costumes/Icon_SummerVic.png', 'Images_Full/Costumes/Mega_SummerVic.png', 'SummerVic', 234]
+    ];
+    case 23:
+    // "Cold Winter Time" costumes
+    returnArray = [
+      ['Images_Icons/Costumes/Icon_WinterMatch.png', 'Images_Full/Costumes/Mega_WinterMatch.png', 'WinterMatch', 235],
+      ['Images_Icons/Costumes/Icon_WinterMadd.png', 'Images_Full/Costumes/Mega_WinterMadd.png', 'WinterMadd', 236],
+      ['Images_Icons/Costumes/Icon_WinterCountZap.png', 'Images_Full/Costumes/Mega_WinterCountZap.png', 'WinterCountZap', 237],
+      ['Images_Icons/Costumes/Icon_WinterYahoot.png', 'Images_Full/Costumes/Mega_WinterYahoot.png', 'WinterYahoot', 238],
+      ['Images_Icons/Costumes/Icon_WinterIvanChillski.png', 'Images_Full/Costumes/Mega_WinterIvanChillski.png', 'WinterIvanChillski', 239],
+      ['Images_Icons/Costumes/Icon_WinterBlizzardMan.png', 'Images_Full/Costumes/Mega_WinterBlizzardMan.png', 'WinterBlizzardMan', 240],
+      ['Images_Icons/Costumes/Icon_WinterFroid.png', 'Images_Full/Costumes/Mega_WinterFroid.png', 'WinterFroid', 241],
+      ['Images_Icons/Costumes/Icon_WinterBaryl.png', 'Images_Full/Costumes/Giga_WinterBaryl.png', 'WinterBaryl', 242],
+      ['Images_Icons/Costumes/Icon_WinterPharaohMan.png', 'Images_Full/Costumes/Giga_WinterPharaohMan.png', 'WinterPharaohMan', 243],
+      ['Images_Icons/Costumes/Icon_WinterPride.png', 'Images_Full/Costumes/Mega_WinterPride.png', 'WinterPride', 244]
+    ];
+    default:
+    // ???
+  }
+
+  return returnArray;
+}
+
+function bannerThemeRank(themeArray, i) {
+  // This will search through the existing arrays for a random specific character.
+  // Grab a random value from the theme array, and use it to get an existing character from the tier arrays.
+  selectedCharacter = themeArray[Math.floor(Math.random() * themeArray.length)];
+
+  let j = 0;
+
+  while (j < teraRank.length){
+    if (selectedCharacter == teraRank[j][3])
+    {
+      document.getElementById("iconDisplay" + i).src = teraRank[j][0];
+      document.getElementById("iconDisplay" + i).longdesc = teraRank[j][1];
+      document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                        + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                        + "<br>" + teraRank[j][2];
+
+      return selectedCharacter;
+    }
+
+    j++;
+  }
+
+  j = 0;
+
+  while (j < gigaRank.length){
+    if (selectedCharacter == gigaRank[j][3])
+    {
+      document.getElementById("iconDisplay" + i).src = gigaRank[j][0];
+      document.getElementById("iconDisplay" + i).longdesc = gigaRank[j][1];
+      document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                        + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                        + "<br>" + gigaRank[j][2];
+
+      return selectedCharacter;
+    }
+
+    j++;
+  }
+
+  j = 0;
+
+  while (j < megaRank.length){
+    if (selectedCharacter == megaRank[j][3])
+    {
+      document.getElementById("iconDisplay" + i).src = megaRank[j][0];
+      document.getElementById("iconDisplay" + i).longdesc = megaRank[j][1];
+      document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                        + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                        + "<br>" + megaRank[j][2];
+
+      return selectedCharacter;
+    }
+
+    j++;
+  }
+
+  j = 0;
+
+  while (j < kiloRank.length){
+    if (selectedCharacter == kiloRank[j][3])
+    {
+      document.getElementById("iconDisplay" + i).src = kiloRank[j][0];
+      document.getElementById("iconDisplay" + i).longdesc = kiloRank[j][1];
+      document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                        + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                        + "<br>" + kiloRank[j][2];
+
+      return selectedCharacter;
+    }
+
+    j++;
+  }
+
+  j = 0;
+
+  while (j < standardRank.length){
+    if (selectedCharacter == standardRank[j][3])
+    {
+      document.getElementById("iconDisplay" + i).src = standardRank[j][0];
+      document.getElementById("iconDisplay" + i).longdesc = standardRank[j][1];
+      document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                        + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                        + "<br>" + standardRank[j][2];
+
+      return selectedCharacter;
+    }
+  }
+}
+
+function bannerCostumeRank(costumeArray, i) {
+  // Grab a random character from the chosen costume array.
+  selectedCharacter = Math.floor(Math.random() * costumeArray.length);
+
+  document.getElementById("iconDisplay" + i).src = costumeArray[selectedCharacter][0];
+  document.getElementById("iconDisplay" + i).longdesc = costumeArray[selectedCharacter][1];
+  document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                    + parseInt(sessionStorage.getItem("iconDisplay" + i))
+                                                    + "<br>" + costumeArray[selectedCharacter][2];
+
+  return selectedCharacter;
+}
+
+function newSpecialPull_Theme(input, themeName) {
+  // A function for the special themed banners, which gives increased chances for characters
+  // that fit a certain themed (from a particular game, member of a particular group, etc.)
+  // This includes the costume banners as well.
+  // "input" determines which themed array of characters to use.
+
+  pullPrice = 0;
+
+  if (input < 13)
+  {
+    // If the input is for the first 13 arrays (0 to 12), then the pull is for the character theme pulls.
+    pullPrice = 200;
+  }
+  else {
+    // Otherwise, the pull is for the special costume banners instead.
+    pullPrice = 250;
+  }
+
+  if (parseInt(sessionStorage.getItem("currency")) < pullPrice) {
+    // Only do a pull if the user has enough currency.
+    document.getElementById("pullButton").innerHTML = "You need more currency!!";
+    resetOnPull();
+  } else {
+    // Grab the specific array to use for this function call.
+    var themeArray = [];
+    themeArray = getThemeArray(input);
+
+    // Check the True Gacha Mode to see what rates to use.
+    themeRate = 0;
+    teraRate = 0;
+    gigaRate = 0;
+
+    if (retrieveTrueGacha()){
+      themeRate = 999;
+      teraRate = 998;
+      gigaRate = 991;
+    } else {
+      themeRate = 970;
+      teraRate = 950;
+      gigaRate = 850;
+    }
+
+    var randomNumber;
+    let i = 1; // Have to start at 1 due to how the img id is set on the page.
+    let obtained = false;
+
+    // Use an array to keep track of the character per pull.
+    var pullEntry = [];
+    characterValue = 0;
+
+    // Make use of variable i to populate all of the iconDisplays in the 10+1 pull page.
+    while (i < 12) {
+      // Set the random number in the while-loop, so it can be different on each loop.
+      randomNumber = Math.floor((Math.random() * 1000) + 1);
+
+      if (randomNumber >= themeRate) {
+        // Improved rate for the banner theme specifically.
+        // Check if we're pulling from the existing characters or the special costume arrays.
+
+        if (input < 13) {
+          characterValue = bannerThemeRank(themeArray, i);
+        }
+        else {
+          characterValue = bannerCostumeRank(themeArray, i);
+        }
+
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+
+        obtained = true;
+      }
+      if (randomNumber >= teraRate) {
+        // Improved rate for the banner character specifically.
+        characterValue = bannerTeraRank(Math.floor(Math.random() * teraRank.length), i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      } else if (randomNumber >= gigaRate) {
+        // Giga character rates stay the same.
+        characterValue = bannerGigaRank(Math.floor(Math.random() * gigaRank.length), i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      } else {
+        characterValue = megaKiloAndStandardRank(randomNumber, i);
+        updateCharacterCount(characterValue);
+        pullEntry.push(characterValue);
+      }
+
+      i++;
+    }
+
+    specialPullMessages(obtained, themeName);
+    resetOnPull();
+    updateSessionVariables(pullPrice); // Update the tracker variables with the new pull.
     updatePagePulls();
     updatePullHistory(pullEntry);
   }
