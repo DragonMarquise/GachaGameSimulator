@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Shows the  title in the browser's tab for this page -->
+        <title>Gacha Game Simulator</title>
+        <link rel="stylesheet" href="gachaStyle.css">
+    </head>
+    <body class="gallery">
+        <h1>Gacha Game Simulator: Full Gallery</h1>
+        <div>
+          <br>
+        </div>
+
+        <a href="index.html">Back to Main Page</a>
+        <div>
+          <br>
+        </div>
+
+        <div>Here, you can view special costume art of the characters featured in this simulator. No need to keep doing pulls!<br>
+          Each button below is for one of the specific themes shown in this gacha. Click on a button to view costumes<br>for the selected theme!</div>
+        <div>
+          <br>
+        </div>
+
+        <table>
+          <tr>
+            <td style="padding-right: 150px;">
+              <button onclick="loadingCostumeGallery(13)">A Step into the Future</button>
+              <button onclick="loadingCostumeGallery(14)">A Step into the Past</button>
+              <button onclick="loadingCostumeGallery(15)">New Years</button>
+              <button onclick="loadingCostumeGallery(16)">Valentines</button>
+              <button onclick="loadingCostumeGallery(17)">Easter</button>
+            </td>
+          </tr>
+          <tr>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button onclick="loadingCostumeGallery(18)">Fireworks Festival</button>
+              <button onclick="loadingCostumeGallery(19)">Harvest Moon</button>
+              <button onclick="loadingCostumeGallery(20)">Halloween</button>
+              <button onclick="loadingCostumeGallery(21)">Christmas</button>
+              <button onclick="loadingCostumeGallery(22)">Hot Summer Fun</button>
+              <button onclick="loadingCostumeGallery(23)">Cold Winter Time</button>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <br>
+        </div>
+
+        <div>Click on an icon to view the full image on the right, along with the number of copies obtained and their descriptions.</div>
+        <div>
+          <br>
+          <hr>
+        </div>
+
+        <table>
+          <tr>
+            <td colspan="4">
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" id="bannerMessage" style="text-align: center; vertical-align: middle;">...</td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <hr>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+              <img id="iconDisplay0" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay0')">
+              <img id="iconDisplay1" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay1')">
+              <img id="iconDisplay2" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay2')">
+              <br>
+              <img id="iconDisplay3" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay3')">
+              <img id="iconDisplay4" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay4')">
+              <img id="iconDisplay5" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay5')">
+              <br>
+              <img id="iconDisplay6" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay6')">
+              <img id="iconDisplay7" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay7')">
+              <img id="iconDisplay8" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay8')">
+              <br>
+              <img id="iconDisplay9" src="Images_Icons/Icon_Placeholder.png" width="100" height="100" onclick="displayFullImage('iconDisplay9')">
+            </td>
+            <td style="vertical-align: top;" height="600">
+              <img id="fullDisplay" src="Images_Icons/Icon_Placeholder.png" width="500" height="500">
+              <br>
+              <div id="descriptionSelect" style="text-align: center; vertical-align: middle;" height="100">
+                A description about the selected character will appear here.
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <script src="gachaMagic.js"></script>
+          <!-- Don't need any on load scripts here, it's handled by the button selections instead. -->
+    </body>
+</html>

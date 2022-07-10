@@ -32,7 +32,11 @@ function updateTracker() {
   // would be in within the Gallery.
   // If the first one isn't already populated, then that means the others aren't as well.
   if (sessionStorage.getItem("iconDisplay1") == null) {
-    var totalCharacters = teraRank.length + gigaRank.length + megaRank.length + kiloRank.length + standardRank.length;
+    var totalCharacters = teraRank.length + gigaRank.length + megaRank.length + kiloRank.length + standardRank.length + 110;
+    // Note that the 110 represents the total number of costumes. The total is used here instead of having to retrieve the full
+    // arrays just to get their length. Each array has 10 costumes, and there are 11 themes total. If additional costumes/themes
+    // are added in the future, this number will need to be updated accordingly.
+
     var i = 1;
     while (i <= totalCharacters) {
       sessionStorage.setItem("iconDisplay" + i, 0);
@@ -1412,6 +1416,21 @@ function loadingGallery() {
   }
 }
 
+function loadingCostumeGallery(input) {
+  // This is specifically for the Costume Gallery. Input is an int representing which costume array
+  // to load for the images. All costume themes should be limited to 10 costumes each.
+  var themeArray = [];
+  themeArray = getThemeArray(input);
+
+  for (var i = 0; i < themeArray.length; i++){
+    document.getElementById("iconDisplay" + i).src = themeArray[i][0];
+    document.getElementById("iconDisplay" + i).longdesc = themeArray[i][1];
+    document.getElementById("iconDisplay" + i).alt = "Number of copies obtained: "
+                                                      + parseInt(sessionStorage.getItem("iconDisplay" + themeArray[i][3]))
+                                                      + "<br>" + themeArray[i][2];
+  }
+}
+
 function currencyGenerator() {
   // Increase the player's currency by a random amount. Note that anything stored in sessionStorage
   // comes out as a string, so the currency value needs to be converted into an int.
@@ -1539,13 +1558,182 @@ function createImg(character, image) {
     }
   }
 
-  // If still no match was found, then finally check the standardRank array.
+  // If still no match was found, then check the standardRank array.
   if (!matchFound) {
     for (x = 0; x < standardRank.length; x++) {
       if (standardRank[x][3] == character) {
         imgNode.src = standardRank[x][0];
         imgNode.longdesc = standardRank[x][1];
         imgNode.alt = standardRank[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  // At this point if matchFound is still false, that means it must be in one of the costume arrays.
+
+  var themeArray = [];
+
+  if (!matchFound) {
+    themeArray = getThemeArray(13);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(14);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(15);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(16);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(17);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(18);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(19);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(20);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(21);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(22);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
+
+        matchFound = true;
+        break;
+      }
+    }
+  }
+
+  if (!matchFound) {
+    themeArray = getThemeArray(21);
+
+    for (x = 0; x < themeArray.length; x++) {
+      if (themeArray[x][3] == character) {
+        imgNode.src = themeArray[x][0];
+        imgNode.longdesc = themeArray[x][1];
+        imgNode.alt = themeArray[x][2];
 
         matchFound = true;
         break;
