@@ -91,126 +91,127 @@ const gigaRank = [
   ['Images_Icons/2_GigaIcons/Icon_Count.png', 'Images_Full/2_Giga/Giga_Count.png', 'Giga_Count', 21],
   ['Images_Icons/2_GigaIcons/Icon_ShootingStars.png', 'Images_Full/2_Giga/Giga_ShootingStars.png', 'Giga_ShootingStars', 22],
   ['Images_Icons/2_GigaIcons/Icon_Wan.png', 'Images_Full/2_Giga/Giga_Wan.png', 'Giga_Wan', 23],
-  ['Images_Icons/2_GigaIcons/Icon_Wily.png', 'Images_Full/2_Giga/Giga_Wily.png', 'Giga_Wily', 24]
+  ['Images_Icons/2_GigaIcons/Icon_Wily.png', 'Images_Full/2_Giga/Giga_Wily.png', 'Giga_Wily', 24],
+  ['Images_Icons/2_GigaIcons/Icon_TrojanHorse.png', 'Images_Full/2_Giga/Giga_TrojanHorse.png', 'Giga_TrojanHorse', 25]
 ]
 
 const megaRank = [
-  ['Images_Icons/3_MegaIcons/Icon_FireMan.png', 'Images_Full/3_Mega/Mega_FireMan.png', 'Mega_FireMan', 25],
-  ['Images_Icons/3_MegaIcons/Icon_HeatMan.png', 'Images_Full/3_Mega/Mega_HeatMan.png', 'Mega_HeatMan', 26],
-  ['Images_Icons/3_MegaIcons/Icon_FlameMan.png', 'Images_Full/3_Mega/Mega_FlameMan.png', 'Mega_FlameMan', 27],
-  ['Images_Icons/3_MegaIcons/Icon_Madd.png', 'Images_Full/3_Mega/Mega_Madd.png', 'Mega_Madd', 28],
-  ['Images_Icons/3_MegaIcons/Icon_CountZap.png', 'Images_Full/3_Mega/Mega_CountZap.png', 'Mega_CountZap', 29],
-  ['Images_Icons/3_MegaIcons/Icon_Yahoot.png', 'Images_Full/3_Mega/Mega_Yahoot.png', 'Mega_Yahoot', 30],
-  ['Images_Icons/3_MegaIcons/Icon_StoneMan.png', 'Images_Full/3_Mega/Mega_StoneMan.png', 'Mega_StoneMan', 31],
-  ['Images_Icons/3_MegaIcons/Icon_BombMan.png', 'Images_Full/3_Mega/Mega_BombMan.png', 'Mega_BombMan', 32],
-  ['Images_Icons/3_MegaIcons/Icon_Froid.png', 'Images_Full/3_Mega/Mega_Froid.png', 'Mega_Froid', 33],
-  ['Images_Icons/3_MegaIcons/Icon_Arashi.png', 'Images_Full/3_Mega/Mega_Arashi.png', 'Mega_Arashi', 34],
-  ['Images_Icons/3_MegaIcons/Icon_Dave.png', 'Images_Full/3_Mega/Mega_Dave.png', 'Mega_Dave', 35],
-  ['Images_Icons/3_MegaIcons/Icon_CutMan.png', 'Images_Full/3_Mega/Mega_CutMan.png', 'Mega_CutMan', 36],
-  ['Images_Icons/3_MegaIcons/Icon_Gauss.png', 'Images_Full/3_Mega/Mega_Gauss.png', 'Mega_Gauss', 37],
-  ['Images_Icons/3_MegaIcons/Icon_Sean.png', 'Images_Full/3_Mega/Mega_Sean.png', 'Mega_Sean', 38],
-  ['Images_Icons/3_MegaIcons/Icon_Raoul.png', 'Images_Full/3_Mega/Mega_Raoul.png', 'Mega_Raoul', 39],
-  ['Images_Icons/3_MegaIcons/Icon_Millions.png', 'Images_Full/3_Mega/Mega_Millions.png', 'Mega_Millions', 40],
-  ['Images_Icons/3_MegaIcons/Icon_Rei.png', 'Images_Full/3_Mega/Mega_Rei.png', 'Mega_Rei', 41],
-  ['Images_Icons/3_MegaIcons/Icon_Inukai.png', 'Images_Full/3_Mega/Mega_Inukai.png', 'Mega_Inukai', 42],
-  ['Images_Icons/3_MegaIcons/Icon_BubbleMan.png', 'Images_Full/3_Mega/Mega_BubbleMan.png', 'Mega_BubbleMan', 43],
-  ['Images_Icons/3_MegaIcons/Icon_Tamako.png', 'Images_Full/3_Mega/Mega_Tamako.png', 'Mega_Tamako', 44],
-  ['Images_Icons/3_MegaIcons/Icon_Tora.png', 'Images_Full/3_Mega/Mega_Tora.png', 'Mega_Tora', 45],
-  ['Images_Icons/3_MegaIcons/Icon_Sunayama.png', 'Images_Full/3_Mega/Mega_Sunayama.png', 'Mega_Sunayama', 46],
-  ['Images_Icons/3_MegaIcons/Icon_Anetta.png', 'Images_Full/3_Mega/Mega_Anetta.png', 'Mega_Anetta', 47],
-  ['Images_Icons/3_MegaIcons/Icon_MistMan.png', 'Images_Full/3_Mega/Mega_MistMan.png', 'Mega_MistMan', 48],
-  ['Images_Icons/3_MegaIcons/Icon_BowlMan.png', 'Images_Full/3_Mega/Mega_BowlMan.png', 'Mega_BowlMan', 49],
-  ['Images_Icons/3_MegaIcons/Icon_DrillMan.png', 'Images_Full/3_Mega/Mega_DrillMan.png', 'Mega_DrillMan', 50],
-  ['Images_Icons/3_MegaIcons/Icon_DarkMan.png', 'Images_Full/3_Mega/Mega_DarkMan.png', 'Mega_DarkMan', 51],
-  ['Images_Icons/3_MegaIcons/Icon_YamatoMan.png', 'Images_Full/3_Mega/Mega_YamatoMan.png', 'Mega_YamatoMan', 52],
-  ['Images_Icons/3_MegaIcons/Icon_ShadeMan.png', 'Images_Full/3_Mega/Mega_ShadeMan.png', 'Mega_ShadeMan', 53],
-  ['Images_Icons/3_MegaIcons/Icon_Shuko.png', 'Images_Full/3_Mega/Mega_Shuko.png', 'Mega_Shuko', 54],
-  ['Images_Icons/3_MegaIcons/Icon_Terry.png', 'Images_Full/3_Mega/Mega_Terry.png', 'Mega_Terry', 55],
-  ['Images_Icons/3_MegaIcons/Icon_TopMan.png', 'Images_Full/3_Mega/Mega_TopMan.png', 'Mega_TopMan', 56],
-  ['Images_Icons/3_MegaIcons/Icon_KiteMan.png', 'Images_Full/3_Mega/Mega_KiteMan.png', 'Mega_KiteMan', 57],
-  ['Images_Icons/3_MegaIcons/Icon_Atsuki.png', 'Images_Full/3_Mega/Mega_Atsuki.png', 'Mega_Atsuki', 58],
-  ['Images_Icons/3_MegaIcons/Icon_Narcy.png', 'Images_Full/3_Mega/Mega_Narcy.png', 'Mega_Narcy', 59],
-  ['Images_Icons/3_MegaIcons/Icon_Lilly.png', 'Images_Full/3_Mega/Mega_Lilly.png', 'Mega_Lilly', 60],
-  ['Images_Icons/3_MegaIcons/Icon_IvanChillski.png', 'Images_Full/3_Mega/Mega_IvanChillski.png', 'Mega_IvanChillski', 61],
-  ['Images_Icons/3_MegaIcons/Icon_JunkMan.png', 'Images_Full/3_Mega/Mega_JunkMan.png', 'Mega_JunkMan', 62],
-  ['Images_Icons/3_MegaIcons/Icon_Regal.png', 'Images_Full/3_Mega/Mega_Regal.png', 'Mega_Regal', 63],
-  ['Images_Icons/3_MegaIcons/Icon_Tesla.png', 'Images_Full/3_Mega/Mega_Tesla.png', 'Mega_Tesla', 64],
-  ['Images_Icons/3_MegaIcons/Icon_Charlie.png', 'Images_Full/3_Mega/Mega_Charlie.png', 'Mega_Charlie', 65],
-  ['Images_Icons/3_MegaIcons/Icon_Nenji.png', 'Images_Full/3_Mega/Mega_Nenji.png', 'Mega_Nenji', 66],
-  ['Images_Icons/3_MegaIcons/Icon_Raika.png', 'Images_Full/3_Mega/Mega_Raika.png', 'Mega_Raika', 67],
-  ['Images_Icons/3_MegaIcons/Icon_Jasmine.png', 'Images_Full/3_Mega/Mega_Jasmine.png', 'Mega_Jasmine', 68],
-  ['Images_Icons/3_MegaIcons/Icon_Pride.png', 'Images_Full/3_Mega/Mega_Pride.png', 'Mega_Pride', 69],
-  ['Images_Icons/3_MegaIcons/Icon_Dusk.png', 'Images_Full/3_Mega/Mega_Dusk.png', 'Mega_Dusk', 70],
-  ['Images_Icons/3_MegaIcons/Icon_Dingo.png', 'Images_Full/3_Mega/Mega_Dingo.png', 'Mega_Dingo', 71],
-  ['Images_Icons/3_MegaIcons/Icon_LarkMan.png', 'Images_Full/3_Mega/Mega_LarkMan.png', 'Mega_LarkMan', 72],
-  ['Images_Icons/3_MegaIcons/Icon_BlizzardMan.png', 'Images_Full/3_Mega/Mega_BlizzardMan.png', 'Mega_BlizzardMan', 73],
-  ['Images_Icons/3_MegaIcons/Icon_CloudMan.png', 'Images_Full/3_Mega/Mega_CloudMan.png', 'Mega_CloudMan', 74],
-  ['Images_Icons/3_MegaIcons/Icon_CosmoMan.png', 'Images_Full/3_Mega/Mega_CosmoMan.png', 'Mega_CosmoMan', 75],
-  ['Images_Icons/3_MegaIcons/Icon_Pat.png', 'Images_Full/3_Mega/Mega_Pat.png', 'Mega_Pat', 76],
-  ['Images_Icons/3_MegaIcons/Icon_AnnZap.png', 'Images_Full/3_Mega/Mega_AnnZap.png', 'Mega_AnnZap', 77],
-  ['Images_Icons/3_MegaIcons/Icon_DarkScythe.png', 'Images_Full/3_Mega/Mega_DarkScythe.png', 'Mega_DarkScythe', 78],
-  ['Images_Icons/3_MegaIcons/Icon_AlFerry.png', 'Images_Full/3_Mega/Mega_AlFerry.png', 'Mega_AlFerry', 79],
-  ['Images_Icons/3_MegaIcons/Icon_Master.png', 'Images_Full/3_Mega/Mega_Master.png', 'Mega_Master', 80],
-  ['Images_Icons/3_MegaIcons/Icon_Moliarty.png', 'Images_Full/3_Mega/Mega_Moliarty.png', 'Mega_Moliarty', 81],
-  ['Images_Icons/3_MegaIcons/Icon_Press.png', 'Images_Full/3_Mega/Mega_Press.png', 'Mega_Press', 82],
-  ['Images_Icons/3_MegaIcons/Icon_JoeMach.png', 'Images_Full/3_Mega/Mega_JoeMach.png', 'Mega_JoeMach', 83],
-  ['Images_Icons/3_MegaIcons/Icon_Blackbeard.png', 'Images_Full/3_Mega/Mega_Blackbeard.png', 'Mega_Blackbeard', 84],
-  ['Images_Icons/3_MegaIcons/Icon_Yuika.png', 'Images_Full/3_Mega/Mega_Yuika.png', 'Mega_Yuika', 85],
-  ['Images_Icons/3_MegaIcons/Icon_Ito.png', 'Images_Full/3_Mega/Mega_Ito.png', 'Mega_Ito', 86],
-  ['Images_Icons/3_MegaIcons/Icon_Vic.png', 'Images_Full/3_Mega/Mega_Vic.png', 'Mega_Vic', 87],
-  ['Images_Icons/3_MegaIcons/Icon_HatMan.png', 'Images_Full/3_Mega/Mega_HatMan.png', 'Mega_HatMan', 88],
-  ['Images_Icons/3_MegaIcons/Icon_MaryTowa.png', 'Images_Full/3_Mega/Mega_MaryTowa.png', 'Mega_MaryTowa', 89],
-  ['Images_Icons/3_MegaIcons/Icon_Kai.png', 'Images_Full/3_Mega/Mega_Kai.png', 'Mega_Kai', 90],
-  ['Images_Icons/3_MegaIcons/Icon_Sherrice.png', 'Images_Full/3_Mega/Mega_Sherrice.png', 'Mega_Sherrice', 91],
-  ['Images_Icons/3_MegaIcons/Icon_BrightMan.png', 'Images_Full/3_Mega/Mega_BrightMan.png', 'Mega_BrightMan', 92],
-  ['Images_Icons/3_MegaIcons/Icon_GravityMan.png', 'Images_Full/3_Mega/Mega_GravityMan.png', 'Mega_GravityMan', 93],
-  ['Images_Icons/3_MegaIcons/Icon_NeedleMan.png', 'Images_Full/3_Mega/Mega_NeedleMan.png', 'Mega_NeedleMan', 94],
-  ['Images_Icons/3_MegaIcons/Icon_SwordMan.png', 'Images_Full/3_Mega/Mega_SwordMan.png', 'Mega_SwordMan', 95],
-  ['Images_Icons/3_MegaIcons/Icon_StarMan.png', 'Images_Full/3_Mega/Mega_StarMan.png', 'Mega_StarMan', 96],
-  ['Images_Icons/3_MegaIcons/Icon_Professor.png', 'Images_Full/3_Mega/Mega_Professor.png', 'Mega_Professor', 97]
+  ['Images_Icons/3_MegaIcons/Icon_FireMan.png', 'Images_Full/3_Mega/Mega_FireMan.png', 'Mega_FireMan', 26],
+  ['Images_Icons/3_MegaIcons/Icon_HeatMan.png', 'Images_Full/3_Mega/Mega_HeatMan.png', 'Mega_HeatMan', 27],
+  ['Images_Icons/3_MegaIcons/Icon_FlameMan.png', 'Images_Full/3_Mega/Mega_FlameMan.png', 'Mega_FlameMan', 28],
+  ['Images_Icons/3_MegaIcons/Icon_Madd.png', 'Images_Full/3_Mega/Mega_Madd.png', 'Mega_Madd', 29],
+  ['Images_Icons/3_MegaIcons/Icon_CountZap.png', 'Images_Full/3_Mega/Mega_CountZap.png', 'Mega_CountZap', 30],
+  ['Images_Icons/3_MegaIcons/Icon_Yahoot.png', 'Images_Full/3_Mega/Mega_Yahoot.png', 'Mega_Yahoot', 31],
+  ['Images_Icons/3_MegaIcons/Icon_StoneMan.png', 'Images_Full/3_Mega/Mega_StoneMan.png', 'Mega_StoneMan', 32],
+  ['Images_Icons/3_MegaIcons/Icon_BombMan.png', 'Images_Full/3_Mega/Mega_BombMan.png', 'Mega_BombMan', 33],
+  ['Images_Icons/3_MegaIcons/Icon_Froid.png', 'Images_Full/3_Mega/Mega_Froid.png', 'Mega_Froid', 34],
+  ['Images_Icons/3_MegaIcons/Icon_Arashi.png', 'Images_Full/3_Mega/Mega_Arashi.png', 'Mega_Arashi', 35],
+  ['Images_Icons/3_MegaIcons/Icon_Dave.png', 'Images_Full/3_Mega/Mega_Dave.png', 'Mega_Dave', 36],
+  ['Images_Icons/3_MegaIcons/Icon_CutMan.png', 'Images_Full/3_Mega/Mega_CutMan.png', 'Mega_CutMan', 37],
+  ['Images_Icons/3_MegaIcons/Icon_Gauss.png', 'Images_Full/3_Mega/Mega_Gauss.png', 'Mega_Gauss', 38],
+  ['Images_Icons/3_MegaIcons/Icon_Sean.png', 'Images_Full/3_Mega/Mega_Sean.png', 'Mega_Sean', 39],
+  ['Images_Icons/3_MegaIcons/Icon_Raoul.png', 'Images_Full/3_Mega/Mega_Raoul.png', 'Mega_Raoul', 40],
+  ['Images_Icons/3_MegaIcons/Icon_Millions.png', 'Images_Full/3_Mega/Mega_Millions.png', 'Mega_Millions', 41],
+  ['Images_Icons/3_MegaIcons/Icon_Rei.png', 'Images_Full/3_Mega/Mega_Rei.png', 'Mega_Rei', 42],
+  ['Images_Icons/3_MegaIcons/Icon_Inukai.png', 'Images_Full/3_Mega/Mega_Inukai.png', 'Mega_Inukai', 43],
+  ['Images_Icons/3_MegaIcons/Icon_BubbleMan.png', 'Images_Full/3_Mega/Mega_BubbleMan.png', 'Mega_BubbleMan', 44],
+  ['Images_Icons/3_MegaIcons/Icon_Tamako.png', 'Images_Full/3_Mega/Mega_Tamako.png', 'Mega_Tamako', 45],
+  ['Images_Icons/3_MegaIcons/Icon_Tora.png', 'Images_Full/3_Mega/Mega_Tora.png', 'Mega_Tora', 46],
+  ['Images_Icons/3_MegaIcons/Icon_Sunayama.png', 'Images_Full/3_Mega/Mega_Sunayama.png', 'Mega_Sunayama', 47],
+  ['Images_Icons/3_MegaIcons/Icon_Anetta.png', 'Images_Full/3_Mega/Mega_Anetta.png', 'Mega_Anetta', 48],
+  ['Images_Icons/3_MegaIcons/Icon_MistMan.png', 'Images_Full/3_Mega/Mega_MistMan.png', 'Mega_MistMan', 49],
+  ['Images_Icons/3_MegaIcons/Icon_BowlMan.png', 'Images_Full/3_Mega/Mega_BowlMan.png', 'Mega_BowlMan', 50],
+  ['Images_Icons/3_MegaIcons/Icon_DrillMan.png', 'Images_Full/3_Mega/Mega_DrillMan.png', 'Mega_DrillMan', 51],
+  ['Images_Icons/3_MegaIcons/Icon_DarkMan.png', 'Images_Full/3_Mega/Mega_DarkMan.png', 'Mega_DarkMan', 52],
+  ['Images_Icons/3_MegaIcons/Icon_YamatoMan.png', 'Images_Full/3_Mega/Mega_YamatoMan.png', 'Mega_YamatoMan', 53],
+  ['Images_Icons/3_MegaIcons/Icon_ShadeMan.png', 'Images_Full/3_Mega/Mega_ShadeMan.png', 'Mega_ShadeMan', 54],
+  ['Images_Icons/3_MegaIcons/Icon_Shuko.png', 'Images_Full/3_Mega/Mega_Shuko.png', 'Mega_Shuko', 55],
+  ['Images_Icons/3_MegaIcons/Icon_Terry.png', 'Images_Full/3_Mega/Mega_Terry.png', 'Mega_Terry', 56],
+  ['Images_Icons/3_MegaIcons/Icon_TopMan.png', 'Images_Full/3_Mega/Mega_TopMan.png', 'Mega_TopMan', 57],
+  ['Images_Icons/3_MegaIcons/Icon_KiteMan.png', 'Images_Full/3_Mega/Mega_KiteMan.png', 'Mega_KiteMan', 58],
+  ['Images_Icons/3_MegaIcons/Icon_Atsuki.png', 'Images_Full/3_Mega/Mega_Atsuki.png', 'Mega_Atsuki', 59],
+  ['Images_Icons/3_MegaIcons/Icon_Narcy.png', 'Images_Full/3_Mega/Mega_Narcy.png', 'Mega_Narcy', 60],
+  ['Images_Icons/3_MegaIcons/Icon_Lilly.png', 'Images_Full/3_Mega/Mega_Lilly.png', 'Mega_Lilly', 61],
+  ['Images_Icons/3_MegaIcons/Icon_IvanChillski.png', 'Images_Full/3_Mega/Mega_IvanChillski.png', 'Mega_IvanChillski', 62],
+  ['Images_Icons/3_MegaIcons/Icon_JunkMan.png', 'Images_Full/3_Mega/Mega_JunkMan.png', 'Mega_JunkMan', 63],
+  ['Images_Icons/3_MegaIcons/Icon_Regal.png', 'Images_Full/3_Mega/Mega_Regal.png', 'Mega_Regal', 64],
+  ['Images_Icons/3_MegaIcons/Icon_Tesla.png', 'Images_Full/3_Mega/Mega_Tesla.png', 'Mega_Tesla', 65],
+  ['Images_Icons/3_MegaIcons/Icon_Charlie.png', 'Images_Full/3_Mega/Mega_Charlie.png', 'Mega_Charlie', 66],
+  ['Images_Icons/3_MegaIcons/Icon_Nenji.png', 'Images_Full/3_Mega/Mega_Nenji.png', 'Mega_Nenji', 67],
+  ['Images_Icons/3_MegaIcons/Icon_Raika.png', 'Images_Full/3_Mega/Mega_Raika.png', 'Mega_Raika', 68],
+  ['Images_Icons/3_MegaIcons/Icon_Jasmine.png', 'Images_Full/3_Mega/Mega_Jasmine.png', 'Mega_Jasmine', 69],
+  ['Images_Icons/3_MegaIcons/Icon_Pride.png', 'Images_Full/3_Mega/Mega_Pride.png', 'Mega_Pride', 70],
+  ['Images_Icons/3_MegaIcons/Icon_Dusk.png', 'Images_Full/3_Mega/Mega_Dusk.png', 'Mega_Dusk', 71],
+  ['Images_Icons/3_MegaIcons/Icon_Dingo.png', 'Images_Full/3_Mega/Mega_Dingo.png', 'Mega_Dingo', 72],
+  ['Images_Icons/3_MegaIcons/Icon_LarkMan.png', 'Images_Full/3_Mega/Mega_LarkMan.png', 'Mega_LarkMan', 73],
+  ['Images_Icons/3_MegaIcons/Icon_BlizzardMan.png', 'Images_Full/3_Mega/Mega_BlizzardMan.png', 'Mega_BlizzardMan', 74],
+  ['Images_Icons/3_MegaIcons/Icon_CloudMan.png', 'Images_Full/3_Mega/Mega_CloudMan.png', 'Mega_CloudMan', 75],
+  ['Images_Icons/3_MegaIcons/Icon_CosmoMan.png', 'Images_Full/3_Mega/Mega_CosmoMan.png', 'Mega_CosmoMan', 76],
+  ['Images_Icons/3_MegaIcons/Icon_Pat.png', 'Images_Full/3_Mega/Mega_Pat.png', 'Mega_Pat', 77],
+  ['Images_Icons/3_MegaIcons/Icon_AnnZap.png', 'Images_Full/3_Mega/Mega_AnnZap.png', 'Mega_AnnZap', 78],
+  ['Images_Icons/3_MegaIcons/Icon_DarkScythe.png', 'Images_Full/3_Mega/Mega_DarkScythe.png', 'Mega_DarkScythe', 79],
+  ['Images_Icons/3_MegaIcons/Icon_AlFerry.png', 'Images_Full/3_Mega/Mega_AlFerry.png', 'Mega_AlFerry', 80],
+  ['Images_Icons/3_MegaIcons/Icon_Master.png', 'Images_Full/3_Mega/Mega_Master.png', 'Mega_Master', 81],
+  ['Images_Icons/3_MegaIcons/Icon_Moliarty.png', 'Images_Full/3_Mega/Mega_Moliarty.png', 'Mega_Moliarty', 82],
+  ['Images_Icons/3_MegaIcons/Icon_Press.png', 'Images_Full/3_Mega/Mega_Press.png', 'Mega_Press', 83],
+  ['Images_Icons/3_MegaIcons/Icon_JoeMach.png', 'Images_Full/3_Mega/Mega_JoeMach.png', 'Mega_JoeMach', 84],
+  ['Images_Icons/3_MegaIcons/Icon_Blackbeard.png', 'Images_Full/3_Mega/Mega_Blackbeard.png', 'Mega_Blackbeard', 85],
+  ['Images_Icons/3_MegaIcons/Icon_Yuika.png', 'Images_Full/3_Mega/Mega_Yuika.png', 'Mega_Yuika', 86],
+  ['Images_Icons/3_MegaIcons/Icon_Ito.png', 'Images_Full/3_Mega/Mega_Ito.png', 'Mega_Ito', 87],
+  ['Images_Icons/3_MegaIcons/Icon_Vic.png', 'Images_Full/3_Mega/Mega_Vic.png', 'Mega_Vic', 88],
+  ['Images_Icons/3_MegaIcons/Icon_HatMan.png', 'Images_Full/3_Mega/Mega_HatMan.png', 'Mega_HatMan', 89],
+  ['Images_Icons/3_MegaIcons/Icon_MaryTowa.png', 'Images_Full/3_Mega/Mega_MaryTowa.png', 'Mega_MaryTowa', 90],
+  ['Images_Icons/3_MegaIcons/Icon_Kai.png', 'Images_Full/3_Mega/Mega_Kai.png', 'Mega_Kai', 91],
+  ['Images_Icons/3_MegaIcons/Icon_Sherrice.png', 'Images_Full/3_Mega/Mega_Sherrice.png', 'Mega_Sherrice', 92],
+  ['Images_Icons/3_MegaIcons/Icon_BrightMan.png', 'Images_Full/3_Mega/Mega_BrightMan.png', 'Mega_BrightMan', 93],
+  ['Images_Icons/3_MegaIcons/Icon_GravityMan.png', 'Images_Full/3_Mega/Mega_GravityMan.png', 'Mega_GravityMan', 94],
+  ['Images_Icons/3_MegaIcons/Icon_NeedleMan.png', 'Images_Full/3_Mega/Mega_NeedleMan.png', 'Mega_NeedleMan', 95],
+  ['Images_Icons/3_MegaIcons/Icon_SwordMan.png', 'Images_Full/3_Mega/Mega_SwordMan.png', 'Mega_SwordMan', 96],
+  ['Images_Icons/3_MegaIcons/Icon_StarMan.png', 'Images_Full/3_Mega/Mega_StarMan.png', 'Mega_StarMan', 97],
+  ['Images_Icons/3_MegaIcons/Icon_Professor.png', 'Images_Full/3_Mega/Mega_Professor.png', 'Mega_Professor', 98]
 ]
 
 const kiloRank = [
-  ['Images_Icons/4_KiloIcons/Icon_SirProg.png', 'Images_Full/4_Kilo/Kilo_SirProg.png', 'Kilo_SirProg', 98],
-  ['Images_Icons/4_KiloIcons/Icon_ProgEsq.png', 'Images_Full/4_Kilo/Kilo_ProgEsq.png', 'Kilo_ProgEsq', 99],
-  ['Images_Icons/4_KiloIcons/Icon_NinjaProg.png', 'Images_Full/4_Kilo/Kilo_NinjaProg.png', 'Kilo_NinjaProg', 100],
-  ['Images_Icons/4_KiloIcons/Icon_DrProg.png', 'Images_Full/4_Kilo/Kilo_DrProg.png', 'Kilo_DrProg', 101],
-  ['Images_Icons/4_KiloIcons/Icon_IronFist.png', 'Images_Full/4_Kilo/Kilo_IronFist.png', 'Kilo_IronFist', 102],
-  ['Images_Icons/4_KiloIcons/Icon_Jennifer.png', 'Images_Full/4_Kilo/Kilo_Jennifer.png', 'Kilo_Jennifer', 103],
-  ['Images_Icons/4_KiloIcons/Icon_Insectopedia.png', 'Images_Full/4_Kilo/Kilo_Insectopedia.png', 'Kilo_Insectopedia', 104],
-  ['Images_Icons/4_KiloIcons/Icon_Guilty.png', 'Images_Full/4_Kilo/Kilo_Guilty.png', 'Kilo_Guilty', 105],
-  ['Images_Icons/4_KiloIcons/Icon_Criminal.png', 'Images_Full/4_Kilo/Kilo_Criminal.png', 'Kilo_Criminal', 106],
-  ['Images_Icons/4_KiloIcons/Icon_Liar.png', 'Images_Full/4_Kilo/Kilo_Liar.png', 'Kilo_Liar', 107],
-  ['Images_Icons/4_KiloIcons/Icon_Mick.png', 'Images_Full/4_Kilo/Kilo_Mick.png', 'Kilo_Mick', 108],
-  ['Images_Icons/4_KiloIcons/Icon_Tab.png', 'Images_Full/4_Kilo/Kilo_Tab.png', 'Kilo_Tab', 109],
-  ['Images_Icons/4_KiloIcons/Icon_Maylu.png', 'Images_Full/4_Kilo/Kilo_Maylu.png', 'Kilo_Maylu', 110],
-  ['Images_Icons/4_KiloIcons/Icon_Yai.png', 'Images_Full/4_Kilo/Kilo_Yai.png', 'Kilo_Yai', 111],
-  ['Images_Icons/4_KiloIcons/Icon_Dex.png', 'Images_Full/4_Kilo/Kilo_Dex.png', 'Kilo_Dex', 112],
-  ['Images_Icons/4_KiloIcons/Icon_Higsby.png', 'Images_Full/4_Kilo/Kilo_Higsby.png', 'Kilo_Higsby', 113],
-  ['Images_Icons/4_KiloIcons/Icon_Ribitta.png', 'Images_Full/4_Kilo/Kilo_Ribitta.png', 'Kilo_Ribitta', 114],
-  ['Images_Icons/4_KiloIcons/Icon_Sal.png', 'Images_Full/4_Kilo/Kilo_Sal.png', 'Kilo_Sal', 115],
-  ['Images_Icons/4_KiloIcons/Icon_Miyu.png', 'Images_Full/4_Kilo/Kilo_Miyu.png', 'Kilo_Miyu', 116],
-  ['Images_Icons/4_KiloIcons/Icon_Masa.png', 'Images_Full/4_Kilo/Kilo_Masa.png', 'Kilo_Masa', 117],
-  ['Images_Icons/4_KiloIcons/Icon_GateMan.png', 'Images_Full/4_Kilo/Kilo_GateMan.png', 'Kilo_GateMan', 118],
-  ['Images_Icons/4_KiloIcons/Icon_Punk.png', 'Images_Full/4_Kilo/Kilo_Punk.png', 'Kilo_Punk', 119],
-  ['Images_Icons/4_KiloIcons/Icon_KendoMan.png', 'Images_Full/4_Kilo/Kilo_KendoMan.png', 'Kilo_KendoMan', 120],
-  ['Images_Icons/4_KiloIcons/Icon_GridMan.png', 'Images_Full/4_Kilo/Kilo_GridMan.png', 'Kilo_GridMan', 121],
-  ['Images_Icons/4_KiloIcons/Icon_Iris.png', 'Images_Full/4_Kilo/Kilo_Iris.png', 'Kilo_Iris', 122]
+  ['Images_Icons/4_KiloIcons/Icon_SirProg.png', 'Images_Full/4_Kilo/Kilo_SirProg.png', 'Kilo_SirProg', 99],
+  ['Images_Icons/4_KiloIcons/Icon_ProgEsq.png', 'Images_Full/4_Kilo/Kilo_ProgEsq.png', 'Kilo_ProgEsq', 100],
+  ['Images_Icons/4_KiloIcons/Icon_NinjaProg.png', 'Images_Full/4_Kilo/Kilo_NinjaProg.png', 'Kilo_NinjaProg', 101],
+  ['Images_Icons/4_KiloIcons/Icon_DrProg.png', 'Images_Full/4_Kilo/Kilo_DrProg.png', 'Kilo_DrProg', 102],
+  ['Images_Icons/4_KiloIcons/Icon_IronFist.png', 'Images_Full/4_Kilo/Kilo_IronFist.png', 'Kilo_IronFist', 103],
+  ['Images_Icons/4_KiloIcons/Icon_Jennifer.png', 'Images_Full/4_Kilo/Kilo_Jennifer.png', 'Kilo_Jennifer', 104],
+  ['Images_Icons/4_KiloIcons/Icon_Insectopedia.png', 'Images_Full/4_Kilo/Kilo_Insectopedia.png', 'Kilo_Insectopedia', 105],
+  ['Images_Icons/4_KiloIcons/Icon_Guilty.png', 'Images_Full/4_Kilo/Kilo_Guilty.png', 'Kilo_Guilty', 106],
+  ['Images_Icons/4_KiloIcons/Icon_Criminal.png', 'Images_Full/4_Kilo/Kilo_Criminal.png', 'Kilo_Criminal', 107],
+  ['Images_Icons/4_KiloIcons/Icon_Liar.png', 'Images_Full/4_Kilo/Kilo_Liar.png', 'Kilo_Liar', 108],
+  ['Images_Icons/4_KiloIcons/Icon_Mick.png', 'Images_Full/4_Kilo/Kilo_Mick.png', 'Kilo_Mick', 109],
+  ['Images_Icons/4_KiloIcons/Icon_Tab.png', 'Images_Full/4_Kilo/Kilo_Tab.png', 'Kilo_Tab', 110],
+  ['Images_Icons/4_KiloIcons/Icon_Maylu.png', 'Images_Full/4_Kilo/Kilo_Maylu.png', 'Kilo_Maylu', 111],
+  ['Images_Icons/4_KiloIcons/Icon_Yai.png', 'Images_Full/4_Kilo/Kilo_Yai.png', 'Kilo_Yai', 112],
+  ['Images_Icons/4_KiloIcons/Icon_Dex.png', 'Images_Full/4_Kilo/Kilo_Dex.png', 'Kilo_Dex', 113],
+  ['Images_Icons/4_KiloIcons/Icon_Higsby.png', 'Images_Full/4_Kilo/Kilo_Higsby.png', 'Kilo_Higsby', 114],
+  ['Images_Icons/4_KiloIcons/Icon_Ribitta.png', 'Images_Full/4_Kilo/Kilo_Ribitta.png', 'Kilo_Ribitta', 115],
+  ['Images_Icons/4_KiloIcons/Icon_Sal.png', 'Images_Full/4_Kilo/Kilo_Sal.png', 'Kilo_Sal', 116],
+  ['Images_Icons/4_KiloIcons/Icon_Miyu.png', 'Images_Full/4_Kilo/Kilo_Miyu.png', 'Kilo_Miyu', 117],
+  ['Images_Icons/4_KiloIcons/Icon_Masa.png', 'Images_Full/4_Kilo/Kilo_Masa.png', 'Kilo_Masa', 118],
+  ['Images_Icons/4_KiloIcons/Icon_GateMan.png', 'Images_Full/4_Kilo/Kilo_GateMan.png', 'Kilo_GateMan', 119],
+  ['Images_Icons/4_KiloIcons/Icon_Punk.png', 'Images_Full/4_Kilo/Kilo_Punk.png', 'Kilo_Punk', 120],
+  ['Images_Icons/4_KiloIcons/Icon_KendoMan.png', 'Images_Full/4_Kilo/Kilo_KendoMan.png', 'Kilo_KendoMan', 121],
+  ['Images_Icons/4_KiloIcons/Icon_GridMan.png', 'Images_Full/4_Kilo/Kilo_GridMan.png', 'Kilo_GridMan', 122],
+  ['Images_Icons/4_KiloIcons/Icon_Iris.png', 'Images_Full/4_Kilo/Kilo_Iris.png', 'Kilo_Iris', 123]
 ]
 
 const standardRank = [
-  ['Images_Icons/5_StandardIcons/Icon_FastEddy.png', 'Images_Full/5_Standard/Standard_FastEddy.png', 'Standard_FastEddy', 123],
-  ['Images_Icons/5_StandardIcons/Icon_Candy.png', 'Images_Full/5_Standard/Standard_Candy.png', 'Standard_Candy', 124],
-  ['Images_Icons/5_StandardIcons/Icon_Indigo.png', 'Images_Full/5_Standard/Standard_Indigo.png', 'Standard_Indigo', 125],
-  ['Images_Icons/5_StandardIcons/Icon_Pacifica.png', 'Images_Full/5_Standard/Standard_Pacifica.png', 'Standard_Pacifica', 126],
-  ['Images_Icons/5_StandardIcons/Icon_John.png', 'Images_Full/5_Standard/Standard_John.png', 'Standard_John', 127],
-  ['Images_Icons/5_StandardIcons/Icon_Virtue.png', 'Images_Full/5_Standard/Standard_Virtue.png', 'Standard_Virtue', 128],
-  ['Images_Icons/5_StandardIcons/Icon_Mari.png', 'Images_Full/5_Standard/Standard_Mari.png', 'Standard_Mari', 129],
-  ['Images_Icons/5_StandardIcons/Icon_Haruka.png', 'Images_Full/5_Standard/Standard_Haruka.png', 'Standard_Haruka', 130],
-  ['Images_Icons/5_StandardIcons/Icon_Yuichiro.png', 'Images_Full/5_Standard/Standard_Yuichiro.png', 'Standard_Yuichiro', 131],
-  ['Images_Icons/5_StandardIcons/Icon_Prog.png', 'Images_Full/5_Standard/Standard_Prog.png', 'Standard_Prog', 132],
-  ['Images_Icons/5_StandardIcons/Icon_ProfessorProg.png', 'Images_Full/5_Standard/Standard_ProfessorProg.png', 'Standard_ProfessorProg', 133],
-  ['Images_Icons/5_StandardIcons/Icon_FarmerProg.png', 'Images_Full/5_Standard/Standard_FarmerProg.png', 'Standard_FarmerProg', 134]
+  ['Images_Icons/5_StandardIcons/Icon_FastEddy.png', 'Images_Full/5_Standard/Standard_FastEddy.png', 'Standard_FastEddy', 124],
+  ['Images_Icons/5_StandardIcons/Icon_Candy.png', 'Images_Full/5_Standard/Standard_Candy.png', 'Standard_Candy', 125],
+  ['Images_Icons/5_StandardIcons/Icon_Indigo.png', 'Images_Full/5_Standard/Standard_Indigo.png', 'Standard_Indigo', 126],
+  ['Images_Icons/5_StandardIcons/Icon_Pacifica.png', 'Images_Full/5_Standard/Standard_Pacifica.png', 'Standard_Pacifica', 127],
+  ['Images_Icons/5_StandardIcons/Icon_John.png', 'Images_Full/5_Standard/Standard_John.png', 'Standard_John', 128],
+  ['Images_Icons/5_StandardIcons/Icon_Virtue.png', 'Images_Full/5_Standard/Standard_Virtue.png', 'Standard_Virtue', 129],
+  ['Images_Icons/5_StandardIcons/Icon_Mari.png', 'Images_Full/5_Standard/Standard_Mari.png', 'Standard_Mari', 130],
+  ['Images_Icons/5_StandardIcons/Icon_Haruka.png', 'Images_Full/5_Standard/Standard_Haruka.png', 'Standard_Haruka', 131],
+  ['Images_Icons/5_StandardIcons/Icon_Yuichiro.png', 'Images_Full/5_Standard/Standard_Yuichiro.png', 'Standard_Yuichiro', 132],
+  ['Images_Icons/5_StandardIcons/Icon_Prog.png', 'Images_Full/5_Standard/Standard_Prog.png', 'Standard_Prog', 133],
+  ['Images_Icons/5_StandardIcons/Icon_ProfessorProg.png', 'Images_Full/5_Standard/Standard_ProfessorProg.png', 'Standard_ProfessorProg', 134],
+  ['Images_Icons/5_StandardIcons/Icon_FarmerProg.png', 'Images_Full/5_Standard/Standard_FarmerProg.png', 'Standard_FarmerProg', 135]
 ]
 
 // The arrays used for the special costume variations are in the getThemeArray() function.
@@ -833,219 +834,219 @@ function getThemeArray(input) {
   switch(input) {
     case 0:
       // Lan and friends specifically
-      returnArray = [1,6,7,38,68,71,90,89,108,109,110,111,112,122];
+      returnArray = [1,6,7,39,69,72,90,91,109,110,111,112,113,123];
       break;
     case 1:
       // World Three members (BN1, BN3, and BN6)
-      returnArray = [8,10,11,12,24,25,27,28,29,30,31,32,41,42,43,46,47,50,83,84,85,86,87,96,97,113];
+      returnArray = [8,10,11,12,24,26,28,29,30,31,32,33,42,43,44,47,48,51,84,85,86,87,88,97,98,114];
       break;
       case 2:
       // Gospel members (BN2)
-      returnArray = [34,35,36,37,38,69];
+      returnArray = [35,36,37,38,39,70];
       break;
     case 3:
       // Nebula members (BN4 and BN5)
-      returnArray = [23,53,63,73,74,75,107];
+      returnArray = [23,54,64,74,75,76,108];
       break;
     case 4:
       // Team Colonel members
-      returnArray = [8,69,70,71,113,114];
+      returnArray = [8,70,71,72,114,115];
       break;
     case 5:
       // Team ProtoMan members
-      returnArray = [7,64,65,66,67,68];
+      returnArray = [7,65,66,67,68,69];
       break;
     case 6:
       // Characters that first appeared in BN1
-      returnArray = [6,7,9,11,13,24,25,28,29,30,31,32,33,110,111,113,114,115,116,117,129,130,131,132];
+      returnArray = [6,7,9,11,13,24,26,29,30,31,32,33,34,111,112,113,114,116,117,118,130,131,132,133];
       break;
     case 7:
       // Characters that first appeared in BN2
-      returnArray = [12,14,26,34,35,36,37,38,39,40,69,70,102,103,104,114,118];
+      returnArray = [12,14,27,35,36,37,38,39,40,41,70,71,103,104,105,115,119];
       break;
     case 8:
       // Characters that first appeared in BN3
-      returnArray = [1,15,27,41,42,43,44,45,46,47,48,49,50,51,52,119];
+      returnArray = [1,15,28,42,43,44,45,46,47,48,49,50,51,52,53,120];
       break;
     case 9:
       // Characters that first appeared in BN4
-      returnArray = [16,53,54,55,56,57,58,59,60,61,62,63,67,120];
+      returnArray = [16,54,55,56,57,58,59,60,61,62,63,64,68,121];
       break;
     case 10:
       // Characters that first appeared in BN5
-      returnArray = [8,17,64,65,66,68,71,72,73,74,75,100,107,121];
+      returnArray = [8,17,65,66,67,69,72,73,74,75,76,101,108,122];
       break;
     case 11:
       // Characters that first appeared in BN6
-      returnArray = [18,19,76,77,78,79,80,81,82,83,84,85,86,87,108,109,122];
+      returnArray = [18,19,77,78,79,80,81,82,83,84,85,86,87,88,109,110,123];
       break;
     case 12:
       // Side game/anime characters
-      returnArray = [4,5,10,88,89,90,91,92,93,94,95,96,97];
+      returnArray = [4,5,10,25,89,90,91,92,93,94,95,96,97,98];
       break;
     case 13:
       // "A Step into the Future" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_FutureMamoru.png', 'Images_Full/Costumes/Tera_FutureMamoru.png', 'FutureMamoru', 135],
-        ['Images_Icons/Costumes/Icon_FutureLan.png', 'Images_Full/Costumes/Giga_FutureLan.png', 'FutureLan', 136],
-        ['Images_Icons/Costumes/Icon_FutureChaud.png', 'Images_Full/Costumes/Giga_FutureChaud.png', 'FutureChaud', 137],
-        ['Images_Icons/Costumes/Icon_FutureSean.png', 'Images_Full/Costumes/Mega_FutureSean.png', 'FutureSean', 138],
-        ['Images_Icons/Costumes/Icon_FutureMick.png', 'Images_Full/Costumes/Kilo_FutureMick.png', 'FutureMick', 139],
-        ['Images_Icons/Costumes/Icon_FutureTab.png', 'Images_Full/Costumes/Kilo_FutureTab.png', 'FutureTab', 140],
-        ['Images_Icons/Costumes/Icon_FutureMaylu.png', 'Images_Full/Costumes/Kilo_FutureMaylu.png', 'FutureMaylu', 141],
-        ['Images_Icons/Costumes/Icon_FutureYai.png', 'Images_Full/Costumes/Kilo_FutureYai.png', 'FutureYai', 142],
-        ['Images_Icons/Costumes/Icon_FutureDex.png', 'Images_Full/Costumes/Kilo_FutureDex.png', 'FutureDex', 143],
-        ['Images_Icons/Costumes/Icon_FutureAnetta.png', 'Images_Full/Costumes/Mega_FutureAnetta.png', 'FutureAnetta', 144]
+        ['Images_Icons/Costumes/Icon_FutureMamoru.png', 'Images_Full/Costumes/Tera_FutureMamoru.png', 'FutureMamoru', 136],
+        ['Images_Icons/Costumes/Icon_FutureLan.png', 'Images_Full/Costumes/Giga_FutureLan.png', 'FutureLan', 137],
+        ['Images_Icons/Costumes/Icon_FutureChaud.png', 'Images_Full/Costumes/Giga_FutureChaud.png', 'FutureChaud', 138],
+        ['Images_Icons/Costumes/Icon_FutureSean.png', 'Images_Full/Costumes/Mega_FutureSean.png', 'FutureSean', 139],
+        ['Images_Icons/Costumes/Icon_FutureMick.png', 'Images_Full/Costumes/Kilo_FutureMick.png', 'FutureMick', 140],
+        ['Images_Icons/Costumes/Icon_FutureTab.png', 'Images_Full/Costumes/Kilo_FutureTab.png', 'FutureTab', 141],
+        ['Images_Icons/Costumes/Icon_FutureMaylu.png', 'Images_Full/Costumes/Kilo_FutureMaylu.png', 'FutureMaylu', 142],
+        ['Images_Icons/Costumes/Icon_FutureYai.png', 'Images_Full/Costumes/Kilo_FutureYai.png', 'FutureYai', 143],
+        ['Images_Icons/Costumes/Icon_FutureDex.png', 'Images_Full/Costumes/Kilo_FutureDex.png', 'FutureDex', 144],
+        ['Images_Icons/Costumes/Icon_FutureAnetta.png', 'Images_Full/Costumes/Mega_FutureAnetta.png', 'FutureAnetta', 145]
       ];
       break;
     case 14:
       // "A Step into the Past" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_PastMatch.png', 'Images_Full/Costumes/Mega_PastMatch.png', 'PastMatch', 145],
-        ['Images_Icons/Costumes/Icon_PastMadd.png', 'Images_Full/Costumes/Mega_PastMadd.png', 'PastMadd', 146],
-        ['Images_Icons/Costumes/Icon_PastCountZap.png', 'Images_Full/Costumes/Mega_PastCountZap.png', 'PastCountZap', 147],
-        ['Images_Icons/Costumes/Icon_PastYahoot.png', 'Images_Full/Costumes/Mega_PastYahoot.png', 'PastYahoot', 148],
-        ['Images_Icons/Costumes/Icon_PastYuichiro.png', 'Images_Full/Costumes/Standard_PastYuichiro.png', 'PastYuichiro', 149],
-        ['Images_Icons/Costumes/Icon_PastHaruka.png', 'Images_Full/Costumes/Standard_PastHaruka.png', 'PastHaruka', 150],
-        ['Images_Icons/Costumes/Icon_PastWily.png', 'Images_Full/Costumes/Giga_PastWily.png', 'PastWily', 151],
-        ['Images_Icons/Costumes/Icon_PastLan.png', 'Images_Full/Costumes/Giga_PastLan.png', 'PastLan', 152],
-        ['Images_Icons/Costumes/Icon_PastBass.png', 'Images_Full/Costumes/Giga_PastBass.png', 'PastBass', 153],
-        ['Images_Icons/Costumes/Icon_PastTamako.png', 'Images_Full/Costumes/Mega_PastTamako.png', 'PastTamako', 154]
+        ['Images_Icons/Costumes/Icon_PastMatch.png', 'Images_Full/Costumes/Mega_PastMatch.png', 'PastMatch', 146],
+        ['Images_Icons/Costumes/Icon_PastMadd.png', 'Images_Full/Costumes/Mega_PastMadd.png', 'PastMadd', 147],
+        ['Images_Icons/Costumes/Icon_PastCountZap.png', 'Images_Full/Costumes/Mega_PastCountZap.png', 'PastCountZap', 148],
+        ['Images_Icons/Costumes/Icon_PastYahoot.png', 'Images_Full/Costumes/Mega_PastYahoot.png', 'PastYahoot', 149],
+        ['Images_Icons/Costumes/Icon_PastYuichiro.png', 'Images_Full/Costumes/Standard_PastYuichiro.png', 'PastYuichiro', 150],
+        ['Images_Icons/Costumes/Icon_PastHaruka.png', 'Images_Full/Costumes/Standard_PastHaruka.png', 'PastHaruka', 151],
+        ['Images_Icons/Costumes/Icon_PastWily.png', 'Images_Full/Costumes/Giga_PastWily.png', 'PastWily', 152],
+        ['Images_Icons/Costumes/Icon_PastLan.png', 'Images_Full/Costumes/Giga_PastLan.png', 'PastLan', 153],
+        ['Images_Icons/Costumes/Icon_PastBass.png', 'Images_Full/Costumes/Giga_PastBass.png', 'PastBass', 154],
+        ['Images_Icons/Costumes/Icon_PastTamako.png', 'Images_Full/Costumes/Mega_PastTamako.png', 'PastTamako', 155]
       ];
       break;
     case 15:
       // "New Years" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_NewYearsMatch.png', 'Images_Full/Costumes/Mega_NewYearsMatch.png', 'NewYearsMatch', 155],
-        ['Images_Icons/Costumes/Icon_NewYearsMadd.png', 'Images_Full/Costumes/Mega_NewYearsMadd.png', 'NewYearsMadd', 156],
-        ['Images_Icons/Costumes/Icon_NewYearsCountZap.png', 'Images_Full/Costumes/Mega_NewYearsCountZap.png', 'NewYearsCountZap', 157],
-        ['Images_Icons/Costumes/Icon_NewYearsYahoot.png', 'Images_Full/Costumes/Mega_NewYearsYahoot.png', 'NewYearsYahoot', 158],
-        ['Images_Icons/Costumes/Icon_NewYearsTab.png', 'Images_Full/Costumes/Kilo_NewYearsTab.png', 'NewYearsTab', 159],
-        ['Images_Icons/Costumes/Icon_NewYearsKai.png', 'Images_Full/Costumes/Mega_NewYearsKai.png', 'NewYearsKai', 160],
-        ['Images_Icons/Costumes/Icon_NewYearsTora.png', 'Images_Full/Costumes/Mega_NewYearsTora.png', 'NewYearsTora', 161],
-        ['Images_Icons/Costumes/Icon_NewYearsLilly.png', 'Images_Full/Costumes/Mega_NewYearsLilly.png', 'NewYearsLilly', 162],
-        ['Images_Icons/Costumes/Icon_NewYearsJunkMan.png', 'Images_Full/Costumes/Mega_NewYearsJunkMan.png', 'NewYearsJunkMan', 163],
-        ['Images_Icons/Costumes/Icon_NewYearsRaoul.png', 'Images_Full/Costumes/Mega_NewYearsRaoul.png', 'NewYearsRaoul', 164]
+        ['Images_Icons/Costumes/Icon_NewYearsMatch.png', 'Images_Full/Costumes/Mega_NewYearsMatch.png', 'NewYearsMatch', 156],
+        ['Images_Icons/Costumes/Icon_NewYearsMadd.png', 'Images_Full/Costumes/Mega_NewYearsMadd.png', 'NewYearsMadd', 157],
+        ['Images_Icons/Costumes/Icon_NewYearsCountZap.png', 'Images_Full/Costumes/Mega_NewYearsCountZap.png', 'NewYearsCountZap', 158],
+        ['Images_Icons/Costumes/Icon_NewYearsYahoot.png', 'Images_Full/Costumes/Mega_NewYearsYahoot.png', 'NewYearsYahoot', 159],
+        ['Images_Icons/Costumes/Icon_NewYearsTab.png', 'Images_Full/Costumes/Kilo_NewYearsTab.png', 'NewYearsTab', 160],
+        ['Images_Icons/Costumes/Icon_NewYearsKai.png', 'Images_Full/Costumes/Mega_NewYearsKai.png', 'NewYearsKai', 161],
+        ['Images_Icons/Costumes/Icon_NewYearsTora.png', 'Images_Full/Costumes/Mega_NewYearsTora.png', 'NewYearsTora', 162],
+        ['Images_Icons/Costumes/Icon_NewYearsLilly.png', 'Images_Full/Costumes/Mega_NewYearsLilly.png', 'NewYearsLilly', 163],
+        ['Images_Icons/Costumes/Icon_NewYearsJunkMan.png', 'Images_Full/Costumes/Mega_NewYearsJunkMan.png', 'NewYearsJunkMan', 164],
+        ['Images_Icons/Costumes/Icon_NewYearsRaoul.png', 'Images_Full/Costumes/Mega_NewYearsRaoul.png', 'NewYearsRaoul', 165]
       ];
       break;
     case 16:
       // "Valentines" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_ValentinesMatch.png', 'Images_Full/Costumes/Mega_ValentinesMatch.png', 'ValentinesMatch', 165],
-        ['Images_Icons/Costumes/Icon_ValentinesMadd.png', 'Images_Full/Costumes/Mega_ValentinesMadd.png', 'ValentinesMadd', 166],
-        ['Images_Icons/Costumes/Icon_ValentinesCountZap.png', 'Images_Full/Costumes/Mega_ValentinesCountZap.png', 'ValentinesCountZap', 167],
-        ['Images_Icons/Costumes/Icon_ValentinesYahoot.png', 'Images_Full/Costumes/Mega_ValentinesYahoot.png', 'ValentinesYahoot', 168],
-        ['Images_Icons/Costumes/Icon_ValentinesChaud.png', 'Images_Full/Costumes/Giga_ValentinesChaud.png', 'ValentinesChaud', 169],
-        ['Images_Icons/Costumes/Icon_ValentinesMaryTowa.png', 'Images_Full/Costumes/Mega_ValentinesMaryTowa.png', 'ValentinesMaryTowa', 170],
-        ['Images_Icons/Costumes/Icon_ValentinesMaylu.png', 'Images_Full/Costumes/Kilo_ValentinesMaylu.png', 'ValentinesMaylu', 171],
-        ['Images_Icons/Costumes/Icon_ValentinesCharlie.png', 'Images_Full/Costumes/Mega_ValentinesCharlie.png', 'ValentinesCharlie', 172],
-        ['Images_Icons/Costumes/Icon_ValentinesMillions.png', 'Images_Full/Costumes/Mega_ValentinesMillions.png', 'ValentinesMillions', 173],
-        ['Images_Icons/Costumes/Icon_ValentinesYuika.png', 'Images_Full/Costumes/Mega_ValentinesYuika.png', 'ValentinesYuika', 174]
+        ['Images_Icons/Costumes/Icon_ValentinesMatch.png', 'Images_Full/Costumes/Mega_ValentinesMatch.png', 'ValentinesMatch', 166],
+        ['Images_Icons/Costumes/Icon_ValentinesMadd.png', 'Images_Full/Costumes/Mega_ValentinesMadd.png', 'ValentinesMadd', 167],
+        ['Images_Icons/Costumes/Icon_ValentinesCountZap.png', 'Images_Full/Costumes/Mega_ValentinesCountZap.png', 'ValentinesCountZap', 168],
+        ['Images_Icons/Costumes/Icon_ValentinesYahoot.png', 'Images_Full/Costumes/Mega_ValentinesYahoot.png', 'ValentinesYahoot', 169],
+        ['Images_Icons/Costumes/Icon_ValentinesChaud.png', 'Images_Full/Costumes/Giga_ValentinesChaud.png', 'ValentinesChaud', 170],
+        ['Images_Icons/Costumes/Icon_ValentinesMaryTowa.png', 'Images_Full/Costumes/Mega_ValentinesMaryTowa.png', 'ValentinesMaryTowa', 171],
+        ['Images_Icons/Costumes/Icon_ValentinesMaylu.png', 'Images_Full/Costumes/Kilo_ValentinesMaylu.png', 'ValentinesMaylu', 172],
+        ['Images_Icons/Costumes/Icon_ValentinesCharlie.png', 'Images_Full/Costumes/Mega_ValentinesCharlie.png', 'ValentinesCharlie', 173],
+        ['Images_Icons/Costumes/Icon_ValentinesMillions.png', 'Images_Full/Costumes/Mega_ValentinesMillions.png', 'ValentinesMillions', 174],
+        ['Images_Icons/Costumes/Icon_ValentinesYuika.png', 'Images_Full/Costumes/Mega_ValentinesYuika.png', 'ValentinesYuika', 175]
       ];
       break;
     case 17:
       // "Easter" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_EasterMatch.png', 'Images_Full/Costumes/Mega_EasterMatch.png', 'EasterMatch', 175],
-        ['Images_Icons/Costumes/Icon_EasterMadd.png', 'Images_Full/Costumes/Mega_EasterMadd.png', 'EasterMadd', 176],
-        ['Images_Icons/Costumes/Icon_EasterCountZap.png', 'Images_Full/Costumes/Mega_EasterCountZap.png', 'EasterCountZap', 177],
-        ['Images_Icons/Costumes/Icon_EasterYahoot.png', 'Images_Full/Costumes/Mega_EasterYahoot.png', 'EasterYahoot', 178],
-        ['Images_Icons/Costumes/Icon_EasterShuko.png', 'Images_Full/Costumes/Mega_EasterShuko.png', 'EasterShuko', 179],
-        ['Images_Icons/Costumes/Icon_EasterAlFerry.png', 'Images_Full/Costumes/Mega_EasterAlFerry.png', 'EasterAlFerry', 180],
-        ['Images_Icons/Costumes/Icon_EasterMoliarty.png', 'Images_Full/Costumes/Mega_EasterMoliarty.png', 'EasterMoliarty', 181],
-        ['Images_Icons/Costumes/Icon_EasterNarcy.png', 'Images_Full/Costumes/Mega_EasterNarcy.png', 'EasterNarcy', 182],
-        ['Images_Icons/Costumes/Icon_EasterArashi.png', 'Images_Full/Costumes/Mega_EasterArashi.png', 'EasterArashi', 183],
-        ['Images_Icons/Costumes/Icon_EasterBowlMan.png', 'Images_Full/Costumes/Mega_EasterBowlMan.png', 'EasterBowlMan', 184]
+        ['Images_Icons/Costumes/Icon_EasterMatch.png', 'Images_Full/Costumes/Mega_EasterMatch.png', 'EasterMatch', 176],
+        ['Images_Icons/Costumes/Icon_EasterMadd.png', 'Images_Full/Costumes/Mega_EasterMadd.png', 'EasterMadd', 177],
+        ['Images_Icons/Costumes/Icon_EasterCountZap.png', 'Images_Full/Costumes/Mega_EasterCountZap.png', 'EasterCountZap', 178],
+        ['Images_Icons/Costumes/Icon_EasterYahoot.png', 'Images_Full/Costumes/Mega_EasterYahoot.png', 'EasterYahoot', 179],
+        ['Images_Icons/Costumes/Icon_EasterShuko.png', 'Images_Full/Costumes/Mega_EasterShuko.png', 'EasterShuko', 180],
+        ['Images_Icons/Costumes/Icon_EasterAlFerry.png', 'Images_Full/Costumes/Mega_EasterAlFerry.png', 'EasterAlFerry', 181],
+        ['Images_Icons/Costumes/Icon_EasterMoliarty.png', 'Images_Full/Costumes/Mega_EasterMoliarty.png', 'EasterMoliarty', 182],
+        ['Images_Icons/Costumes/Icon_EasterNarcy.png', 'Images_Full/Costumes/Mega_EasterNarcy.png', 'EasterNarcy', 183],
+        ['Images_Icons/Costumes/Icon_EasterArashi.png', 'Images_Full/Costumes/Mega_EasterArashi.png', 'EasterArashi', 184],
+        ['Images_Icons/Costumes/Icon_EasterBowlMan.png', 'Images_Full/Costumes/Mega_EasterBowlMan.png', 'EasterBowlMan', 185]
       ];
       break;
     case 18:
       // "Fireworks Festival" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_FireworksMatch.png', 'Images_Full/Costumes/Mega_FireworksMatch.png', 'FireworksMatch', 185],
-        ['Images_Icons/Costumes/Icon_FireworksMadd.png', 'Images_Full/Costumes/Mega_FireworksMadd.png', 'FireworksMadd', 186],
-        ['Images_Icons/Costumes/Icon_FireworksCountZap.png', 'Images_Full/Costumes/Mega_FireworksCountZap.png', 'FireworksCountZap', 187],
-        ['Images_Icons/Costumes/Icon_FireworksYahoot.png', 'Images_Full/Costumes/Mega_FireworksYahoot.png', 'FireworksYahoot', 188],
-        ['Images_Icons/Costumes/Icon_FireworksNenji.png', 'Images_Full/Costumes/Mega_FireworksNenji.png', 'FireworksNenji', 189],
-        ['Images_Icons/Costumes/Icon_FireworksHigsby.png', 'Images_Full/Costumes/Mega_FireworksHigsby.png', 'FireworksHigsby', 190],
-        ['Images_Icons/Costumes/Icon_FireworksDingo.png', 'Images_Full/Costumes/Mega_FireworksDingo.png', 'FireworksDingo', 191],
-        ['Images_Icons/Costumes/Icon_FireworksStarMan.png', 'Images_Full/Costumes/Mega_FireworksStarMan.png', 'FireworksStarMan', 192],
-        ['Images_Icons/Costumes/Icon_FireworksAtsuki.png', 'Images_Full/Costumes/Mega_FireworksAtsuki.png', 'FireworksAtsuki', 193],
-        ['Images_Icons/Costumes/Icon_FireworksBombMan.png', 'Images_Full/Costumes/Mega_FireworksBombMan.png', 'FireworksBombMan', 194]
+        ['Images_Icons/Costumes/Icon_FireworksMatch.png', 'Images_Full/Costumes/Mega_FireworksMatch.png', 'FireworksMatch', 186],
+        ['Images_Icons/Costumes/Icon_FireworksMadd.png', 'Images_Full/Costumes/Mega_FireworksMadd.png', 'FireworksMadd', 187],
+        ['Images_Icons/Costumes/Icon_FireworksCountZap.png', 'Images_Full/Costumes/Mega_FireworksCountZap.png', 'FireworksCountZap', 188],
+        ['Images_Icons/Costumes/Icon_FireworksYahoot.png', 'Images_Full/Costumes/Mega_FireworksYahoot.png', 'FireworksYahoot', 189],
+        ['Images_Icons/Costumes/Icon_FireworksNenji.png', 'Images_Full/Costumes/Mega_FireworksNenji.png', 'FireworksNenji', 190],
+        ['Images_Icons/Costumes/Icon_FireworksHigsby.png', 'Images_Full/Costumes/Mega_FireworksHigsby.png', 'FireworksHigsby', 191],
+        ['Images_Icons/Costumes/Icon_FireworksDingo.png', 'Images_Full/Costumes/Mega_FireworksDingo.png', 'FireworksDingo', 192],
+        ['Images_Icons/Costumes/Icon_FireworksStarMan.png', 'Images_Full/Costumes/Mega_FireworksStarMan.png', 'FireworksStarMan', 193],
+        ['Images_Icons/Costumes/Icon_FireworksAtsuki.png', 'Images_Full/Costumes/Mega_FireworksAtsuki.png', 'FireworksAtsuki', 194],
+        ['Images_Icons/Costumes/Icon_FireworksBombMan.png', 'Images_Full/Costumes/Mega_FireworksBombMan.png', 'FireworksBombMan', 195]
       ];
       break;
     case 19:
       // "Harvest Moon" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_HarvestMatch.png', 'Images_Full/Costumes/Mega_HarvestMatch.png', 'HarvestMatch', 195],
-        ['Images_Icons/Costumes/Icon_HarvestMadd.png', 'Images_Full/Costumes/Mega_HarvestMadd.png', 'HarvestMadd', 196],
-        ['Images_Icons/Costumes/Icon_HarvestCountZap.png', 'Images_Full/Costumes/Mega_HarvestCountZap.png', 'HarvestCountZap', 197],
-        ['Images_Icons/Costumes/Icon_HarvestYahoot.png', 'Images_Full/Costumes/Mega_HarvestYahoot.png', 'HarvestYahoot', 198],
-        ['Images_Icons/Costumes/Icon_HarvestDex.png', 'Images_Full/Costumes/Kilo_HarvestDex.png', 'HarvestDex', 199],
-        ['Images_Icons/Costumes/Icon_HarvestRei.png', 'Images_Full/Costumes/Mega_HarvestRei.png', 'HarvestRei', 200],
-        ['Images_Icons/Costumes/Icon_HarvestPat.png', 'Images_Full/Costumes/Mega_HarvestPat.png', 'HarvestPat', 201],
-        ['Images_Icons/Costumes/Icon_HarvestPress.png', 'Images_Full/Costumes/Mega_HarvestPress.png', 'HarvestPress', 202],
-        ['Images_Icons/Costumes/Icon_HarvestMistMan.png', 'Images_Full/Costumes/Mega_HarvestMistMan.png', 'HarvestMistMan', 203],
-        ['Images_Icons/Costumes/Icon_HarvestYamatoMan.png', 'Images_Full/Costumes/Mega_HarvestYamatoMan.png', 'HarvestYamatoMan', 204]
+        ['Images_Icons/Costumes/Icon_HarvestMatch.png', 'Images_Full/Costumes/Mega_HarvestMatch.png', 'HarvestMatch', 196],
+        ['Images_Icons/Costumes/Icon_HarvestMadd.png', 'Images_Full/Costumes/Mega_HarvestMadd.png', 'HarvestMadd', 197],
+        ['Images_Icons/Costumes/Icon_HarvestCountZap.png', 'Images_Full/Costumes/Mega_HarvestCountZap.png', 'HarvestCountZap', 198],
+        ['Images_Icons/Costumes/Icon_HarvestYahoot.png', 'Images_Full/Costumes/Mega_HarvestYahoot.png', 'HarvestYahoot', 199],
+        ['Images_Icons/Costumes/Icon_HarvestDex.png', 'Images_Full/Costumes/Kilo_HarvestDex.png', 'HarvestDex', 200],
+        ['Images_Icons/Costumes/Icon_HarvestRei.png', 'Images_Full/Costumes/Mega_HarvestRei.png', 'HarvestRei', 201],
+        ['Images_Icons/Costumes/Icon_HarvestPat.png', 'Images_Full/Costumes/Mega_HarvestPat.png', 'HarvestPat', 202],
+        ['Images_Icons/Costumes/Icon_HarvestPress.png', 'Images_Full/Costumes/Mega_HarvestPress.png', 'HarvestPress', 203],
+        ['Images_Icons/Costumes/Icon_HarvestMistMan.png', 'Images_Full/Costumes/Mega_HarvestMistMan.png', 'HarvestMistMan', 204],
+        ['Images_Icons/Costumes/Icon_HarvestYamatoMan.png', 'Images_Full/Costumes/Mega_HarvestYamatoMan.png', 'HarvestYamatoMan', 205]
       ];
       break;
     case 20:
       // "Halloween" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_HalloweenMatch.png', 'Images_Full/Costumes/Mega_HalloweenMatch.png', 'HalloweenMatch', 205],
-        ['Images_Icons/Costumes/Icon_HalloweenMadd.png', 'Images_Full/Costumes/Mega_HalloweenMadd.png', 'HalloweenMadd', 206],
-        ['Images_Icons/Costumes/Icon_HalloweenCountZap.png', 'Images_Full/Costumes/Mega_HalloweenCountZap.png', 'HalloweenCountZap', 207],
-        ['Images_Icons/Costumes/Icon_HalloweenYahoot.png', 'Images_Full/Costumes/Mega_HalloweenYahoot.png', 'HalloweenYahoot', 208],
-        ['Images_Icons/Costumes/Icon_HalloweenRaika.png', 'Images_Full/Costumes/Mega_HalloweenRaika.png', 'HalloweenRaika', 209],
-        ['Images_Icons/Costumes/Icon_HalloweenLan.png', 'Images_Full/Costumes/Giga_HalloweenLan.png', 'HalloweenLan', 210],
-        ['Images_Icons/Costumes/Icon_HalloweenPlanetMan.png', 'Images_Full/Costumes/Giga_HalloweenPlanetMan.png', 'HalloweenPlanetMan', 211],
-        ['Images_Icons/Costumes/Icon_HalloweenShadeMan.png', 'Images_Full/Costumes/Mega_HalloweenShadeMan.png', 'HalloweenShadeMan', 212],
-        ['Images_Icons/Costumes/Icon_HalloweenDarkMan.png', 'Images_Full/Costumes/Mega_HalloweenDarkMan.png', 'HalloweenDarkMan', 213],
-        ['Images_Icons/Costumes/Icon_HalloweenDarkScythe.png', 'Images_Full/Costumes/Mega_HalloweenDarkScythe.png', 'HalloweenDarkScythe', 214]
+        ['Images_Icons/Costumes/Icon_HalloweenMatch.png', 'Images_Full/Costumes/Mega_HalloweenMatch.png', 'HalloweenMatch', 206],
+        ['Images_Icons/Costumes/Icon_HalloweenMadd.png', 'Images_Full/Costumes/Mega_HalloweenMadd.png', 'HalloweenMadd', 207],
+        ['Images_Icons/Costumes/Icon_HalloweenCountZap.png', 'Images_Full/Costumes/Mega_HalloweenCountZap.png', 'HalloweenCountZap', 208],
+        ['Images_Icons/Costumes/Icon_HalloweenYahoot.png', 'Images_Full/Costumes/Mega_HalloweenYahoot.png', 'HalloweenYahoot', 209],
+        ['Images_Icons/Costumes/Icon_HalloweenRaika.png', 'Images_Full/Costumes/Mega_HalloweenRaika.png', 'HalloweenRaika', 210],
+        ['Images_Icons/Costumes/Icon_HalloweenLan.png', 'Images_Full/Costumes/Giga_HalloweenLan.png', 'HalloweenLan', 211],
+        ['Images_Icons/Costumes/Icon_HalloweenPlanetMan.png', 'Images_Full/Costumes/Giga_HalloweenPlanetMan.png', 'HalloweenPlanetMan', 212],
+        ['Images_Icons/Costumes/Icon_HalloweenShadeMan.png', 'Images_Full/Costumes/Mega_HalloweenShadeMan.png', 'HalloweenShadeMan', 213],
+        ['Images_Icons/Costumes/Icon_HalloweenDarkMan.png', 'Images_Full/Costumes/Mega_HalloweenDarkMan.png', 'HalloweenDarkMan', 214],
+        ['Images_Icons/Costumes/Icon_HalloweenDarkScythe.png', 'Images_Full/Costumes/Mega_HalloweenDarkScythe.png', 'HalloweenDarkScythe', 215]
       ];
       break;
     case 21:
       // "Christmas" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_ChristmasMatch.png', 'Images_Full/Costumes/Mega_ChristmasMatch.png', 'ChristmasMatch', 215],
-        ['Images_Icons/Costumes/Icon_ChristmasMadd.png', 'Images_Full/Costumes/Mega_ChristmasMadd.png', 'ChristmasMadd', 216],
-        ['Images_Icons/Costumes/Icon_ChristmasCountZap.png', 'Images_Full/Costumes/Mega_ChristmasCountZap.png', 'ChristmasCountZap', 217],
-        ['Images_Icons/Costumes/Icon_ChristmasYahoot.png', 'Images_Full/Costumes/Mega_ChristmasYahootChristmasYahoot.png', 'ChristmasYahoot', 218],
-        ['Images_Icons/Costumes/Icon_ChristmasMamoru.png', 'Images_Full/Costumes/Tera_ChristmasMamoru.png', 'ChristmasMamoru', 219],
-        ['Images_Icons/Costumes/Icon_ChristmasInukai.png', 'Images_Full/Costumes/Mega_ChristmasInukai.png', 'ChristmasInukai', 220],
-        ['Images_Icons/Costumes/Icon_ChristmasJasmine.png', 'Images_Full/Costumes/Mega_ChristmasJasmine.png', 'ChristmasJasmine', 221],
-        ['Images_Icons/Costumes/Icon_ChristmasSal.png', 'Images_Full/Costumes/Mega_ChristmasSal.png', 'ChristmasSal', 222],
-        ['Images_Icons/Costumes/Icon_ChristmasMick.png', 'Images_Full/Costumes/Kilo_ChristmasMick.png', 'ChristmasMick', 223],
-        ['Images_Icons/Costumes/Icon_ChristmasLarkMan.png', 'Images_Full/Costumes/Mega_ChristmasLarkMan.png', 'ChristmasLarkMan', 224]
+        ['Images_Icons/Costumes/Icon_ChristmasMatch.png', 'Images_Full/Costumes/Mega_ChristmasMatch.png', 'ChristmasMatch', 216],
+        ['Images_Icons/Costumes/Icon_ChristmasMadd.png', 'Images_Full/Costumes/Mega_ChristmasMadd.png', 'ChristmasMadd', 217],
+        ['Images_Icons/Costumes/Icon_ChristmasCountZap.png', 'Images_Full/Costumes/Mega_ChristmasCountZap.png', 'ChristmasCountZap', 218],
+        ['Images_Icons/Costumes/Icon_ChristmasYahoot.png', 'Images_Full/Costumes/Mega_ChristmasYahootChristmasYahoot.png', 'ChristmasYahoot', 219],
+        ['Images_Icons/Costumes/Icon_ChristmasMamoru.png', 'Images_Full/Costumes/Tera_ChristmasMamoru.png', 'ChristmasMamoru', 220],
+        ['Images_Icons/Costumes/Icon_ChristmasInukai.png', 'Images_Full/Costumes/Mega_ChristmasInukai.png', 'ChristmasInukai', 221],
+        ['Images_Icons/Costumes/Icon_ChristmasJasmine.png', 'Images_Full/Costumes/Mega_ChristmasJasmine.png', 'ChristmasJasmine', 222],
+        ['Images_Icons/Costumes/Icon_ChristmasSal.png', 'Images_Full/Costumes/Mega_ChristmasSal.png', 'ChristmasSal', 223],
+        ['Images_Icons/Costumes/Icon_ChristmasMick.png', 'Images_Full/Costumes/Kilo_ChristmasMick.png', 'ChristmasMick', 224],
+        ['Images_Icons/Costumes/Icon_ChristmasLarkMan.png', 'Images_Full/Costumes/Mega_ChristmasLarkMan.png', 'ChristmasLarkMan', 225]
       ];
       break;
     case 22:
       // "Hot Summer Fun" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_SummerMatch.png', 'Images_Full/Costumes/Mega_SummerMatch.png', 'SummerMatch', 225],
-        ['Images_Icons/Costumes/Icon_SummerMadd.png', 'Images_Full/Costumes/Mega_SummerMadd.png', 'SummerMadd', 226],
-        ['Images_Icons/Costumes/Icon_SummerCountZap.png', 'Images_Full/Costumes/Mega_SummerCountZap.png', 'SummerCountZap', 227],
-        ['Images_Icons/Costumes/Icon_SummerYahoot.png', 'Images_Full/Costumes/Mega_SummerYahoot.png', 'SummerYahoot', 228],
-        ['Images_Icons/Costumes/Icon_SummerSunayama.png', 'Images_Full/Costumes/Mega_SummerSunayama.png', 'SummerSunayama', 229],
-        ['Images_Icons/Costumes/Icon_SummerYai.png', 'Images_Full/Costumes/Kilo_SummerYai.png', 'SummerYai', 230],
-        ['Images_Icons/Costumes/Icon_SummerTesla.png', 'Images_Full/Costumes/Mega_SummerTesla.png', 'SummerTesla', 231],
-        ['Images_Icons/Costumes/Icon_SummerBlackbeard.png', 'Images_Full/Costumes/Mega_SummerBlackbeard.png', 'SummerBlackbeard', 232],
-        ['Images_Icons/Costumes/Icon_SummerTerry.png', 'Images_Full/Costumes/Mega_SummerTerry.png', 'SummerTerry', 233],
-        ['Images_Icons/Costumes/Icon_SummerVic.png', 'Images_Full/Costumes/Mega_SummerVic.png', 'SummerVic', 234]
+        ['Images_Icons/Costumes/Icon_SummerMatch.png', 'Images_Full/Costumes/Mega_SummerMatch.png', 'SummerMatch', 226],
+        ['Images_Icons/Costumes/Icon_SummerMadd.png', 'Images_Full/Costumes/Mega_SummerMadd.png', 'SummerMadd', 227],
+        ['Images_Icons/Costumes/Icon_SummerCountZap.png', 'Images_Full/Costumes/Mega_SummerCountZap.png', 'SummerCountZap', 228],
+        ['Images_Icons/Costumes/Icon_SummerYahoot.png', 'Images_Full/Costumes/Mega_SummerYahoot.png', 'SummerYahoot', 229],
+        ['Images_Icons/Costumes/Icon_SummerSunayama.png', 'Images_Full/Costumes/Mega_SummerSunayama.png', 'SummerSunayama', 230],
+        ['Images_Icons/Costumes/Icon_SummerYai.png', 'Images_Full/Costumes/Kilo_SummerYai.png', 'SummerYai', 231],
+        ['Images_Icons/Costumes/Icon_SummerTesla.png', 'Images_Full/Costumes/Mega_SummerTesla.png', 'SummerTesla', 232],
+        ['Images_Icons/Costumes/Icon_SummerBlackbeard.png', 'Images_Full/Costumes/Mega_SummerBlackbeard.png', 'SummerBlackbeard', 233],
+        ['Images_Icons/Costumes/Icon_SummerTerry.png', 'Images_Full/Costumes/Mega_SummerTerry.png', 'SummerTerry', 234],
+        ['Images_Icons/Costumes/Icon_SummerVic.png', 'Images_Full/Costumes/Mega_SummerVic.png', 'SummerVic', 235]
       ];
       break;
     case 23:
       // "Cold Winter Time" costumes
       returnArray = [
-        ['Images_Icons/Costumes/Icon_WinterMatch.png', 'Images_Full/Costumes/Mega_WinterMatch.png', 'WinterMatch', 235],
-        ['Images_Icons/Costumes/Icon_WinterMadd.png', 'Images_Full/Costumes/Mega_WinterMadd.png', 'WinterMadd', 236],
-        ['Images_Icons/Costumes/Icon_WinterCountZap.png', 'Images_Full/Costumes/Mega_WinterCountZap.png', 'WinterCountZap', 237],
-        ['Images_Icons/Costumes/Icon_WinterYahoot.png', 'Images_Full/Costumes/Mega_WinterYahoot.png', 'WinterYahoot', 238],
-        ['Images_Icons/Costumes/Icon_WinterIvanChillski.png', 'Images_Full/Costumes/Mega_WinterIvanChillski.png', 'WinterIvanChillski', 239],
-        ['Images_Icons/Costumes/Icon_WinterBlizzardMan.png', 'Images_Full/Costumes/Mega_WinterBlizzardMan.png', 'WinterBlizzardMan', 240],
-        ['Images_Icons/Costumes/Icon_WinterFroid.png', 'Images_Full/Costumes/Mega_WinterFroid.png', 'WinterFroid', 241],
-        ['Images_Icons/Costumes/Icon_WinterBaryl.png', 'Images_Full/Costumes/Giga_WinterBaryl.png', 'WinterBaryl', 242],
-        ['Images_Icons/Costumes/Icon_WinterPharaohMan.png', 'Images_Full/Costumes/Giga_WinterPharaohMan.png', 'WinterPharaohMan', 243],
-        ['Images_Icons/Costumes/Icon_WinterPride.png', 'Images_Full/Costumes/Mega_WinterPride.png', 'WinterPride', 244]
+        ['Images_Icons/Costumes/Icon_WinterMatch.png', 'Images_Full/Costumes/Mega_WinterMatch.png', 'WinterMatch', 236],
+        ['Images_Icons/Costumes/Icon_WinterMadd.png', 'Images_Full/Costumes/Mega_WinterMadd.png', 'WinterMadd', 237],
+        ['Images_Icons/Costumes/Icon_WinterCountZap.png', 'Images_Full/Costumes/Mega_WinterCountZap.png', 'WinterCountZap', 238],
+        ['Images_Icons/Costumes/Icon_WinterYahoot.png', 'Images_Full/Costumes/Mega_WinterYahoot.png', 'WinterYahoot', 239],
+        ['Images_Icons/Costumes/Icon_WinterIvanChillski.png', 'Images_Full/Costumes/Mega_WinterIvanChillski.png', 'WinterIvanChillski', 240],
+        ['Images_Icons/Costumes/Icon_WinterBlizzardMan.png', 'Images_Full/Costumes/Mega_WinterBlizzardMan.png', 'WinterBlizzardMan', 241],
+        ['Images_Icons/Costumes/Icon_WinterFroid.png', 'Images_Full/Costumes/Mega_WinterFroid.png', 'WinterFroid', 242],
+        ['Images_Icons/Costumes/Icon_WinterBaryl.png', 'Images_Full/Costumes/Giga_WinterBaryl.png', 'WinterBaryl', 243],
+        ['Images_Icons/Costumes/Icon_WinterPharaohMan.png', 'Images_Full/Costumes/Giga_WinterPharaohMan.png', 'WinterPharaohMan', 245],
+        ['Images_Icons/Costumes/Icon_WinterPride.png', 'Images_Full/Costumes/Mega_WinterPride.png', 'WinterPride', 246]
       ];
       break;
     default:
