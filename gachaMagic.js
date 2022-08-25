@@ -967,7 +967,7 @@ function getThemeArray(input) {
         ['Images_Icons/Costumes/Icon_FireworksCountZap.png', 'Images_Full/Costumes/Mega_FireworksCountZap.png', 'FireworksCountZap', 188],
         ['Images_Icons/Costumes/Icon_FireworksYahoot.png', 'Images_Full/Costumes/Mega_FireworksYahoot.png', 'FireworksYahoot', 189],
         ['Images_Icons/Costumes/Icon_FireworksNenji.png', 'Images_Full/Costumes/Mega_FireworksNenji.png', 'FireworksNenji', 190],
-        ['Images_Icons/Costumes/Icon_FireworksHigsby.png', 'Images_Full/Costumes/Mega_FireworksHigsby.png', 'FireworksHigsby', 191],
+        ['Images_Icons/Costumes/Icon_FireworksHigsby.png', 'Images_Full/Costumes/Kilo_FireworksHigsby.png', 'FireworksHigsby', 191],
         ['Images_Icons/Costumes/Icon_FireworksDingo.png', 'Images_Full/Costumes/Mega_FireworksDingo.png', 'FireworksDingo', 192],
         ['Images_Icons/Costumes/Icon_FireworksStarMan.png', 'Images_Full/Costumes/Mega_FireworksStarMan.png', 'FireworksStarMan', 193],
         ['Images_Icons/Costumes/Icon_FireworksAtsuki.png', 'Images_Full/Costumes/Mega_FireworksAtsuki.png', 'FireworksAtsuki', 194],
@@ -1014,7 +1014,7 @@ function getThemeArray(input) {
         ['Images_Icons/Costumes/Icon_ChristmasMamoru.png', 'Images_Full/Costumes/Tera_ChristmasMamoru.png', 'ChristmasMamoru', 220],
         ['Images_Icons/Costumes/Icon_ChristmasInukai.png', 'Images_Full/Costumes/Mega_ChristmasInukai.png', 'ChristmasInukai', 221],
         ['Images_Icons/Costumes/Icon_ChristmasJasmine.png', 'Images_Full/Costumes/Mega_ChristmasJasmine.png', 'ChristmasJasmine', 222],
-        ['Images_Icons/Costumes/Icon_ChristmasSal.png', 'Images_Full/Costumes/Mega_ChristmasSal.png', 'ChristmasSal', 223],
+        ['Images_Icons/Costumes/Icon_ChristmasSal.png', 'Images_Full/Costumes/Kilo_ChristmasSal.png', 'ChristmasSal', 223],
         ['Images_Icons/Costumes/Icon_ChristmasMick.png', 'Images_Full/Costumes/Kilo_ChristmasMick.png', 'ChristmasMick', 224],
         ['Images_Icons/Costumes/Icon_ChristmasLarkMan.png', 'Images_Full/Costumes/Mega_ChristmasLarkMan.png', 'ChristmasLarkMan', 225]
       ];
