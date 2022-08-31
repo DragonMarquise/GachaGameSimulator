@@ -2,7 +2,7 @@ The MMBN Fan Gacha Simulator is a free and open source gacha game based on the
 MegaMan Battle Network series by Capcom. No profit is being made from this project,
 and all graphical assets were made specifically for this fan game.
 
-Gather some currency and do some pulls to get characters! This is purely the gacha part
+Gather some Zenny and do some pulls to get characters! This is purely the gacha part
 of a gacha game, so unfortuntely you can't do anything with the characters.
 Still, it's all the fun of "watch-number-go-up" without breaking the bank!
 
